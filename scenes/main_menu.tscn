@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bu17cj5pv2v2x"]
+
+[ext_resource type="Script" uid="uid://d2yp4a2al0b7d" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="PackedScene" uid="uid://b17wkfictpve2" path="res://scenes/fade-transition.tscn" id="2_ekxnf"]
+
+[node name="Main Menu" type="Node2D" unique_id=1406853634]
+script = ExtResource("1_l6cm7")
+
+[node name="Button Manager" type="Control" parent="." unique_id=164437769]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="start" type="Button" parent="Button Manager" unique_id=256495613]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 422.0
+offset_right = 691.0
+offset_bottom = 576.0
+text = "Start
+"
+
+[node name="options" type="Button" parent="Button Manager" unique_id=2136468973]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 225.0
+offset_right = 688.0
+offset_bottom = 381.0
+text = "Options"
+
+[node name="quit" type="Button" parent="Button Manager" unique_id=1083877553]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 41.0
+offset_right = 692.0
+offset_bottom = 188.0
+text = "quit"
+
+[node name="FadeTransition" parent="." unique_id=1049697202 instance=ExtResource("2_ekxnf")]
+visible = false
+offset_left = 331.0
+offset_top = 41.0
+offset_right = 331.0
+offset_bottom = 41.0
+
+[node name="fade_timer" type="Timer" parent="FadeTransition" unique_id=1002641997]
+
+[connection signal="pressed" from="Button Manager/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button Manager/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button Manager/quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="FadeTransition/fade_timer" to="." method="_on_fade_timer_timeout"]

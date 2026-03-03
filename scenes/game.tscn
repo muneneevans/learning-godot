@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bwgb48aqk1k47"]
+
+[ext_resource type="Script" uid="uid://dvpl23slxhipp" path="res://scripts/game.gd" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://b17wkfictpve2" path="res://scenes/fade-transition.tscn" id="2_lnu2h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8cj0n"]
+size = Vector3(10, 1, 10)
+
+[node name="Game" type="Node3D" unique_id=1157048785]
+script = ExtResource("1_yqjtg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1625033020]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1212023804]
+shape = SubResource("BoxShape3D_8cj0n")
+debug_color = Color(0, 0.6161023, 0.5980596, 0.41960785)
+
+[node name="FadeTransition" parent="." unique_id=1049697202 instance=ExtResource("2_lnu2h")]

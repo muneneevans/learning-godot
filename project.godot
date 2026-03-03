@@ -15,6 +15,10 @@ run/main_scene="uid://bu17cj5pv2v2x"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="Learning"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

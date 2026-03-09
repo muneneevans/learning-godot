@@ -6,7 +6,7 @@ on: push
 env:
   GODOT_VERSION: 4.3
   EXPORT_NAME: learning
-  PROJECT_PATH: learning
+  PROJECT_PATH: .
 
 jobs:
   export-windows:

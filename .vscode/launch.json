@@ -15,6 +15,18 @@
             "debug_navigation": false,
             "additional_options": ""
         }
+        ,
+            {
+                "name": "GDScript: Launch Scene",
+                "type": "godot",
+                "request": "launch",
+                "project": "${workspaceFolder}",
+                "scene": "${file}",
+                "debug_collisions": false,
+                "debug_paths": false,
+                "debug_navigation": false,
+                "additional_options": ""
+            }
     ]
 }
 

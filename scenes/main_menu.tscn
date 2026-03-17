@@ -13,10 +13,10 @@ offset_bottom = 40.0
 
 [node name="quit" type="Button" parent="Button Manager" unique_id=1083877553]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 213.0
-offset_right = 401.0
-offset_bottom = 360.0
+offset_left = 777.0
+offset_top = 482.0
+offset_right = 1138.0
+offset_bottom = 629.0
 text = "quit"
 
 [node name="kenney_city" type="Button" parent="Button Manager" unique_id=1069278846]
@@ -27,5 +27,14 @@ offset_right = 402.0
 offset_bottom = 163.0
 text = "Kenney city"
 
+[node name="raycast_city" type="Button" parent="Button Manager" unique_id=1014486224]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 198.0
+offset_right = 401.0
+offset_bottom = 334.0
+text = "Raycast vehicles"
+
 [connection signal="pressed" from="Button Manager/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Button Manager/kenney_city" to="." method="_on_kenney_city_pressed"]
+[connection signal="pressed" from="Button Manager/raycast_city" to="." method="_on_raycast_city_pressed"]

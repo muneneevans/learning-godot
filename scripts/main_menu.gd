@@ -16,5 +16,9 @@ func _on_kenney_city_pressed() -> void:
 	get_tree().change_scene_to_file("res://games/kenney_city/kenney_city.tscn")
 
 
+func _on_raycast_city_pressed() -> void:
+	get_tree().change_scene_to_file("res://games/raycast_vehicles/game.tscn")
+
+
 func _on_quit_pressed() -> void:
 	get_tree().quit()

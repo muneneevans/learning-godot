@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bu17cj5pv2v2x"]
 
-[ext_resource type="Script" uid="uid://d2yp4a2al0b7d" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://d2yp4a2al0b7d" path="res://scripts/main_menu.gd" id="1_06t4h"]
 
 [node name="Main Menu" type="Node2D" unique_id=1406853634]
-script = ExtResource("1_l6cm7")
+script = ExtResource("1_06t4h")
 
 [node name="Button Manager" type="Control" parent="." unique_id=164437769]
 layout_mode = 3
@@ -24,17 +24,26 @@ layout_mode = 0
 offset_left = 42.0
 offset_top = 29.0
 offset_right = 402.0
-offset_bottom = 163.0
+offset_bottom = 83.0
 text = "Kenney city"
 
 [node name="raycast_city" type="Button" parent="Button Manager" unique_id=1014486224]
 layout_mode = 0
 offset_left = 42.0
-offset_top = 198.0
+offset_top = 95.0
 offset_right = 401.0
-offset_bottom = 334.0
+offset_bottom = 152.0
 text = "Raycast vehicles"
+
+[node name="composition" type="Button" parent="Button Manager" unique_id=439120485]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 171.0
+offset_right = 401.0
+offset_bottom = 223.0
+text = "Composition"
 
 [connection signal="pressed" from="Button Manager/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Button Manager/kenney_city" to="." method="_on_kenney_city_pressed"]
 [connection signal="pressed" from="Button Manager/raycast_city" to="." method="_on_raycast_city_pressed"]
+[connection signal="pressed" from="Button Manager/composition" to="." method="_on_composition_pressed"]

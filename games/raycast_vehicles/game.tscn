@@ -3,8 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://cm5m7nr7dugjd" path="res://assets/textures/grids/Purple/texture_09.png" id="2_a0n0t"]
 [ext_resource type="Script" uid="uid://ca51c3seby6jq" path="res://games/raycast_vehicles/car/raycast_car.gd" id="3_75xd7"]
 [ext_resource type="Texture2D" uid="uid://c8upf6osvdwx5" path="res://assets/textures/grids/Orange/texture_05.png" id="3_i2fvb"]
-[ext_resource type="Texture2D" uid="uid://bj2tjclvfiove" path="res://assets/textures/grids/Purple/texture_05.png" id="4_75xd7"]
+[ext_resource type="Script" uid="uid://clf8ct5n3f6cv" path="res://games/raycast_vehicles/car/raycast_wheel.gd" id="4_3sa35"]
 [ext_resource type="Texture2D" uid="uid://dhgdwpnq35vpd" path="res://assets/textures/grids/Orange/texture_08.png" id="4_xy24r"]
+[ext_resource type="Texture2D" uid="uid://c3ljl42mq1cbk" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/Textures/colormap.png" id="5_3sa35"]
 [ext_resource type="Texture2D" uid="uid://d223qxjvy58hj" path="res://assets/textures/grids/Dark/texture_09.png" id="5_xy24r"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2ddmw"]
@@ -19,6 +20,11 @@ background_mode = 2
 sky = SubResource("Sky_a0n0t")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="Curve" id="Curve_3sa35"]
+_data = [Vector2(0, 0.3), 0.0, 0.0, 0, 0, Vector2(0.3, 0.90000004), 0.0, 0.0, 0, 0, Vector2(0.6, 0.8), 0.0, 0.0, 0, 0, Vector2(1, 0.1), 0.0, 0.0, 0, 0]
+point_count = 4
+metadata/_snap_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3sa35"]
 albedo_texture = ExtResource("3_i2fvb")
@@ -39,9 +45,7 @@ material = SubResource("StandardMaterial3D_2ieqn")
 size = Vector3(2, 0.5, 4)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_357gy"]
-albedo_texture = ExtResource("4_75xd7")
-uv1_triplanar = true
-uv1_world_triplanar = true
+albedo_texture = ExtResource("5_3sa35")
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_hw28t"]
 material = SubResource("StandardMaterial3D_357gy")
@@ -68,12 +72,13 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.24999999, 0.072445825, 0.3860
 shadow_enabled = true
 
 [node name="car" type="RigidBody3D" parent="." unique_id=994024416 node_paths=PackedStringArray("wheels")]
-transform = Transform3D(1, 0, 0, 0, 0.9801156, 0.19842717, 0, -0.19842717, 0.9801156, 2.8015425, 5.0282736, 13.823673)
-mass = 50.0
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.047073126, 0.44027972, 83.575226)
+mass = 100.0
 script = ExtResource("3_75xd7")
 wheels = [NodePath("wheel_fl"), NodePath("wheel_rl"), NodePath("wheel_fr"), NodePath("wheel_rr")]
-spring_strength = 5000.0
-spring_damping = 100
+acceleration = 600
+max_speed = 60
+acceleration_curve = SubResource("Curve_3sa35")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="car" unique_id=1934565024]
 mesh = SubResource("BoxMesh_mfkao")
@@ -87,34 +92,54 @@ shape = SubResource("BoxShape3D_hw28t")
 
 [node name="wheel_fl" type="RayCast3D" parent="car" unique_id=2076168072]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1, 0, -1.3)
+enabled = false
+script = ExtResource("4_3sa35")
+spring_strength = 5000.0
+spring_damping = 120
 
 [node name="wheel" type="MeshInstance3D" parent="car/wheel_fl" unique_id=709438943]
 transform = Transform3D(-0.010471792, -0.99994516, 0, 0.99994516, -0.010471792, 0, 0, 0, 1, 0, -0.5, 0)
 mesh = SubResource("CylinderMesh_hw28t")
 
-[node name="wheel_rl" type="RayCast3D" parent="car" unique_id=812804057]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1, 0, 1.3)
-
-[node name="wheel" type="MeshInstance3D" parent="car/wheel_rl" unique_id=593140311]
-transform = Transform3D(-0.010471792, -0.99994516, 0, 0.99994516, -0.010471792, 0, 0, 0, 1, 0, -0.5, 0)
-mesh = SubResource("CylinderMesh_hw28t")
-
 [node name="wheel_fr" type="RayCast3D" parent="car" unique_id=1749492447]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, -1.3)
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 1.1000001, 0, -1.3000002)
+enabled = false
+script = ExtResource("4_3sa35")
+spring_strength = 5000.0
+spring_damping = 120
 
 [node name="wheel" type="MeshInstance3D" parent="car/wheel_fr" unique_id=1933747098]
 transform = Transform3D(-0.010471792, -0.99994516, 0, 0.99994516, -0.010471792, 0, 0, 0, 1, 0, -0.5, 0)
 mesh = SubResource("CylinderMesh_hw28t")
 
+[node name="wheel_rl" type="RayCast3D" parent="car" unique_id=812804057]
+transform = Transform3D(1.35, 0, 0, 0, 1.35, 0, 0, 0, 1.35, -1.1, 0, 1.3)
+enabled = false
+script = ExtResource("4_3sa35")
+spring_strength = 5000.0
+spring_damping = 120
+wheel_radius = 0.54
+is_motor = true
+
+[node name="wheel" type="MeshInstance3D" parent="car/wheel_rl" unique_id=593140311]
+transform = Transform3D(-0.010471792, -0.99994516, 0, 0.99994516, -0.010471792, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("CylinderMesh_hw28t")
+
 [node name="wheel_rr" type="RayCast3D" parent="car" unique_id=1100217577]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 1.3)
+transform = Transform3D(1.35, 0, 0, 0, 1.35, 0, 0, 0, 1.35, 1.1, 0, 1.3)
+enabled = false
+script = ExtResource("4_3sa35")
+spring_strength = 5000.0
+spring_damping = 120
+wheel_radius = 0.54
+is_motor = true
 
 [node name="wheel" type="MeshInstance3D" parent="car/wheel_rr" unique_id=1924664714]
 transform = Transform3D(-0.010471792, -0.99994516, 0, 0.99994516, -0.010471792, 0, 0, 0, 1, 0, -0.5, 0)
 mesh = SubResource("CylinderMesh_hw28t")
 
 [node name="Camera3D" type="Camera3D" parent="car" unique_id=1490901880]
-transform = Transform3D(0.9950514, 0.020713512, 0.097178735, -0.051173232, 0.94517833, 0.3225205, -0.0851707, -0.32589728, 0.9415609, -0.43046188, 4.643483, 8.186063)
+transform = Transform3D(0.7071068, 0.17107658, -0.6860997, 0, 0.97029155, 0.2419388, 0.7071068, -0.17107658, 0.6860997, -3.8291426, 2.11499, 4.0276766)
 
 [node name="map" type="Node3D" parent="." unique_id=1794197367]
 
@@ -125,7 +150,7 @@ size = Vector3(1000, 1, 1000)
 material = SubResource("StandardMaterial3D_mfkao")
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="map" unique_id=112311272]
-transform = Transform3D(0.044107623, 0, -13.84075, 0, 3.3247123, 0, 0.9990268, 0, 0.6110773, -3.7614918, 0, 15.630283)
+transform = Transform3D(0.14774036, 0, 13.702198, 0, 3.324712, 0, -0.9890261, 0, 2.0468297, 248.85403, 0, -4.0011597)
 use_collision = true
 polygon = PackedVector2Array(0, 0, -9.052685, -0.57205486, 0, 1, 1, 1, 1, 0)
 material = SubResource("StandardMaterial3D_75xd7")

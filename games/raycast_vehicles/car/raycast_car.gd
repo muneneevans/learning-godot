@@ -59,13 +59,13 @@ func _do_single_wheel_acceleration(ray: RayCastWheel) -> void:
 			var force_vector := forward_direction * acceleration * motor_input * acceleration_ratio
 
 			apply_force(force_vector , force_position)
-			# DebugDraw3D.draw_arrow_ray(contact, force_vector/mass,2.5, Color.RED)
+			DebugDraw3D.draw_arrow_ray(contact, force_vector/mass,2.5, Color.RED)
 		
 		
 		elif abs(velocity) > 0.1 and not motor_input:
 			var drag_force_vector = global_basis.z  * deceleration * signf(velocity)
 			apply_force(drag_force_vector, force_position)
-			# DebugDraw3D.draw_arrow_ray(contact, drag_force_vector/mass,2.5, Color.PURPLE) 		
+			DebugDraw3D.draw_arrow_ray(contact, drag_force_vector/mass,2.5, Color.PURPLE) 		
 
 func _do_single_wheel_suspension(ray: RayCastWheel) -> void:
 	if ray.is_colliding():
@@ -93,6 +93,6 @@ func _do_single_wheel_suspension(ray: RayCastWheel) -> void:
 		var force_position_offset := contact - global_position
 		apply_force(force_vector, force_position_offset)
 
-		# DebugDraw3D.draw_arrow_ray(contact, force_vector/mass, 2.5)
-		# DebugDraw3D.draw_sphere(ray.get_collision_point(), 0.25, Color.YELLOW)
+		DebugDraw3D.draw_arrow_ray(contact, force_vector/mass, 2.5)
+		DebugDraw3D.draw_sphere(ray.get_collision_point(), 0.25, Color.YELLOW)
 	

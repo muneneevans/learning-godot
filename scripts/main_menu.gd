@@ -22,3 +22,7 @@ func _on_raycast_city_pressed() -> void:
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_composition_pressed() -> void:
+	get_tree().change_scene_to_file("res://games/composition/composition.tscn")

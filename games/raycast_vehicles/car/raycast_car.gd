@@ -41,5 +41,5 @@ func _do_single_wheel_suspension(suspension_ray: RayCast3D) -> void:
 		var force_position_offset := contact - global_position
 		apply_force(force_vector, force_position_offset)
 
-		#DebugDraw.draw_arrow_ray(contact, force_vector, 2.5)
+		DebugDraw3D.draw_arrow_ray(contact, force_vector, 2.5)
 	

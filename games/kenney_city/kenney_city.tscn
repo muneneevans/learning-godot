@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dpacnqm43y1v6"]
 
-[ext_resource type="Texture2D" uid="uid://blapy10hmckk1" path="res://assets/textures/roads/asphalt_track_diff_4k.jpg" id="1_ksb34"]
+[ext_resource type="Texture2D" uid="uid://bn8wfhbs1omgo" path="res://assets/textures/grids/Dark/texture_08.png" id="1_ksb34"]
 [ext_resource type="PackedScene" uid="uid://8d0r32c3jcg7" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-h.glb" id="2_d4gm4"]
 [ext_resource type="PackedScene" uid="uid://m2hcrduaysd" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-c.glb" id="3_1tbqd"]
 
@@ -20,9 +20,10 @@ glow_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_yci4h"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l21gp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d4gm4"]
 albedo_texture = ExtResource("1_ksb34")
 uv1_triplanar = true
+uv1_world_triplanar = true
 
 [node name="KenneyCity" type="Node3D" unique_id=729466984]
 
@@ -35,16 +36,18 @@ environment = SubResource("Environment_klabr")
 transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0.09049377, 0.007256031, 0.19235234)
 use_collision = true
 mesh = SubResource("BoxMesh_yci4h")
-material = SubResource("StandardMaterial3D_l21gp")
+material = SubResource("StandardMaterial3D_d4gm4")
 
 [node name="road" type="Node3D" parent="world" unique_id=1087827220]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49316883, 0, 0)
 
-[node name="building-type-h2" parent="world" unique_id=1171141476 instance=ExtResource("2_d4gm4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5406383, 0)
-
 [node name="Camera3D" type="Camera3D" parent="world" unique_id=579112566]
 transform = Transform3D(1, 0, 0, 0, 0.81591564, 0.578171, 0, -0.578171, 0.81591564, 0.7438681, 3.1994596, 2.3975978)
 
-[node name="building-c2" parent="." unique_id=1250792650 instance=ExtResource("3_1tbqd")]
+[node name="buildings" type="Node3D" parent="." unique_id=1820829408]
+
+[node name="building-c2" parent="buildings" unique_id=1250792650 instance=ExtResource("3_1tbqd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6910269, 0.5, -0.7785795)
+
+[node name="building-type-h2" parent="buildings" unique_id=1171141476 instance=ExtResource("2_d4gm4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5406383, 0)

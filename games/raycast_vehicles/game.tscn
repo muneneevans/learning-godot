@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://c7xxlq8e581ol"]
 
-[ext_resource type="Texture2D" uid="uid://cm5m7nr7dugjd" path="res://games/raycast_vehicles/assets/textures/grids/Purple/texture_09.png" id="2_a0n0t"]
+[ext_resource type="Texture2D" uid="uid://cm5m7nr7dugjd" path="res://assets/textures/grids/Purple/texture_09.png" id="2_a0n0t"]
 [ext_resource type="Script" uid="uid://ca51c3seby6jq" path="res://games/raycast_vehicles/car/raycast_car.gd" id="3_75xd7"]
-[ext_resource type="Texture2D" uid="uid://c8upf6osvdwx5" path="res://games/raycast_vehicles/assets/textures/grids/Orange/texture_05.png" id="3_i2fvb"]
-[ext_resource type="Texture2D" uid="uid://bj2tjclvfiove" path="res://games/raycast_vehicles/assets/textures/grids/Purple/texture_05.png" id="4_75xd7"]
-[ext_resource type="Texture2D" uid="uid://dhgdwpnq35vpd" path="res://games/raycast_vehicles/assets/textures/grids/Orange/texture_08.png" id="4_xy24r"]
-[ext_resource type="Texture2D" uid="uid://d223qxjvy58hj" path="res://games/raycast_vehicles/assets/textures/grids/Dark/texture_09.png" id="5_xy24r"]
+[ext_resource type="Texture2D" uid="uid://c8upf6osvdwx5" path="res://assets/textures/grids/Orange/texture_05.png" id="3_i2fvb"]
+[ext_resource type="Texture2D" uid="uid://bj2tjclvfiove" path="res://assets/textures/grids/Purple/texture_05.png" id="4_75xd7"]
+[ext_resource type="Texture2D" uid="uid://dhgdwpnq35vpd" path="res://assets/textures/grids/Orange/texture_08.png" id="4_xy24r"]
+[ext_resource type="Texture2D" uid="uid://d223qxjvy58hj" path="res://assets/textures/grids/Dark/texture_09.png" id="5_xy24r"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2ddmw"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

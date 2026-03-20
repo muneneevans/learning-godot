@@ -1,0 +1,925 @@
+[gd_scene format=3 uid="uid://7ekkn3d8555x"]
+
+[ext_resource type="PackedScene" uid="uid://bejk1clhij3xi" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/barricade-doorway-a.glb" id="1_qbcuh"]
+[ext_resource type="PackedScene" uid="uid://ieg2j2vynvre" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/barricade-doorway-b.glb" id="2_wca7v"]
+[ext_resource type="PackedScene" uid="uid://bddp1wxc8qesd" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/barricade-doorway-c.glb" id="3_3h06g"]
+[ext_resource type="PackedScene" uid="uid://cfqu7c7128hex" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/barricade-window-a.glb" id="4_4yblf"]
+[ext_resource type="PackedScene" uid="uid://ddmwk24s60ovv" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/barricade-window-b.glb" id="5_xu2hf"]
+[ext_resource type="PackedScene" uid="uid://dqu7r1v4gblsf" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/barricade-window-c.glb" id="6_6wgmn"]
+[ext_resource type="PackedScene" uid="uid://brrdqxo1b3ucp" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-corner-diagonal.glb" id="7_x13s8"]
+[ext_resource type="PackedScene" uid="uid://c0obledy6hnmw" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-corner-round.glb" id="8_oag0e"]
+[ext_resource type="PackedScene" uid="uid://dtcd3d2geiyc6" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-corner-small.glb" id="9_psowe"]
+[ext_resource type="PackedScene" uid="uid://csy0qpwrbe6o7" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-corner.glb" id="10_43ouy"]
+[ext_resource type="PackedScene" uid="uid://cum4rnklucjje" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-high-corner-diagonal.glb" id="11_jwch2"]
+[ext_resource type="PackedScene" uid="uid://weouw71dwj3k" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-high-corner-round.glb" id="12_nl03k"]
+[ext_resource type="PackedScene" uid="uid://b67fb7b4d7kc" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-high-corner-small.glb" id="13_xwhc2"]
+[ext_resource type="PackedScene" uid="uid://ck0krajdajj17" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-high-corner.glb" id="14_qotn8"]
+[ext_resource type="PackedScene" uid="uid://cuqxj3t8ug6jo" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border-high.glb" id="15_wgmtp"]
+[ext_resource type="PackedScene" uid="uid://cc6g5i4wkxk5m" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/border.glb" id="16_lyrr8"]
+[ext_resource type="PackedScene" uid="uid://bgkwf3bt46d3e" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/column-thin.glb" id="17_onnn0"]
+[ext_resource type="PackedScene" uid="uid://btu1c1hqn3h78" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/column-wide.glb" id="18_ysedl"]
+[ext_resource type="PackedScene" uid="uid://b8o31ca0fg7d5" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/column.glb" id="19_qnpdu"]
+[ext_resource type="PackedScene" uid="uid://g2ghx3kx8l6" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/detail-pipe.glb" id="20_wywna"]
+[ext_resource type="PackedScene" uid="uid://c55vybny3p7us" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-round-a.glb" id="21_s14j1"]
+[ext_resource type="PackedScene" uid="uid://bxlkpv1pdpabp" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-round-b.glb" id="22_gv0d8"]
+[ext_resource type="PackedScene" uid="uid://cqvxbhl46v331" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-round-c.glb" id="23_dis3i"]
+[ext_resource type="PackedScene" uid="uid://m8a1mg8fyd0g" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-round-d.glb" id="24_rth6m"]
+[ext_resource type="PackedScene" uid="uid://1l3g13xgw6qb" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-square-a.glb" id="25_tbtyg"]
+[ext_resource type="PackedScene" uid="uid://bvjofbl84ne00" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-square-b.glb" id="26_6yh80"]
+[ext_resource type="PackedScene" uid="uid://bmpll7h7w01op" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-square-c.glb" id="27_q7xx7"]
+[ext_resource type="PackedScene" uid="uid://cvqu4jxyoshaq" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/door-rotate-square-d.glb" id="28_pgmyh"]
+[ext_resource type="PackedScene" uid="uid://bolefmyd8vpi3" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/floor-corner-diagonal.glb" id="29_kvsd7"]
+[ext_resource type="PackedScene" uid="uid://twesludhynky" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/floor-corner-round.glb" id="30_k6crx"]
+[ext_resource type="PackedScene" uid="uid://dvu6l1xai88ut" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/floor-half.glb" id="31_fdnpx"]
+[ext_resource type="PackedScene" uid="uid://l7rcj8anqit" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/floor-quarter.glb" id="32_tu1ge"]
+[ext_resource type="PackedScene" uid="uid://dfbv66nmn4u23" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/floor.glb" id="33_7a2wq"]
+[ext_resource type="PackedScene" uid="uid://bbtki5x1n12ao" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/gutter-vertical-bottom.glb" id="34_kupia"]
+[ext_resource type="PackedScene" uid="uid://c2wbx4uxildif" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/gutter-vertical-short.glb" id="35_25hg6"]
+[ext_resource type="PackedScene" uid="uid://bm7cuyo3xpv1" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/gutter-vertical-top.glb" id="36_ngm17"]
+[ext_resource type="PackedScene" uid="uid://lvtdrwreul21" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/gutter-vertical-wall.glb" id="37_t63wx"]
+[ext_resource type="PackedScene" uid="uid://cxn7k1u6f3hxu" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/gutter-vertical.glb" id="38_noexl"]
+[ext_resource type="PackedScene" uid="uid://dvxd4bms7du1q" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/plating-detailed-wide.glb" id="39_mgw6c"]
+[ext_resource type="PackedScene" uid="uid://ry6xawyscxt5" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/plating-detailed.glb" id="40_xkf3e"]
+[ext_resource type="PackedScene" uid="uid://d3ilpqo45dqti" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/plating-wide.glb" id="41_qndb4"]
+[ext_resource type="PackedScene" uid="uid://dw1f5etsyt133" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/plating.glb" id="42_akpib"]
+[ext_resource type="PackedScene" uid="uid://dj8jv3q8dktno" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-center.glb" id="43_vknyo"]
+[ext_resource type="PackedScene" uid="uid://c7rhig4qqce4" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-corner-inner.glb" id="44_f6fl7"]
+[ext_resource type="PackedScene" uid="uid://0hsstrmxiub1" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-corner.glb" id="45_dwr6y"]
+[ext_resource type="PackedScene" uid="uid://tmf1dfjbav4o" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-patch-large.glb" id="46_20acn"]
+[ext_resource type="PackedScene" uid="uid://dsx8caano82cb" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-patch.glb" id="47_8dvwf"]
+[ext_resource type="PackedScene" uid="uid://d1dhvnqm2ero6" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-side.glb" id="48_o0ag2"]
+[ext_resource type="PackedScene" uid="uid://bh473c3q2k4bh" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/roof-flat-square.glb" id="49_sb5og"]
+[ext_resource type="PackedScene" uid="uid://ckqgbarip1yt3" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-center-short.glb" id="50_mpbyv"]
+[ext_resource type="PackedScene" uid="uid://fbp3w4bapmre" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-center.glb" id="51_yvjdm"]
+[ext_resource type="PackedScene" uid="uid://5mb2kmnge1nc" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-closed-short.glb" id="52_6ytrb"]
+[ext_resource type="PackedScene" uid="uid://bnh6ntwhqfik1" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-closed.glb" id="53_pq8rp"]
+[ext_resource type="PackedScene" uid="uid://cs6p5f41cj7i1" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-open-short.glb" id="54_7q8pn"]
+[ext_resource type="PackedScene" uid="uid://cfft1m50trixd" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-open.glb" id="55_ucya1"]
+[ext_resource type="PackedScene" uid="uid://4xc31074ekc1" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-sides-short.glb" id="56_ycfa6"]
+[ext_resource type="PackedScene" uid="uid://73viuvht0eeh" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/stairs-sides.glb" id="57_r72vt"]
+[ext_resource type="PackedScene" uid="uid://cpwepo6hh1c3k" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner-column-bottom.glb" id="58_p5kb3"]
+[ext_resource type="PackedScene" uid="uid://blvefsv376a7f" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner-column-small-bottom.glb" id="59_l11nx"]
+[ext_resource type="PackedScene" uid="uid://csxdabpvb8vqx" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner-column-small.glb" id="60_3fwtg"]
+[ext_resource type="PackedScene" uid="uid://bqdx6tpvobvhf" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner-column.glb" id="61_4g4qv"]
+[ext_resource type="PackedScene" uid="uid://bg7vqc236jp0s" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner-diagonal.glb" id="62_evknv"]
+[ext_resource type="PackedScene" uid="uid://bi0mgbystgvh5" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner-round.glb" id="63_x3208"]
+[ext_resource type="PackedScene" uid="uid://c5h1s2m208867" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-corner.glb" id="64_678bj"]
+[ext_resource type="PackedScene" uid="uid://cex01n0pgbycd" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-doorway-round.glb" id="65_6cnkd"]
+[ext_resource type="PackedScene" uid="uid://c3aps8b1skvel" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-doorway-square.glb" id="66_fdae0"]
+[ext_resource type="PackedScene" uid="uid://cgwaqfxifqd7n" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-doorway-wide-round.glb" id="67_qx40i"]
+[ext_resource type="PackedScene" uid="uid://c33bjy8ncdda1" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-doorway-wide-square.glb" id="68_cd87s"]
+[ext_resource type="PackedScene" uid="uid://044db30wmatk" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-half.glb" id="69_ry71j"]
+[ext_resource type="PackedScene" uid="uid://6hxarvs26fwi" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-low.glb" id="70_jfp54"]
+[ext_resource type="PackedScene" uid="uid://ccygpx55vaiek" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-round-detailed.glb" id="71_uosss"]
+[ext_resource type="PackedScene" uid="uid://bgufg41t6cw40" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-round.glb" id="72_nclht"]
+[ext_resource type="PackedScene" uid="uid://dj5dj4iqrx1ex" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-square-detailed.glb" id="73_g8jjg"]
+[ext_resource type="PackedScene" uid="uid://y5k4xtl4tuas" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-square.glb" id="74_uqp6g"]
+[ext_resource type="PackedScene" uid="uid://cb0yp8bexdcd7" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-wide-round-detailed.glb" id="75_e36vk"]
+[ext_resource type="PackedScene" uid="uid://8m0bjmw1v44y" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-wide-round.glb" id="76_vfent"]
+[ext_resource type="PackedScene" uid="uid://cq3pnna1u8per" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-wide-square-detailed.glb" id="77_dsdot"]
+[ext_resource type="PackedScene" uid="uid://c4bbabu6gc4al" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall-window-wide-square.glb" id="78_oj551"]
+[ext_resource type="PackedScene" uid="uid://ceq0dbmhpum16" path="res://games/kenney_city/assets/kenney_building-kit/Models/GLB format/wall.glb" id="79_imwp7"]
+[ext_resource type="PackedScene" uid="uid://d1n1vt6nlxf56" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/ambulance.glb" id="80_qp26a"]
+[ext_resource type="PackedScene" uid="uid://drkkmy217w203" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/bridge-pillar-wide.glb" id="80_u5r8r"]
+[ext_resource type="PackedScene" uid="uid://civsekxompsiw" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/box.glb" id="81_4gfhs"]
+[ext_resource type="PackedScene" uid="uid://bsgpg7bofuvkm" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/bridge-pillar.glb" id="81_sb6q3"]
+[ext_resource type="PackedScene" uid="uid://dwiaey1nejc7n" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/construction-barrier.glb" id="82_f038e"]
+[ext_resource type="PackedScene" uid="uid://bbru8iv6vk05j" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/cone-flat.glb" id="82_onswo"]
+[ext_resource type="PackedScene" uid="uid://brwxdyefxn56o" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/cone.glb" id="83_3q6oj"]
+[ext_resource type="PackedScene" uid="uid://ss6gynii8um6" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/construction-cone.glb" id="83_jnqy8"]
+[ext_resource type="PackedScene" uid="uid://dccnsdhvfbjw7" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-bolt.glb" id="84_oru0i"]
+[ext_resource type="PackedScene" uid="uid://ch756bqoykune" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/construction-light.glb" id="84_sawsv"]
+[ext_resource type="PackedScene" uid="uid://cw5k1e0pswn0w" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-bumper.glb" id="85_d4oml"]
+[ext_resource type="PackedScene" uid="uid://bov4gnr8a2h6x" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/light-curved-cross.glb" id="85_ndeyu"]
+[ext_resource type="PackedScene" uid="uid://cq5wgaukjkv6f" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-door-window.glb" id="86_kq0pd"]
+[ext_resource type="PackedScene" uid="uid://b0la77fvd8888" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/light-curved-double.glb" id="86_x3cqw"]
+[ext_resource type="PackedScene" uid="uid://ckqdcwr8068mw" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-door.glb" id="87_7bke8"]
+[ext_resource type="PackedScene" uid="uid://bl28cqsft710u" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/light-curved.glb" id="87_v044i"]
+[ext_resource type="PackedScene" uid="uid://bl7gxce6lfoq8" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/light-square-cross.glb" id="88_dpegw"]
+[ext_resource type="PackedScene" uid="uid://c2bakevv8ythf" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-drivetrain-axle.glb" id="88_ie2ck"]
+[ext_resource type="PackedScene" uid="uid://bjdxr6mqfngia" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/light-square-double.glb" id="89_f10ba"]
+[ext_resource type="PackedScene" uid="uid://cbi875pf2162y" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-drivetrain.glb" id="89_iyl0x"]
+[ext_resource type="PackedScene" uid="uid://c2mesyfomo0kc" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/light-square.glb" id="90_j7017"]
+[ext_resource type="PackedScene" uid="uid://bdr6e4j0sooiw" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-nut.glb" id="90_rfwg7"]
+[ext_resource type="PackedScene" uid="uid://78ev7eble3q1" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-plate-a.glb" id="91_d4g7r"]
+[ext_resource type="PackedScene" uid="uid://bhqtv8x8jmksc" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-bend-barrier.glb" id="91_x7k4x"]
+[ext_resource type="PackedScene" uid="uid://c1htcj0dh4sbk" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-plate-b.glb" id="92_0gxcd"]
+[ext_resource type="PackedScene" uid="uid://bey52wrhg2qyp" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-bend-sidewalk.glb" id="92_la44y"]
+[ext_resource type="PackedScene" uid="uid://c6oafti1xu41g" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-bend-square-barrier.glb" id="93_1khmk"]
+[ext_resource type="PackedScene" uid="uid://doy3r7qyvmnbe" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-plate-small-a.glb" id="93_37wdc"]
+[ext_resource type="PackedScene" uid="uid://bysvll3s2qujp" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-plate-small-b.glb" id="94_kua57"]
+[ext_resource type="PackedScene" uid="uid://cd8w2em2qhg3r" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-bend-square.glb" id="94_y70m2"]
+[ext_resource type="PackedScene" uid="uid://cg67sitxbpwvd" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-bend.glb" id="95_0hbfv"]
+[ext_resource type="PackedScene" uid="uid://c5emx8do68h6f" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-spoiler-a.glb" id="95_qceex"]
+[ext_resource type="PackedScene" uid="uid://cmms0ind4g7h" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-spoiler-b.glb" id="96_aom1k"]
+[ext_resource type="PackedScene" uid="uid://bpy6e6ng0k4se" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-bridge.glb" id="96_qq86h"]
+[ext_resource type="PackedScene" uid="uid://dkf1824obty85" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/debris-tire.glb" id="97_avpk4"]
+[ext_resource type="PackedScene" uid="uid://ckl8wc7knfem8" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-crossing.glb" id="97_fpn6a"]
+[ext_resource type="PackedScene" uid="uid://7kk55rcf10av" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-crossroad-barrier.glb" id="98_c3ky1"]
+[ext_resource type="PackedScene" uid="uid://intlhws2by26" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/delivery-flat.glb" id="98_ewwhb"]
+[ext_resource type="PackedScene" uid="uid://dui0k20ivflbk" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-crossroad-line.glb" id="99_15d7l"]
+[ext_resource type="PackedScene" uid="uid://o6uew1lbgi61" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/delivery.glb" id="99_mtsvq"]
+[ext_resource type="PackedScene" uid="uid://ckfmi7vv5nqad" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/firetruck.glb" id="100_5uid2"]
+[ext_resource type="PackedScene" uid="uid://cii37irdsf1jt" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-crossroad-path.glb" id="100_ibr77"]
+[ext_resource type="PackedScene" uid="uid://ci0siw8xahp8w" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-crossroad.glb" id="101_k38pf"]
+[ext_resource type="PackedScene" uid="uid://cwc6wtam5bkwp" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/garbage-truck.glb" id="101_ky27j"]
+[ext_resource type="PackedScene" uid="uid://blyne5fuj6kyx" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-curve-barrier.glb" id="102_gl1xs"]
+[ext_resource type="PackedScene" uid="uid://dfqnkjswfsee" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/hatchback-sports.glb" id="102_grhxm"]
+[ext_resource type="PackedScene" uid="uid://c1sc6l2hjapu7" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/kart-oobi.glb" id="103_8noim"]
+[ext_resource type="PackedScene" uid="uid://du0r3f2m14h4i" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-curve-intersection-barrier.glb" id="103_dt58n"]
+[ext_resource type="PackedScene" uid="uid://dcujgtfa438im" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-curve-intersection.glb" id="104_0x2v4"]
+[ext_resource type="PackedScene" uid="uid://b2xi0u4ophey1" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/kart-oodi.glb" id="104_6vrbg"]
+[ext_resource type="PackedScene" uid="uid://b14kd8e7o1y27" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/kart-ooli.glb" id="105_f4egj"]
+[ext_resource type="PackedScene" uid="uid://wnma1h15ilc1" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-curve-pavement.glb" id="105_pens1"]
+[ext_resource type="PackedScene" uid="uid://6bq657u2see6" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/kart-oopi.glb" id="106_0tprv"]
+[ext_resource type="PackedScene" uid="uid://c1g08ak71au4b" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-curve.glb" id="106_n8xxo"]
+[ext_resource type="PackedScene" uid="uid://dxc4dfspcgggc" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/kart-oozi.glb" id="107_bjsvg"]
+[ext_resource type="PackedScene" uid="uid://cuuip2g61f8uy" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-driveway-double-barrier.glb" id="107_q4rwa"]
+[ext_resource type="PackedScene" uid="uid://cwf5xb152bcj1" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/police.glb" id="108_l0m02"]
+[ext_resource type="PackedScene" uid="uid://3abbl41n1rs0" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-driveway-double.glb" id="108_wrpl6"]
+[ext_resource type="PackedScene" uid="uid://pjoex4tknksn" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/race-future.glb" id="109_fdt5n"]
+[ext_resource type="PackedScene" uid="uid://b7s0eetlavghc" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-driveway-single-barrier.glb" id="109_iu6ar"]
+[ext_resource type="PackedScene" uid="uid://qc0ild85dvmg" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-driveway-single.glb" id="110_5o6fg"]
+[ext_resource type="PackedScene" uid="uid://hw1upmp836h2" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/race.glb" id="110_s5y3l"]
+[ext_resource type="PackedScene" uid="uid://bv2mmhhjx42v" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-end-barrier.glb" id="111_ksjmi"]
+[ext_resource type="PackedScene" uid="uid://hpdmm3r3r1gd" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/sedan-sports.glb" id="111_xd0f8"]
+[ext_resource type="PackedScene" uid="uid://dqvpy7g7yqv3v" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-end-round-barrier.glb" id="112_npc0j"]
+[ext_resource type="PackedScene" uid="uid://dhikysyrwow7a" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/sedan.glb" id="112_p0lse"]
+[ext_resource type="PackedScene" uid="uid://vp3lt6skjk0c" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-end-round.glb" id="113_56kvn"]
+[ext_resource type="PackedScene" uid="uid://bpvm4upx71dsi" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/suv-luxury.glb" id="113_358yn"]
+[ext_resource type="PackedScene" uid="uid://rkk2si2bohfg" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/suv.glb" id="114_8rec3"]
+[ext_resource type="PackedScene" uid="uid://chrvf21fbnhee" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-end.glb" id="114_jpfn1"]
+[ext_resource type="PackedScene" uid="uid://dwqj7ld8dtdwr" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/taxi.glb" id="115_nyt12"]
+[ext_resource type="PackedScene" uid="uid://csun6gekeyvvx" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-intersection-barrier.glb" id="115_vs8no"]
+[ext_resource type="PackedScene" uid="uid://em5g62rbn20y" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-intersection-line.glb" id="116_0by22"]
+[ext_resource type="PackedScene" uid="uid://jqpgr85eq1q2" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/tractor-police.glb" id="116_ob6tf"]
+[ext_resource type="PackedScene" uid="uid://d4aj7b1pwwm63" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/tractor-shovel.glb" id="117_ey6dw"]
+[ext_resource type="PackedScene" uid="uid://bub5dkkjgh0kk" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-intersection-path.glb" id="117_wal5b"]
+[ext_resource type="PackedScene" uid="uid://bb56eieepm4bp" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/tractor.glb" id="118_hhxni"]
+[ext_resource type="PackedScene" uid="uid://dlvwrnhq8j83n" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-intersection.glb" id="118_upsrp"]
+[ext_resource type="PackedScene" uid="uid://chkfpcmfjo5ff" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/truck-flat.glb" id="119_2tgpq"]
+[ext_resource type="PackedScene" uid="uid://cxow85bj6ywvq" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-roundabout-barrier.glb" id="119_llm2i"]
+[ext_resource type="PackedScene" uid="uid://bi8liyhd6qhxf" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-roundabout.glb" id="120_8d8e0"]
+[ext_resource type="PackedScene" uid="uid://ctpa6mayolgye" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/truck.glb" id="120_yt2ky"]
+[ext_resource type="PackedScene" uid="uid://qacnibp2ka6c" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/van.glb" id="121_akmpa"]
+[ext_resource type="PackedScene" uid="uid://bbs7xt60p8jom" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-side-barrier.glb" id="121_cwfet"]
+[ext_resource type="PackedScene" uid="uid://brx7q6y1q01xk" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-dark.glb" id="122_e66iw"]
+[ext_resource type="PackedScene" uid="uid://cjfadgf3stihn" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-side-entry-barrier.glb" id="122_o2noj"]
+[ext_resource type="PackedScene" uid="uid://n568vn5mho03" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-side-entry.glb" id="123_6i264"]
+[ext_resource type="PackedScene" uid="uid://bjg47nrunmppr" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-default.glb" id="123_lii6m"]
+[ext_resource type="PackedScene" uid="uid://dkal3mex1pspm" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-racing.glb" id="124_afcha"]
+[ext_resource type="PackedScene" uid="uid://wwyvx6udkscn" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-side-exit-barrier.glb" id="124_tl0jn"]
+[ext_resource type="PackedScene" uid="uid://cpfhbyjsle0c3" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-side-exit.glb" id="125_o57pf"]
+[ext_resource type="PackedScene" uid="uid://cccj016h0cq0y" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-tractor-back.glb" id="125_o80ns"]
+[ext_resource type="PackedScene" uid="uid://ceif1sdhhto8y" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-side.glb" id="126_sfhko"]
+[ext_resource type="PackedScene" uid="uid://cp1is08glwpfg" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-tractor-dark-back.glb" id="126_tiy7i"]
+[ext_resource type="PackedScene" uid="uid://d2dvoeoq73pl7" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-barrier.glb" id="127_3hwkv"]
+[ext_resource type="PackedScene" uid="uid://bfvjyklowl070" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-tractor-dark-front.glb" id="127_c84rs"]
+[ext_resource type="PackedScene" uid="uid://dw0qwspjubs00" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-tractor-front.glb" id="128_6xg4y"]
+[ext_resource type="PackedScene" uid="uid://dpr6qgio18jna" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-curve-barrier.glb" id="128_kd5uu"]
+[ext_resource type="PackedScene" uid="uid://befe2o0jnoxas" path="res://games/kenney_city/assets/kenney_car-kit/Models/GLB format/wheel-truck.glb" id="129_aicvp"]
+[ext_resource type="PackedScene" uid="uid://ci6rup21cgu00" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-curve.glb" id="129_jjqk4"]
+[ext_resource type="PackedScene" uid="uid://djtkkr5b3mkfw" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-flat-curve.glb" id="130_at6e2"]
+[ext_resource type="PackedScene" uid="uid://bujc8l62cowm7" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-a.glb" id="130_m8vun"]
+[ext_resource type="PackedScene" uid="uid://cqe6ma66fc73q" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-flat-high.glb" id="131_nfqgl"]
+[ext_resource type="PackedScene" uid="uid://cpxfd3t1mbm5v" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-b.glb" id="131_waev5"]
+[ext_resource type="PackedScene" uid="uid://du8rmp0t3twq2" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-flat.glb" id="132_7t4fc"]
+[ext_resource type="PackedScene" uid="uid://dmlnfibvv31uc" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-c.glb" id="132_oq8eb"]
+[ext_resource type="PackedScene" uid="uid://biljqnoutvpkf" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-d.glb" id="133_fq5r6"]
+[ext_resource type="PackedScene" uid="uid://clroogq0u452a" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-high-barrier.glb" id="133_qsxky"]
+[ext_resource type="PackedScene" uid="uid://c0f2gc0fnvjrv" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant-high.glb" id="134_imi3i"]
+[ext_resource type="PackedScene" uid="uid://d2svqgvsjose8" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-e.glb" id="134_l0hco"]
+[ext_resource type="PackedScene" uid="uid://coyal2si1xjwy" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-slant.glb" id="135_8xqbx"]
+[ext_resource type="PackedScene" uid="uid://c865vh3tsrda4" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-f.glb" id="135_vuryf"]
+[ext_resource type="PackedScene" uid="uid://bit7t8ob58iaa" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-g.glb" id="136_7fiic"]
+[ext_resource type="PackedScene" uid="uid://dirh13epb6p1e" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-split-barrier.glb" id="136_bnhum"]
+[ext_resource type="PackedScene" uid="uid://dfaxlshs48ajm" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-h.glb" id="137_dwykg"]
+[ext_resource type="PackedScene" uid="uid://v4s7536d4043" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-split.glb" id="137_j7uas"]
+[ext_resource type="PackedScene" uid="uid://ddxvbejte4ai2" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-square-barrier.glb" id="138_4gmo3"]
+[ext_resource type="PackedScene" uid="uid://cmaxb5t6hn6uy" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-i.glb" id="138_vlyo3"]
+[ext_resource type="PackedScene" uid="uid://drim65okccbir" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-square.glb" id="139_ltvii"]
+[ext_resource type="PackedScene" uid="uid://cevv2qxgkrxqk" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-j.glb" id="139_s2dp0"]
+[ext_resource type="PackedScene" uid="uid://dhw0eqe10ifsw" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-straight-barrier-end.glb" id="140_soohd"]
+[ext_resource type="PackedScene" uid="uid://bj7xfh4x644yf" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-k.glb" id="140_udxwj"]
+[ext_resource type="PackedScene" uid="uid://behc517id3v8m" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-l.glb" id="141_0hcb6"]
+[ext_resource type="PackedScene" uid="uid://b5nf8shjh21qu" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-straight-barrier-half.glb" id="141_b056i"]
+[ext_resource type="PackedScene" uid="uid://bccxwph5f2l5p" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-m.glb" id="142_gpxcr"]
+[ext_resource type="PackedScene" uid="uid://b8rc67pht438e" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-straight-barrier.glb" id="142_oyq1e"]
+[ext_resource type="PackedScene" uid="uid://dmqtqdxbyor2b" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-straight-half.glb" id="143_0k7k4"]
+[ext_resource type="PackedScene" uid="uid://5p43odi1yb4w" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-n.glb" id="143_bk6n1"]
+[ext_resource type="PackedScene" uid="uid://jal4owdy6s3a" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/road-straight.glb" id="144_ae8sd"]
+[ext_resource type="PackedScene" uid="uid://dxgvboa5iiaur" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-skyscraper-a.glb" id="144_q5oiv"]
+[ext_resource type="PackedScene" uid="uid://bjdemut6spjd3" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/sign-highway-detailed.glb" id="145_clhfa"]
+[ext_resource type="PackedScene" uid="uid://r8rmmbw1amsk" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-skyscraper-b.glb" id="145_iy7il"]
+[ext_resource type="PackedScene" uid="uid://dxyw42aoqpt3o" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/sign-highway-wide.glb" id="146_hjoi6"]
+[ext_resource type="PackedScene" uid="uid://bt8kv1ng57obu" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-skyscraper-c.glb" id="146_ktpio"]
+[ext_resource type="PackedScene" uid="uid://fvdnk4mra8" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-skyscraper-d.glb" id="147_0hk23"]
+[ext_resource type="PackedScene" uid="uid://b3yvwe66bb675" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/sign-highway.glb" id="147_elo54"]
+[ext_resource type="PackedScene" uid="uid://06qy0n42ia60" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-skyscraper-e.glb" id="148_8akvy"]
+[ext_resource type="PackedScene" uid="uid://do3kxqhptlvd5" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/tile-high.glb" id="148_wf12f"]
+[ext_resource type="PackedScene" uid="uid://db7b10yjbhbuh" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/tile-low.glb" id="149_i7tgp"]
+[ext_resource type="PackedScene" uid="uid://cgfavpux057m6" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/detail-awning-wide.glb" id="149_lgxdl"]
+[ext_resource type="PackedScene" uid="uid://cnvxfkn3rjeny" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/detail-awning.glb" id="150_faa3l"]
+[ext_resource type="PackedScene" uid="uid://nc01wq2we6jy" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/tile-slant.glb" id="150_ycayu"]
+[ext_resource type="PackedScene" uid="uid://b6jfkfjqrmm6g" path="res://games/kenney_city/assets/kenney_city-kit-roads/Models/GLB format/tile-slantHigh.glb" id="151_hppbp"]
+[ext_resource type="PackedScene" uid="uid://bptv06vpqwplj" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/detail-overhang-wide.glb" id="151_y5wxx"]
+[ext_resource type="PackedScene" uid="uid://b8th16h8appp4" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/detail-overhang.glb" id="152_nfgp0"]
+[ext_resource type="PackedScene" uid="uid://cixadnbm265e8" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/detail-parasol-a.glb" id="153_x0868"]
+[ext_resource type="PackedScene" uid="uid://byhc5wsnhr0vn" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/detail-parasol-b.glb" id="154_ts3eo"]
+[ext_resource type="PackedScene" uid="uid://djkev1n8dwyhd" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-a.glb" id="155_2y5we"]
+[ext_resource type="PackedScene" uid="uid://cyk80861mpfkn" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-b.glb" id="156_8kvcr"]
+[ext_resource type="PackedScene" uid="uid://dna6q87pmwjla" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-c.glb" id="157_1sjh6"]
+[ext_resource type="PackedScene" uid="uid://dtdat87scn6ay" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-d.glb" id="158_0iwy8"]
+[ext_resource type="PackedScene" uid="uid://k8np17p0td72" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-e.glb" id="159_t5wx5"]
+[ext_resource type="PackedScene" uid="uid://dagf58ff7vqep" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-f.glb" id="160_vdvjw"]
+[ext_resource type="PackedScene" uid="uid://d01rnmc0oxl6p" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-g.glb" id="161_onj5v"]
+[ext_resource type="PackedScene" uid="uid://bpm18v00fsrks" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-h.glb" id="162_yxe3c"]
+[ext_resource type="PackedScene" uid="uid://bb3ugjf32fbgr" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-i.glb" id="163_ho0e0"]
+[ext_resource type="PackedScene" uid="uid://chfox22s70rfx" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-j.glb" id="164_rhp2m"]
+[ext_resource type="PackedScene" uid="uid://tnk8r6c01bsu" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-k.glb" id="165_hxkqo"]
+[ext_resource type="PackedScene" uid="uid://c1pmboo30vkh8" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-l.glb" id="166_sghcw"]
+[ext_resource type="PackedScene" uid="uid://nwo3swvci0ef" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-m.glb" id="167_7lnq8"]
+[ext_resource type="PackedScene" uid="uid://dj0wqwt721bsb" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-n.glb" id="168_epqhn"]
+[ext_resource type="PackedScene" uid="uid://b21t3g6ojnn15" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-wide-a.glb" id="169_3o41n"]
+[ext_resource type="PackedScene" uid="uid://hcqhr6w85y7v" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/low-detail-building-wide-b.glb" id="170_t3w6q"]
+[ext_resource type="PackedScene" uid="uid://fmv1nxwistt1" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-a.glb" id="171_1ltxt"]
+[ext_resource type="PackedScene" uid="uid://dsi2stnqaqafv" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-b.glb" id="172_aygp5"]
+[ext_resource type="PackedScene" uid="uid://m2hcrduaysd" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-c.glb" id="173_x7rre"]
+[ext_resource type="PackedScene" uid="uid://d4e5igk1o2ip8" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-d.glb" id="174_plhxx"]
+[ext_resource type="PackedScene" uid="uid://b28sofh60holk" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-e.glb" id="175_6pf0i"]
+[ext_resource type="PackedScene" uid="uid://iik5h3h8hjdn" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-f.glb" id="176_dqwyt"]
+[ext_resource type="PackedScene" uid="uid://dikdxy4865eef" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-g.glb" id="177_qnect"]
+[ext_resource type="PackedScene" uid="uid://b55air28fdc8l" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-h.glb" id="178_krmrv"]
+[ext_resource type="PackedScene" uid="uid://cnfwsru16nqk5" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-i.glb" id="179_nmo4n"]
+[ext_resource type="PackedScene" uid="uid://b2oj87behuip" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-j.glb" id="180_4d2j5"]
+[ext_resource type="PackedScene" uid="uid://dustj4y3iptuo" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-k.glb" id="181_6ys0k"]
+[ext_resource type="PackedScene" uid="uid://djiuh6xkuehki" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-l.glb" id="182_pheq2"]
+[ext_resource type="PackedScene" uid="uid://dw0sv10hfxp4t" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-m.glb" id="183_uyaos"]
+[ext_resource type="PackedScene" uid="uid://blqdp37u2n5jk" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-n.glb" id="184_y0j1p"]
+[ext_resource type="PackedScene" uid="uid://dfa3ekbh1nrui" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-o.glb" id="185_vmkji"]
+[ext_resource type="PackedScene" uid="uid://cwdxm1p7kaav4" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-p.glb" id="186_rdrww"]
+[ext_resource type="PackedScene" uid="uid://d3rgthfgbhitf" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-q.glb" id="187_qccnn"]
+[ext_resource type="PackedScene" uid="uid://cb66otmtew7x5" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-r.glb" id="188_vqq6e"]
+[ext_resource type="PackedScene" uid="uid://buuncjb3xwetx" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-s.glb" id="189_7ptih"]
+[ext_resource type="PackedScene" uid="uid://nuuuw7p5iyay" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-t.glb" id="190_257po"]
+[ext_resource type="PackedScene" uid="uid://c8nkyib3fuvsg" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/chimney-basic.glb" id="191_4xk65"]
+[ext_resource type="PackedScene" uid="uid://bmg21bkmm0yda" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/chimney-large.glb" id="192_gefix"]
+[ext_resource type="PackedScene" uid="uid://bb2n5is4yneas" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/chimney-medium.glb" id="193_1xpgr"]
+[ext_resource type="PackedScene" uid="uid://bf5lo2mkskpss" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/chimney-small.glb" id="194_ig7lf"]
+[ext_resource type="PackedScene" uid="uid://d21apptx1ldas" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/detail-tank.glb" id="195_dluum"]
+[ext_resource type="PackedScene" uid="uid://bdgnghvb6eown" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-a.glb" id="268_qv3kq"]
+[ext_resource type="PackedScene" uid="uid://xwt36bgb78tm" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-b.glb" id="269_i317a"]
+[ext_resource type="PackedScene" uid="uid://bnyqjfwa60ire" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-c.glb" id="270_oce0t"]
+[ext_resource type="PackedScene" uid="uid://uf4t8fd8kmjk" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-d.glb" id="271_7nbw1"]
+[ext_resource type="PackedScene" uid="uid://di1ytw3adqhhi" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-e.glb" id="272_c8fde"]
+[ext_resource type="PackedScene" uid="uid://dtvkdykfxnmke" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-f.glb" id="273_ox6ak"]
+[ext_resource type="PackedScene" uid="uid://b355cv4fto4no" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-g.glb" id="274_5fkal"]
+[ext_resource type="PackedScene" uid="uid://8d0r32c3jcg7" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-h.glb" id="275_y4xqv"]
+[ext_resource type="PackedScene" uid="uid://capyvw8ilrahw" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-i.glb" id="276_14iom"]
+[ext_resource type="PackedScene" uid="uid://b2d4wr4dn3jim" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-j.glb" id="277_hqjbh"]
+[ext_resource type="PackedScene" uid="uid://bsddb8s4l2hxj" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-k.glb" id="278_1f8we"]
+[ext_resource type="PackedScene" uid="uid://beujq3l8tssql" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-l.glb" id="279_t38k5"]
+[ext_resource type="PackedScene" uid="uid://bqbikch02hsfc" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-m.glb" id="280_km38k"]
+[ext_resource type="PackedScene" uid="uid://cipm0g65n0fi8" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-n.glb" id="281_dgwd0"]
+[ext_resource type="PackedScene" uid="uid://bbwaoiswhnar2" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-o.glb" id="282_i6c83"]
+[ext_resource type="PackedScene" uid="uid://dsdblai45i4js" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-p.glb" id="283_otnu0"]
+[ext_resource type="PackedScene" uid="uid://dypyikesyemyj" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-q.glb" id="284_pbt4k"]
+[ext_resource type="PackedScene" uid="uid://bpl42tiuyqvpp" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-r.glb" id="285_2ce1c"]
+[ext_resource type="PackedScene" uid="uid://de4xnryiw12un" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-s.glb" id="286_6wd0b"]
+[ext_resource type="PackedScene" uid="uid://80fr5yu0m0wa" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-t.glb" id="287_0tlag"]
+[ext_resource type="PackedScene" uid="uid://nd7lrnpiiesc" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-u.glb" id="288_t4eco"]
+[ext_resource type="PackedScene" uid="uid://dbjkhjon0sujh" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/driveway-long.glb" id="289_ejc8k"]
+[ext_resource type="PackedScene" uid="uid://b3moxqb3232hm" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/driveway-short.glb" id="290_3hcf6"]
+[ext_resource type="PackedScene" uid="uid://bly02uvce3gby" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-1x2.glb" id="291_rix6b"]
+[ext_resource type="PackedScene" uid="uid://ccrxcvjp6tuof" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-1x3.glb" id="292_m2vjb"]
+[ext_resource type="PackedScene" uid="uid://dj7iu5r5e25ay" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-1x4.glb" id="293_vhgq7"]
+[ext_resource type="PackedScene" uid="uid://b1r62hk8ir718" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-2x2.glb" id="294_38qux"]
+[ext_resource type="PackedScene" uid="uid://v106vjtu8hej" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-2x3.glb" id="295_3dhpo"]
+[ext_resource type="PackedScene" uid="uid://iq4yilpsql34" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-3x2.glb" id="296_bnu1l"]
+[ext_resource type="PackedScene" uid="uid://b1sxjuip07h3a" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-3x3.glb" id="297_am5rp"]
+[ext_resource type="PackedScene" uid="uid://dbc2krpfbeus6" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence-low.glb" id="298_1dtjg"]
+[ext_resource type="PackedScene" uid="uid://dyed7jlo2nd34" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/fence.glb" id="299_444sx"]
+[ext_resource type="PackedScene" uid="uid://dacsq56vb8qej" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/path-long.glb" id="300_q727b"]
+[ext_resource type="PackedScene" uid="uid://cqfdh4wlau4a8" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/path-short.glb" id="301_qs3io"]
+[ext_resource type="PackedScene" uid="uid://dgg86cl8jc6oc" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/path-stones-long.glb" id="302_chsaw"]
+[ext_resource type="PackedScene" uid="uid://b8wjgry8j0dsy" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/path-stones-messy.glb" id="303_tw4o3"]
+[ext_resource type="PackedScene" uid="uid://dd6nq75rmm0pb" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/path-stones-short.glb" id="304_2v6ye"]
+[ext_resource type="PackedScene" uid="uid://5c8duypavgu2" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/planter.glb" id="305_d6rfr"]
+[ext_resource type="PackedScene" uid="uid://brg1scacnihqk" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/tree-large.glb" id="306_y8bqx"]
+[ext_resource type="PackedScene" uid="uid://djl35ese2q3qx" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/tree-small.glb" id="307_p53ig"]
+
+[node name="Tiles" type="Node3D" unique_id=1579016394]
+
+[node name="barricade-doorway-a2" parent="." unique_id=111471927 instance=ExtResource("1_qbcuh")]
+
+[node name="barricade-doorway-b2" parent="." unique_id=329004442 instance=ExtResource("2_wca7v")]
+
+[node name="barricade-doorway-c2" parent="." unique_id=1597577215 instance=ExtResource("3_3h06g")]
+
+[node name="barricade-window-a2" parent="." unique_id=565550403 instance=ExtResource("4_4yblf")]
+
+[node name="barricade-window-b2" parent="." unique_id=447457344 instance=ExtResource("5_xu2hf")]
+
+[node name="barricade-window-c2" parent="." unique_id=238192747 instance=ExtResource("6_6wgmn")]
+
+[node name="border-corner-diagonal2" parent="." unique_id=222409741 instance=ExtResource("7_x13s8")]
+
+[node name="border-corner-round2" parent="." unique_id=1463807395 instance=ExtResource("8_oag0e")]
+
+[node name="border-corner-small2" parent="." unique_id=72281384 instance=ExtResource("9_psowe")]
+
+[node name="border-corner2" parent="." unique_id=838564033 instance=ExtResource("10_43ouy")]
+
+[node name="border-high-corner-diagonal2" parent="." unique_id=1766721763 instance=ExtResource("11_jwch2")]
+
+[node name="border-high-corner-round2" parent="." unique_id=1705070463 instance=ExtResource("12_nl03k")]
+
+[node name="border-high-corner-small2" parent="." unique_id=1532775381 instance=ExtResource("13_xwhc2")]
+
+[node name="border-high-corner2" parent="." unique_id=952023899 instance=ExtResource("14_qotn8")]
+
+[node name="border-high2" parent="." unique_id=1295553564 instance=ExtResource("15_wgmtp")]
+
+[node name="border2" parent="." unique_id=825690773 instance=ExtResource("16_lyrr8")]
+
+[node name="column-thin2" parent="." unique_id=303021522 instance=ExtResource("17_onnn0")]
+
+[node name="column-wide2" parent="." unique_id=290056090 instance=ExtResource("18_ysedl")]
+
+[node name="column2" parent="." unique_id=1616918239 instance=ExtResource("19_qnpdu")]
+
+[node name="detail-pipe2" parent="." unique_id=594529853 instance=ExtResource("20_wywna")]
+
+[node name="door-rotate-round-a2" parent="." unique_id=1954427076 instance=ExtResource("21_s14j1")]
+
+[node name="door-rotate-round-b2" parent="." unique_id=223932067 instance=ExtResource("22_gv0d8")]
+
+[node name="door-rotate-round-c2" parent="." unique_id=1662394770 instance=ExtResource("23_dis3i")]
+
+[node name="door-rotate-round-d2" parent="." unique_id=1002030852 instance=ExtResource("24_rth6m")]
+
+[node name="door-rotate-square-a2" parent="." unique_id=191314673 instance=ExtResource("25_tbtyg")]
+
+[node name="door-rotate-square-b2" parent="." unique_id=648506310 instance=ExtResource("26_6yh80")]
+
+[node name="door-rotate-square-c2" parent="." unique_id=717036456 instance=ExtResource("27_q7xx7")]
+
+[node name="door-rotate-square-d2" parent="." unique_id=1320321067 instance=ExtResource("28_pgmyh")]
+
+[node name="floor-corner-diagonal2" parent="." unique_id=633564858 instance=ExtResource("29_kvsd7")]
+
+[node name="floor-corner-round2" parent="." unique_id=571160543 instance=ExtResource("30_k6crx")]
+
+[node name="floor-half2" parent="." unique_id=2004431044 instance=ExtResource("31_fdnpx")]
+
+[node name="floor-quarter2" parent="." unique_id=32953148 instance=ExtResource("32_tu1ge")]
+
+[node name="floor2" parent="." unique_id=606077867 instance=ExtResource("33_7a2wq")]
+
+[node name="gutter-vertical-bottom2" parent="." unique_id=1319466127 instance=ExtResource("34_kupia")]
+
+[node name="gutter-vertical-short2" parent="." unique_id=79401542 instance=ExtResource("35_25hg6")]
+
+[node name="gutter-vertical-top2" parent="." unique_id=2035879951 instance=ExtResource("36_ngm17")]
+
+[node name="gutter-vertical-wall2" parent="." unique_id=376309786 instance=ExtResource("37_t63wx")]
+
+[node name="gutter-vertical2" parent="." unique_id=498900932 instance=ExtResource("38_noexl")]
+
+[node name="plating-detailed-wide2" parent="." unique_id=1020309100 instance=ExtResource("39_mgw6c")]
+
+[node name="plating-detailed2" parent="." unique_id=1791460523 instance=ExtResource("40_xkf3e")]
+
+[node name="plating-wide2" parent="." unique_id=2001712945 instance=ExtResource("41_qndb4")]
+
+[node name="plating2" parent="." unique_id=466651261 instance=ExtResource("42_akpib")]
+
+[node name="roof-flat-center2" parent="." unique_id=1288116336 instance=ExtResource("43_vknyo")]
+
+[node name="roof-flat-corner-inner2" parent="." unique_id=332001756 instance=ExtResource("44_f6fl7")]
+
+[node name="roof-flat-corner2" parent="." unique_id=1261073397 instance=ExtResource("45_dwr6y")]
+
+[node name="roof-flat-patch-large2" parent="." unique_id=1522173227 instance=ExtResource("46_20acn")]
+
+[node name="roof-flat-patch2" parent="." unique_id=951169893 instance=ExtResource("47_8dvwf")]
+
+[node name="roof-flat-side2" parent="." unique_id=1242500094 instance=ExtResource("48_o0ag2")]
+
+[node name="roof-flat-square2" parent="." unique_id=985092603 instance=ExtResource("49_sb5og")]
+
+[node name="stairs-center-short2" parent="." unique_id=11137219 instance=ExtResource("50_mpbyv")]
+
+[node name="stairs-center2" parent="." unique_id=1749673201 instance=ExtResource("51_yvjdm")]
+
+[node name="stairs-closed-short2" parent="." unique_id=1372462257 instance=ExtResource("52_6ytrb")]
+
+[node name="stairs-closed2" parent="." unique_id=1117632830 instance=ExtResource("53_pq8rp")]
+
+[node name="stairs-open-short2" parent="." unique_id=1588263736 instance=ExtResource("54_7q8pn")]
+
+[node name="stairs-open2" parent="." unique_id=256453687 instance=ExtResource("55_ucya1")]
+
+[node name="stairs-sides-short2" parent="." unique_id=75947498 instance=ExtResource("56_ycfa6")]
+
+[node name="stairs-sides2" parent="." unique_id=914440199 instance=ExtResource("57_r72vt")]
+
+[node name="wall-corner-column-bottom2" parent="." unique_id=329385042 instance=ExtResource("58_p5kb3")]
+
+[node name="wall-corner-column-small-bottom2" parent="." unique_id=1241438473 instance=ExtResource("59_l11nx")]
+
+[node name="wall-corner-column-small2" parent="." unique_id=205425668 instance=ExtResource("60_3fwtg")]
+
+[node name="wall-corner-column2" parent="." unique_id=2131840426 instance=ExtResource("61_4g4qv")]
+
+[node name="wall-corner-diagonal2" parent="." unique_id=1641545390 instance=ExtResource("62_evknv")]
+
+[node name="wall-corner-round2" parent="." unique_id=848452896 instance=ExtResource("63_x3208")]
+
+[node name="wall-corner2" parent="." unique_id=1216669649 instance=ExtResource("64_678bj")]
+
+[node name="wall-doorway-round2" parent="." unique_id=1635168645 instance=ExtResource("65_6cnkd")]
+
+[node name="wall-doorway-square2" parent="." unique_id=663188031 instance=ExtResource("66_fdae0")]
+
+[node name="wall-doorway-wide-round2" parent="." unique_id=1924918694 instance=ExtResource("67_qx40i")]
+
+[node name="wall-doorway-wide-square2" parent="." unique_id=447732416 instance=ExtResource("68_cd87s")]
+
+[node name="wall-half2" parent="." unique_id=795173447 instance=ExtResource("69_ry71j")]
+
+[node name="wall-low2" parent="." unique_id=984973039 instance=ExtResource("70_jfp54")]
+
+[node name="wall-window-round-detailed2" parent="." unique_id=1568858137 instance=ExtResource("71_uosss")]
+
+[node name="wall-window-round2" parent="." unique_id=1832203132 instance=ExtResource("72_nclht")]
+
+[node name="wall-window-square-detailed2" parent="." unique_id=53633135 instance=ExtResource("73_g8jjg")]
+
+[node name="wall-window-square2" parent="." unique_id=1752506197 instance=ExtResource("74_uqp6g")]
+
+[node name="wall-window-wide-round-detailed2" parent="." unique_id=1887427531 instance=ExtResource("75_e36vk")]
+
+[node name="wall-window-wide-round2" parent="." unique_id=1434195459 instance=ExtResource("76_vfent")]
+
+[node name="wall-window-wide-square-detailed2" parent="." unique_id=1367009382 instance=ExtResource("77_dsdot")]
+
+[node name="wall-window-wide-square2" parent="." unique_id=2002236692 instance=ExtResource("78_oj551")]
+
+[node name="wall2" parent="." unique_id=125778408 instance=ExtResource("79_imwp7")]
+
+[node name="ambulance" parent="." unique_id=764350518 instance=ExtResource("80_qp26a")]
+
+[node name="box2" parent="." unique_id=2046486570 instance=ExtResource("81_4gfhs")]
+
+[node name="cone-flat2" parent="." unique_id=1456304400 instance=ExtResource("82_onswo")]
+
+[node name="cone2" parent="." unique_id=287139086 instance=ExtResource("83_3q6oj")]
+
+[node name="debris-bolt2" parent="." unique_id=1998287686 instance=ExtResource("84_oru0i")]
+
+[node name="debris-bumper2" parent="." unique_id=1647372203 instance=ExtResource("85_d4oml")]
+
+[node name="debris-door-window2" parent="." unique_id=873674354 instance=ExtResource("86_kq0pd")]
+
+[node name="debris-door2" parent="." unique_id=2139049347 instance=ExtResource("87_7bke8")]
+
+[node name="debris-drivetrain-axle2" parent="." unique_id=955512590 instance=ExtResource("88_ie2ck")]
+
+[node name="debris-drivetrain2" parent="." unique_id=1299056370 instance=ExtResource("89_iyl0x")]
+
+[node name="debris-nut2" parent="." unique_id=1238508103 instance=ExtResource("90_rfwg7")]
+
+[node name="debris-plate-a2" parent="." unique_id=326822791 instance=ExtResource("91_d4g7r")]
+
+[node name="debris-plate-b2" parent="." unique_id=431818148 instance=ExtResource("92_0gxcd")]
+
+[node name="debris-plate-small-a2" parent="." unique_id=1465138581 instance=ExtResource("93_37wdc")]
+
+[node name="debris-plate-small-b2" parent="." unique_id=1473306794 instance=ExtResource("94_kua57")]
+
+[node name="debris-spoiler-a2" parent="." unique_id=828035299 instance=ExtResource("95_qceex")]
+
+[node name="debris-spoiler-b2" parent="." unique_id=336453495 instance=ExtResource("96_aom1k")]
+
+[node name="debris-tire2" parent="." unique_id=886721084 instance=ExtResource("97_avpk4")]
+
+[node name="delivery-flat" parent="." unique_id=303699916 instance=ExtResource("98_ewwhb")]
+
+[node name="delivery" parent="." unique_id=1450802395 instance=ExtResource("99_mtsvq")]
+
+[node name="firetruck" parent="." unique_id=698670126 instance=ExtResource("100_5uid2")]
+
+[node name="garbage-truck" parent="." unique_id=1822245491 instance=ExtResource("101_ky27j")]
+
+[node name="hatchback-sports" parent="." unique_id=1799247044 instance=ExtResource("102_grhxm")]
+
+[node name="kart-oobi2" parent="." unique_id=2099414248 instance=ExtResource("103_8noim")]
+
+[node name="kart-oodi2" parent="." unique_id=1547251999 instance=ExtResource("104_6vrbg")]
+
+[node name="kart-ooli2" parent="." unique_id=215990270 instance=ExtResource("105_f4egj")]
+
+[node name="kart-oopi2" parent="." unique_id=20417010 instance=ExtResource("106_0tprv")]
+
+[node name="kart-oozi2" parent="." unique_id=128310683 instance=ExtResource("107_bjsvg")]
+
+[node name="police" parent="." unique_id=1394789962 instance=ExtResource("108_l0m02")]
+
+[node name="race-future" parent="." unique_id=1105047612 instance=ExtResource("109_fdt5n")]
+
+[node name="race" parent="." unique_id=911237352 instance=ExtResource("110_s5y3l")]
+
+[node name="sedan-sports" parent="." unique_id=1038387630 instance=ExtResource("111_xd0f8")]
+
+[node name="sedan" parent="." unique_id=1096415602 instance=ExtResource("112_p0lse")]
+
+[node name="suv-luxury" parent="." unique_id=816553523 instance=ExtResource("113_358yn")]
+
+[node name="suv" parent="." unique_id=556857976 instance=ExtResource("114_8rec3")]
+
+[node name="taxi" parent="." unique_id=1176078905 instance=ExtResource("115_nyt12")]
+
+[node name="tractor-police" parent="." unique_id=1459854948 instance=ExtResource("116_ob6tf")]
+
+[node name="tractor-shovel" parent="." unique_id=200060142 instance=ExtResource("117_ey6dw")]
+
+[node name="tractor" parent="." unique_id=33526991 instance=ExtResource("118_hhxni")]
+
+[node name="truck-flat" parent="." unique_id=970268346 instance=ExtResource("119_2tgpq")]
+
+[node name="truck" parent="." unique_id=1878390552 instance=ExtResource("120_yt2ky")]
+
+[node name="van" parent="." unique_id=1278110365 instance=ExtResource("121_akmpa")]
+
+[node name="wheel-dark2" parent="." unique_id=1787220111 instance=ExtResource("122_e66iw")]
+
+[node name="wheel-default2" parent="." unique_id=173032705 instance=ExtResource("123_lii6m")]
+
+[node name="wheel-racing2" parent="." unique_id=512855598 instance=ExtResource("124_afcha")]
+
+[node name="wheel-tractor-back2" parent="." unique_id=2144867990 instance=ExtResource("125_o80ns")]
+
+[node name="wheel-tractor-dark-back2" parent="." unique_id=2021181081 instance=ExtResource("126_tiy7i")]
+
+[node name="wheel-tractor-dark-front2" parent="." unique_id=1050334389 instance=ExtResource("127_c84rs")]
+
+[node name="wheel-tractor-front2" parent="." unique_id=1153701899 instance=ExtResource("128_6xg4y")]
+
+[node name="wheel-truck2" parent="." unique_id=1706900043 instance=ExtResource("129_aicvp")]
+
+[node name="building-a2" parent="." unique_id=1946818351 instance=ExtResource("130_m8vun")]
+
+[node name="building-b2" parent="." unique_id=1448524340 instance=ExtResource("131_waev5")]
+
+[node name="building-c2" parent="." unique_id=577720792 instance=ExtResource("132_oq8eb")]
+
+[node name="building-d2" parent="." unique_id=701607173 instance=ExtResource("133_fq5r6")]
+
+[node name="building-e2" parent="." unique_id=870648074 instance=ExtResource("134_l0hco")]
+
+[node name="building-f2" parent="." unique_id=1276633200 instance=ExtResource("135_vuryf")]
+
+[node name="building-g2" parent="." unique_id=1310153834 instance=ExtResource("136_7fiic")]
+
+[node name="building-h2" parent="." unique_id=1238275424 instance=ExtResource("137_dwykg")]
+
+[node name="building-i2" parent="." unique_id=757449580 instance=ExtResource("138_vlyo3")]
+
+[node name="building-j2" parent="." unique_id=1456341663 instance=ExtResource("139_s2dp0")]
+
+[node name="building-k2" parent="." unique_id=1157645102 instance=ExtResource("140_udxwj")]
+
+[node name="building-l2" parent="." unique_id=481832362 instance=ExtResource("141_0hcb6")]
+
+[node name="building-m2" parent="." unique_id=2077008249 instance=ExtResource("142_gpxcr")]
+
+[node name="building-n2" parent="." unique_id=1023818917 instance=ExtResource("143_bk6n1")]
+
+[node name="building-skyscraper-a2" parent="." unique_id=2126824212 instance=ExtResource("144_q5oiv")]
+
+[node name="building-skyscraper-b2" parent="." unique_id=802706847 instance=ExtResource("145_iy7il")]
+
+[node name="building-skyscraper-c2" parent="." unique_id=1457515873 instance=ExtResource("146_ktpio")]
+
+[node name="building-skyscraper-d2" parent="." unique_id=897102539 instance=ExtResource("147_0hk23")]
+
+[node name="building-skyscraper-e2" parent="." unique_id=1054954152 instance=ExtResource("148_8akvy")]
+
+[node name="detail-awning-wide2" parent="." unique_id=1174822268 instance=ExtResource("149_lgxdl")]
+
+[node name="detail-awning2" parent="." unique_id=1631318647 instance=ExtResource("150_faa3l")]
+
+[node name="detail-overhang-wide2" parent="." unique_id=505222033 instance=ExtResource("151_y5wxx")]
+
+[node name="detail-overhang2" parent="." unique_id=1324205608 instance=ExtResource("152_nfgp0")]
+
+[node name="detail-parasol-a2" parent="." unique_id=1240733265 instance=ExtResource("153_x0868")]
+
+[node name="detail-parasol-b2" parent="." unique_id=1523328706 instance=ExtResource("154_ts3eo")]
+
+[node name="low-detail-building-a2" parent="." unique_id=1112946385 instance=ExtResource("155_2y5we")]
+
+[node name="low-detail-building-b2" parent="." unique_id=1002451931 instance=ExtResource("156_8kvcr")]
+
+[node name="low-detail-building-c2" parent="." unique_id=1120490646 instance=ExtResource("157_1sjh6")]
+
+[node name="low-detail-building-d2" parent="." unique_id=1206539032 instance=ExtResource("158_0iwy8")]
+
+[node name="low-detail-building-e2" parent="." unique_id=1680676631 instance=ExtResource("159_t5wx5")]
+
+[node name="low-detail-building-f2" parent="." unique_id=1795142507 instance=ExtResource("160_vdvjw")]
+
+[node name="low-detail-building-g2" parent="." unique_id=484796407 instance=ExtResource("161_onj5v")]
+
+[node name="low-detail-building-h2" parent="." unique_id=1105511422 instance=ExtResource("162_yxe3c")]
+
+[node name="low-detail-building-i2" parent="." unique_id=1203689649 instance=ExtResource("163_ho0e0")]
+
+[node name="low-detail-building-j2" parent="." unique_id=953247843 instance=ExtResource("164_rhp2m")]
+
+[node name="low-detail-building-k2" parent="." unique_id=915621875 instance=ExtResource("165_hxkqo")]
+
+[node name="low-detail-building-l2" parent="." unique_id=1624495864 instance=ExtResource("166_sghcw")]
+
+[node name="low-detail-building-m2" parent="." unique_id=1241277755 instance=ExtResource("167_7lnq8")]
+
+[node name="low-detail-building-n2" parent="." unique_id=2016039562 instance=ExtResource("168_epqhn")]
+
+[node name="low-detail-building-wide-a2" parent="." unique_id=1078337402 instance=ExtResource("169_3o41n")]
+
+[node name="low-detail-building-wide-b2" parent="." unique_id=606598548 instance=ExtResource("170_t3w6q")]
+
+[node name="building-a3" parent="." unique_id=1067509501 instance=ExtResource("171_1ltxt")]
+
+[node name="building-b3" parent="." unique_id=1932126736 instance=ExtResource("172_aygp5")]
+
+[node name="building-c3" parent="." unique_id=1250792650 instance=ExtResource("173_x7rre")]
+
+[node name="building-d3" parent="." unique_id=1436125988 instance=ExtResource("174_plhxx")]
+
+[node name="building-e3" parent="." unique_id=1539915629 instance=ExtResource("175_6pf0i")]
+
+[node name="building-f3" parent="." unique_id=774128351 instance=ExtResource("176_dqwyt")]
+
+[node name="building-g3" parent="." unique_id=2147283779 instance=ExtResource("177_qnect")]
+
+[node name="building-h3" parent="." unique_id=1674957386 instance=ExtResource("178_krmrv")]
+
+[node name="building-i3" parent="." unique_id=885825245 instance=ExtResource("179_nmo4n")]
+
+[node name="building-j3" parent="." unique_id=53728602 instance=ExtResource("180_4d2j5")]
+
+[node name="building-k3" parent="." unique_id=176482537 instance=ExtResource("181_6ys0k")]
+
+[node name="building-l3" parent="." unique_id=1009625582 instance=ExtResource("182_pheq2")]
+
+[node name="building-m3" parent="." unique_id=1600871011 instance=ExtResource("183_uyaos")]
+
+[node name="building-n3" parent="." unique_id=14205295 instance=ExtResource("184_y0j1p")]
+
+[node name="building-o2" parent="." unique_id=847167232 instance=ExtResource("185_vmkji")]
+
+[node name="building-p2" parent="." unique_id=605530454 instance=ExtResource("186_rdrww")]
+
+[node name="building-q2" parent="." unique_id=1576764699 instance=ExtResource("187_qccnn")]
+
+[node name="building-r2" parent="." unique_id=492140195 instance=ExtResource("188_vqq6e")]
+
+[node name="building-s2" parent="." unique_id=1784879243 instance=ExtResource("189_7ptih")]
+
+[node name="building-t2" parent="." unique_id=759702678 instance=ExtResource("190_257po")]
+
+[node name="chimney-basic2" parent="." unique_id=1601285786 instance=ExtResource("191_4xk65")]
+
+[node name="chimney-large2" parent="." unique_id=229649188 instance=ExtResource("192_gefix")]
+
+[node name="chimney-medium2" parent="." unique_id=1690346144 instance=ExtResource("193_1xpgr")]
+
+[node name="chimney-small2" parent="." unique_id=1761263308 instance=ExtResource("194_ig7lf")]
+
+[node name="detail-tank2" parent="." unique_id=542897786 instance=ExtResource("195_dluum")]
+
+[node name="bridge-pillar-wide2" parent="." unique_id=1863598949 instance=ExtResource("80_u5r8r")]
+
+[node name="bridge-pillar2" parent="." unique_id=306843241 instance=ExtResource("81_sb6q3")]
+
+[node name="construction-barrier2" parent="." unique_id=839049676 instance=ExtResource("82_f038e")]
+
+[node name="construction-cone2" parent="." unique_id=606257173 instance=ExtResource("83_jnqy8")]
+
+[node name="construction-light2" parent="." unique_id=2126902987 instance=ExtResource("84_sawsv")]
+
+[node name="light-curved-cross2" parent="." unique_id=242322553 instance=ExtResource("85_ndeyu")]
+
+[node name="light-curved-double2" parent="." unique_id=111016274 instance=ExtResource("86_x3cqw")]
+
+[node name="light-curved2" parent="." unique_id=277356760 instance=ExtResource("87_v044i")]
+
+[node name="light-square-cross2" parent="." unique_id=1785860907 instance=ExtResource("88_dpegw")]
+
+[node name="light-square-double2" parent="." unique_id=1489394303 instance=ExtResource("89_f10ba")]
+
+[node name="light-square2" parent="." unique_id=1825226867 instance=ExtResource("90_j7017")]
+
+[node name="road-bend-barrier2" parent="." unique_id=1605649407 instance=ExtResource("91_x7k4x")]
+
+[node name="road-bend-sidewalk2" parent="." unique_id=1391051474 instance=ExtResource("92_la44y")]
+
+[node name="road-bend-square-barrier2" parent="." unique_id=1190129050 instance=ExtResource("93_1khmk")]
+
+[node name="road-bend-square2" parent="." unique_id=674799166 instance=ExtResource("94_y70m2")]
+
+[node name="road-bend2" parent="." unique_id=1175624828 instance=ExtResource("95_0hbfv")]
+
+[node name="road-bridge2" parent="." unique_id=279663608 instance=ExtResource("96_qq86h")]
+
+[node name="road-crossing2" parent="." unique_id=1508825577 instance=ExtResource("97_fpn6a")]
+
+[node name="road-crossroad-barrier2" parent="." unique_id=385746099 instance=ExtResource("98_c3ky1")]
+
+[node name="road-crossroad-line2" parent="." unique_id=500795501 instance=ExtResource("99_15d7l")]
+
+[node name="road-crossroad-path2" parent="." unique_id=387442417 instance=ExtResource("100_ibr77")]
+
+[node name="road-crossroad2" parent="." unique_id=67024773 instance=ExtResource("101_k38pf")]
+
+[node name="road-curve-barrier2" parent="." unique_id=1007113429 instance=ExtResource("102_gl1xs")]
+
+[node name="road-curve-intersection-barrier2" parent="." unique_id=1197479201 instance=ExtResource("103_dt58n")]
+
+[node name="road-curve-intersection2" parent="." unique_id=729790350 instance=ExtResource("104_0x2v4")]
+
+[node name="road-curve-pavement2" parent="." unique_id=1540793535 instance=ExtResource("105_pens1")]
+
+[node name="road-curve2" parent="." unique_id=1284047370 instance=ExtResource("106_n8xxo")]
+
+[node name="road-driveway-double-barrier2" parent="." unique_id=178897877 instance=ExtResource("107_q4rwa")]
+
+[node name="road-driveway-double2" parent="." unique_id=1301263271 instance=ExtResource("108_wrpl6")]
+
+[node name="road-driveway-single-barrier2" parent="." unique_id=1230694514 instance=ExtResource("109_iu6ar")]
+
+[node name="road-driveway-single2" parent="." unique_id=524601284 instance=ExtResource("110_5o6fg")]
+
+[node name="road-end-barrier2" parent="." unique_id=1931110088 instance=ExtResource("111_ksjmi")]
+
+[node name="road-end-round-barrier2" parent="." unique_id=1590016302 instance=ExtResource("112_npc0j")]
+
+[node name="road-end-round2" parent="." unique_id=1393477129 instance=ExtResource("113_56kvn")]
+
+[node name="road-end2" parent="." unique_id=1698489164 instance=ExtResource("114_jpfn1")]
+
+[node name="road-intersection-barrier2" parent="." unique_id=1033178724 instance=ExtResource("115_vs8no")]
+
+[node name="road-intersection-line2" parent="." unique_id=451670505 instance=ExtResource("116_0by22")]
+
+[node name="road-intersection-path2" parent="." unique_id=1277545706 instance=ExtResource("117_wal5b")]
+
+[node name="road-intersection2" parent="." unique_id=636246064 instance=ExtResource("118_upsrp")]
+
+[node name="road-roundabout-barrier2" parent="." unique_id=928022668 instance=ExtResource("119_llm2i")]
+
+[node name="road-roundabout2" parent="." unique_id=16302836 instance=ExtResource("120_8d8e0")]
+
+[node name="road-side-barrier2" parent="." unique_id=251891190 instance=ExtResource("121_cwfet")]
+
+[node name="road-side-entry-barrier2" parent="." unique_id=1806923574 instance=ExtResource("122_o2noj")]
+
+[node name="road-side-entry2" parent="." unique_id=893044393 instance=ExtResource("123_6i264")]
+
+[node name="road-side-exit-barrier2" parent="." unique_id=1811457145 instance=ExtResource("124_tl0jn")]
+
+[node name="road-side-exit2" parent="." unique_id=1376506952 instance=ExtResource("125_o57pf")]
+
+[node name="road-side2" parent="." unique_id=1187496016 instance=ExtResource("126_sfhko")]
+
+[node name="road-slant-barrier2" parent="." unique_id=1716483479 instance=ExtResource("127_3hwkv")]
+
+[node name="road-slant-curve-barrier2" parent="." unique_id=1007369615 instance=ExtResource("128_kd5uu")]
+
+[node name="road-slant-curve2" parent="." unique_id=2071623144 instance=ExtResource("129_jjqk4")]
+
+[node name="road-slant-flat-curve2" parent="." unique_id=1126803397 instance=ExtResource("130_at6e2")]
+
+[node name="road-slant-flat-high2" parent="." unique_id=159671408 instance=ExtResource("131_nfqgl")]
+
+[node name="road-slant-flat2" parent="." unique_id=465395398 instance=ExtResource("132_7t4fc")]
+
+[node name="road-slant-high-barrier2" parent="." unique_id=681819652 instance=ExtResource("133_qsxky")]
+
+[node name="road-slant-high2" parent="." unique_id=1531190210 instance=ExtResource("134_imi3i")]
+
+[node name="road-slant2" parent="." unique_id=599474723 instance=ExtResource("135_8xqbx")]
+
+[node name="road-split-barrier2" parent="." unique_id=717079012 instance=ExtResource("136_bnhum")]
+
+[node name="road-split2" parent="." unique_id=1396519119 instance=ExtResource("137_j7uas")]
+
+[node name="road-square-barrier2" parent="." unique_id=1965742561 instance=ExtResource("138_4gmo3")]
+
+[node name="road-square2" parent="." unique_id=963928939 instance=ExtResource("139_ltvii")]
+
+[node name="road-straight-barrier-end2" parent="." unique_id=1835463981 instance=ExtResource("140_soohd")]
+
+[node name="road-straight-barrier-half2" parent="." unique_id=1067214177 instance=ExtResource("141_b056i")]
+
+[node name="road-straight-barrier2" parent="." unique_id=1986898584 instance=ExtResource("142_oyq1e")]
+
+[node name="road-straight-half2" parent="." unique_id=15469781 instance=ExtResource("143_0k7k4")]
+
+[node name="road-straight2" parent="." unique_id=182409191 instance=ExtResource("144_ae8sd")]
+
+[node name="sign-highway-detailed2" parent="." unique_id=1923024050 instance=ExtResource("145_clhfa")]
+
+[node name="sign-highway-wide2" parent="." unique_id=1618493126 instance=ExtResource("146_hjoi6")]
+
+[node name="sign-highway2" parent="." unique_id=1492305392 instance=ExtResource("147_elo54")]
+
+[node name="tile-high2" parent="." unique_id=1385658164 instance=ExtResource("148_wf12f")]
+
+[node name="tile-low2" parent="." unique_id=1417946740 instance=ExtResource("149_i7tgp")]
+
+[node name="tile-slant2" parent="." unique_id=993921836 instance=ExtResource("150_ycayu")]
+
+[node name="tile-slantHigh2" parent="." unique_id=959167576 instance=ExtResource("151_hppbp")]
+
+[node name="building-type-a2" parent="." unique_id=728684263 instance=ExtResource("268_qv3kq")]
+
+[node name="building-type-b2" parent="." unique_id=1091565114 instance=ExtResource("269_i317a")]
+
+[node name="building-type-c2" parent="." unique_id=281526428 instance=ExtResource("270_oce0t")]
+
+[node name="building-type-d2" parent="." unique_id=801895056 instance=ExtResource("271_7nbw1")]
+
+[node name="building-type-e2" parent="." unique_id=2063710429 instance=ExtResource("272_c8fde")]
+
+[node name="building-type-f2" parent="." unique_id=736849886 instance=ExtResource("273_ox6ak")]
+
+[node name="building-type-g2" parent="." unique_id=612449202 instance=ExtResource("274_5fkal")]
+
+[node name="building-type-h2" parent="." unique_id=1171141476 instance=ExtResource("275_y4xqv")]
+
+[node name="building-type-i2" parent="." unique_id=245883915 instance=ExtResource("276_14iom")]
+
+[node name="building-type-j2" parent="." unique_id=307186099 instance=ExtResource("277_hqjbh")]
+
+[node name="building-type-k2" parent="." unique_id=1449368691 instance=ExtResource("278_1f8we")]
+
+[node name="building-type-l2" parent="." unique_id=2060326381 instance=ExtResource("279_t38k5")]
+
+[node name="building-type-m2" parent="." unique_id=545442952 instance=ExtResource("280_km38k")]
+
+[node name="building-type-n2" parent="." unique_id=1886556664 instance=ExtResource("281_dgwd0")]
+
+[node name="building-type-o2" parent="." unique_id=1745713236 instance=ExtResource("282_i6c83")]
+
+[node name="building-type-p2" parent="." unique_id=482847501 instance=ExtResource("283_otnu0")]
+
+[node name="building-type-q2" parent="." unique_id=587178095 instance=ExtResource("284_pbt4k")]
+
+[node name="building-type-r2" parent="." unique_id=687876439 instance=ExtResource("285_2ce1c")]
+
+[node name="building-type-s2" parent="." unique_id=111357686 instance=ExtResource("286_6wd0b")]
+
+[node name="building-type-t2" parent="." unique_id=623814358 instance=ExtResource("287_0tlag")]
+
+[node name="building-type-u2" parent="." unique_id=380066662 instance=ExtResource("288_t4eco")]
+
+[node name="driveway-long2" parent="." unique_id=953848033 instance=ExtResource("289_ejc8k")]
+
+[node name="driveway-short2" parent="." unique_id=581931411 instance=ExtResource("290_3hcf6")]
+
+[node name="fence-1x22" parent="." unique_id=1059893173 instance=ExtResource("291_rix6b")]
+
+[node name="fence-1x32" parent="." unique_id=1710135857 instance=ExtResource("292_m2vjb")]
+
+[node name="fence-1x42" parent="." unique_id=580792824 instance=ExtResource("293_vhgq7")]
+
+[node name="fence-2x22" parent="." unique_id=160805719 instance=ExtResource("294_38qux")]
+
+[node name="fence-2x32" parent="." unique_id=693576884 instance=ExtResource("295_3dhpo")]
+
+[node name="fence-3x22" parent="." unique_id=580984023 instance=ExtResource("296_bnu1l")]
+
+[node name="fence-3x32" parent="." unique_id=1303378316 instance=ExtResource("297_am5rp")]
+
+[node name="fence-low2" parent="." unique_id=2245197 instance=ExtResource("298_1dtjg")]
+
+[node name="fence2" parent="." unique_id=1958721067 instance=ExtResource("299_444sx")]
+
+[node name="path-long2" parent="." unique_id=1330343979 instance=ExtResource("300_q727b")]
+
+[node name="path-short2" parent="." unique_id=403204732 instance=ExtResource("301_qs3io")]
+
+[node name="path-stones-long2" parent="." unique_id=1753083804 instance=ExtResource("302_chsaw")]
+
+[node name="path-stones-messy2" parent="." unique_id=1993374940 instance=ExtResource("303_tw4o3")]
+
+[node name="path-stones-short2" parent="." unique_id=721461919 instance=ExtResource("304_2v6ye")]
+
+[node name="planter2" parent="." unique_id=1854809862 instance=ExtResource("305_d6rfr")]
+
+[node name="tree-large2" parent="." unique_id=1672191926 instance=ExtResource("306_y8bqx")]
+
+[node name="tree-small2" parent="." unique_id=166034396 instance=ExtResource("307_p53ig")]

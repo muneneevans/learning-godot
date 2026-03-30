@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://dpacnqm43y1v6"]
 
 [ext_resource type="Texture2D" uid="uid://bn8wfhbs1omgo" path="res://assets/textures/grids/Dark/texture_08.png" id="1_ksb34"]
-[ext_resource type="PackedScene" uid="uid://8d0r32c3jcg7" path="res://games/kenney_city/assets/kenney_city-kit-suburban/Models/GLB format/building-type-h.glb" id="2_d4gm4"]
-[ext_resource type="PackedScene" uid="uid://m2hcrduaysd" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-c.glb" id="3_1tbqd"]
+[ext_resource type="PackedScene" uid="uid://dv7lxkdex315p" path="res://games/kenney_city/city/districts/emberwood/blocks/sunwing/sunwing.tscn" id="2_klabr"]
+[ext_resource type="Script" uid="uid://dyx0a21f2gc80" path="res://games/composition/Scenes/player.gd" id="3_l21gp"]
+[ext_resource type="ArrayMesh" uid="uid://j64kjjgdi6na" path="res://games/composition/Models/extracted/SM_Bean_Cop_01.res" id="4_2ki4t"]
+[ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://games/composition/Materials/PolygonStarter_Mat_01_mat.tres" id="5_tg4i2"]
+[ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://games/composition/Scripts/input_component.gd" id="5_u83yh"]
+[ext_resource type="Script" uid="uid://brk0tgnhcqlad" path="res://games/composition/Scripts/movement_component.gd" id="6_tg4i2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yci4h"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -25,6 +29,8 @@ albedo_texture = ExtResource("1_ksb34")
 uv1_triplanar = true
 uv1_world_triplanar = true
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ygsld"]
+
 [node name="KenneyCity" type="Node3D" unique_id=729466984]
 
 [node name="world" type="Node3D" parent="." unique_id=1542024516]
@@ -33,21 +39,43 @@ uv1_world_triplanar = true
 environment = SubResource("Environment_klabr")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="world" unique_id=678305348]
-transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0.09049377, 0.007256031, 0.19235234)
+transform = Transform3D(1000, 0, 0, 0, 0.1, 0, 0, 0, 1000, 0, 0, 0)
 use_collision = true
 mesh = SubResource("BoxMesh_yci4h")
 material = SubResource("StandardMaterial3D_d4gm4")
 
-[node name="road" type="Node3D" parent="world" unique_id=1087827220]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49316883, 0, 0)
+[node name="Sunwing" parent="world" unique_id=26873278 instance=ExtResource("2_klabr")]
+transform = Transform3D(0.9999994, 0.0010646506, 0, -0.0010646506, 0.9999994, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Camera3D" type="Camera3D" parent="world" unique_id=579112566]
-transform = Transform3D(1, 0, 0, 0, 0.81591564, 0.578171, 0, -0.578171, 0.81591564, 0.7438681, 3.1994596, 2.3975978)
+[node name="player" type="CharacterBody3D" parent="." unique_id=1773828600]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 18.258883, 0.05000305, -9.892517)
+script = ExtResource("3_l21gp")
 
-[node name="buildings" type="Node3D" parent="." unique_id=1820829408]
+[node name="cop_body" type="MeshInstance3D" parent="player" unique_id=274645962]
+gi_mode = 2
+mesh = ExtResource("4_2ki4t")
+surface_material_override/0 = ExtResource("5_tg4i2")
 
-[node name="building-c2" parent="buildings" unique_id=1250792650 instance=ExtResource("3_1tbqd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6910269, 0.5, -0.7785795)
+[node name="player_collision" type="CollisionShape3D" parent="player" unique_id=826594144]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_ygsld")
 
-[node name="building-type-h2" parent="buildings" unique_id=1171141476 instance=ExtResource("2_d4gm4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5406383, 0)
+[node name="camera_rig" type="Node3D" parent="player" unique_id=887787302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4214904, 0)
+
+[node name="camera" type="Camera3D" parent="player/camera_rig" unique_id=1622179802]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 12, 20)
+fov = 20.0
+
+[node name="InputComponent" type="Node" parent="player" unique_id=1602999524]
+script = ExtResource("5_u83yh")
+metadata/_custom_type_script = "uid://cj6k7xfwe2y6a"
+
+[node name="MovementComponent" type="Node" parent="player" unique_id=47831128 node_paths=PackedStringArray("body", "model")]
+script = ExtResource("6_tg4i2")
+body = NodePath("..")
+model = NodePath("../cop_body")
+speed = 20.0
+jump_velocity = 20.0
+gravity_multiplier = 10.0
+metadata/_custom_type_script = "uid://brk0tgnhcqlad"

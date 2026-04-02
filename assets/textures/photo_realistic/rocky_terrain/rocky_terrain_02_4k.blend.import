@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d4jkb88lxnr0m"
-path="res://.godot/imported/rocky_terrain_02_4k.blend-01ace600647eee28ae5cbfb38ed6deb6.scn"
+path="res://.godot/imported/rocky_terrain_02_4k.blend-7736b627243628c362e6af1643db9976.scn"
 
 [deps]
 
-source_file="res://games/kenney_city/assets/textures/rocky_terrain/rocky_terrain_02_4k.blend"
-dest_files=["res://.godot/imported/rocky_terrain_02_4k.blend-01ace600647eee28ae5cbfb38ed6deb6.scn"]
+source_file="res://assets/textures/photo_realistic/rocky_terrain/rocky_terrain_02_4k.blend"
+dest_files=["res://.godot/imported/rocky_terrain_02_4k.blend-7736b627243628c362e6af1643db9976.scn"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckrykwrd13axr"
-path.s3tc="res://.godot/imported/forrest_ground_01_diff_4k.jpg-0a41a0d9b81f29d8cc899c2df0e464ec.s3tc.ctex"
+uid="uid://c77ica8bsukp8"
+path.s3tc="res://.godot/imported/rocky_terrain_02_diff_4k.jpg-3653053f4cab298bda025158b98bc74c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://games/kenney_city/assets/textures/forrest_ground_01_4k.blend/textures/forrest_ground_01_diff_4k.jpg"
-dest_files=["res://.godot/imported/forrest_ground_01_diff_4k.jpg-0a41a0d9b81f29d8cc899c2df0e464ec.s3tc.ctex"]
+source_file="res://assets/textures/photo_realistic/rocky_terrain/textures/rocky_terrain_02_diff_4k.jpg"
+dest_files=["res://.godot/imported/rocky_terrain_02_diff_4k.jpg-3653053f4cab298bda025158b98bc74c.s3tc.ctex"]
 
 [params]
 

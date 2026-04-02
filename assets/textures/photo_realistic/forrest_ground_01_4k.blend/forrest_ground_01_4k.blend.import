@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dvnttir5nxtu8"
-path="res://.godot/imported/forrest_ground_01_4k.blend-4ee7eef9e6a042f0a5c3deb30866d91c.scn"
+path="res://.godot/imported/forrest_ground_01_4k.blend-c92259738a440d3d3e71a2d4e2ac2429.scn"
 
 [deps]
 
-source_file="res://games/kenney_city/assets/textures/forrest_ground_01_4k.blend/forrest_ground_01_4k.blend"
-dest_files=["res://.godot/imported/forrest_ground_01_4k.blend-4ee7eef9e6a042f0a5c3deb30866d91c.scn"]
+source_file="res://assets/textures/photo_realistic/forrest_ground_01_4k.blend/forrest_ground_01_4k.blend"
+dest_files=["res://.godot/imported/forrest_ground_01_4k.blend-c92259738a440d3d3e71a2d4e2ac2429.scn"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkpt3wcomfdaf"
-path="res://.godot/imported/rocky_terrain_02_disp_4k.png-fcd5aa7df73f3a1578fbc58b6e80e437.ctex"
+path="res://.godot/imported/rocky_terrain_02_disp_4k.png-62994b8854943756acc4e23a4c0450a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://games/kenney_city/assets/textures/rocky_terrain/textures/rocky_terrain_02_disp_4k.png"
-dest_files=["res://.godot/imported/rocky_terrain_02_disp_4k.png-fcd5aa7df73f3a1578fbc58b6e80e437.ctex"]
+source_file="res://assets/textures/photo_realistic/rocky_terrain/textures/rocky_terrain_02_disp_4k.png"
+dest_files=["res://.godot/imported/rocky_terrain_02_disp_4k.png-62994b8854943756acc4e23a4c0450a7.ctex"]
 
 [params]
 

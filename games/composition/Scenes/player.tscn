@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://mkefdtdk8da5"]
 
-[ext_resource type="PackedScene" uid="uid://bd17mls38jwj0" path="res://games/composition/Prefabs/Characters/SM_Bean_Cop_01.tscn" id="1_187pi"]
+[ext_resource type="PackedScene" uid="uid://bd17mls38jwj0" path="res://shared/entities/characters/SM_Bean_Cop_01.tscn" id="1_187pi"]
 [ext_resource type="Script" uid="uid://dyx0a21f2gc80" path="res://games/composition/Scenes/player.gd" id="1_ohmcp"]
-[ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://games/composition/Scripts/input_component.gd" id="2_ygsld"]
-[ext_resource type="Script" uid="uid://brk0tgnhcqlad" path="res://games/composition/Scripts/movement_component.gd" id="4_c5ung"]
+[ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://shared/components/input_component.gd" id="2_ygsld"]
+[ext_resource type="Script" uid="uid://brk0tgnhcqlad" path="res://shared/components/movement_component.gd" id="4_c5ung"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ygsld"]
 

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bn8wfhbs1omgo" path="res://assets/textures/grids/Dark/texture_08.png" id="1_ksb34"]
 [ext_resource type="PackedScene" uid="uid://dv7lxkdex315p" path="res://games/kenney_city/city/districts/emberwood/blocks/sunwing/sunwing.tscn" id="2_klabr"]
 [ext_resource type="Script" uid="uid://dyx0a21f2gc80" path="res://games/composition/Scenes/player.gd" id="3_l21gp"]
+[ext_resource type="PackedScene" uid="uid://dp3uphpluccrc" path="res://games/kenney_city/city/districts/emberwood/blocks/redpine/redpine.tscn" id="3_u83yh"]
 [ext_resource type="ArrayMesh" uid="uid://j64kjjgdi6na" path="res://games/composition/Models/extracted/SM_Bean_Cop_01.res" id="4_2ki4t"]
 [ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://games/composition/Materials/PolygonStarter_Mat_01_mat.tres" id="5_tg4i2"]
 [ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://games/composition/Scripts/input_component.gd" id="5_u83yh"]
@@ -47,6 +48,9 @@ material = SubResource("StandardMaterial3D_d4gm4")
 [node name="Sunwing" parent="world" unique_id=26873278 instance=ExtResource("2_klabr")]
 transform = Transform3D(0.9999994, 0.0010646506, 0, -0.0010646506, 0.9999994, 0, 0, 0, 1, 0, 0, 0)
 
+[node name="redpine" parent="world" unique_id=1622472248 instance=ExtResource("3_u83yh")]
+transform = Transform3D(0.0032987099, 0, -0.9999946, 0, 1, 0, 0.9999946, 0, 0.0032987099, 263.00903, 0, -136.46136)
+
 [node name="player" type="CharacterBody3D" parent="." unique_id=1773828600]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 18.258883, 0.05000305, -9.892517)
 script = ExtResource("3_l21gp")
@@ -64,7 +68,7 @@ shape = SubResource("CapsuleShape3D_ygsld")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4214904, 0)
 
 [node name="camera" type="Camera3D" parent="player/camera_rig" unique_id=1622179802]
-transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 12, 20)
+transform = Transform3D(0.2, 0, 0, 0, 0.17320508, 0.10000002, 0, -0.10000002, 0.17320508, 0, 17.52972, 30.190363)
 fov = 20.0
 
 [node name="InputComponent" type="Node" parent="player" unique_id=1602999524]

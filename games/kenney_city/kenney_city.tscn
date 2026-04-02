@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dp3uphpluccrc" path="res://games/kenney_city/city/districts/emberwood/blocks/redpine/redpine.tscn" id="3_u83yh"]
 [ext_resource type="ArrayMesh" uid="uid://j64kjjgdi6na" path="res://games/composition/Models/extracted/SM_Bean_Cop_01.res" id="4_2ki4t"]
 [ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://games/composition/Materials/PolygonStarter_Mat_01_mat.tres" id="5_tg4i2"]
-[ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://games/composition/Scripts/input_component.gd" id="5_u83yh"]
-[ext_resource type="Script" uid="uid://brk0tgnhcqlad" path="res://games/composition/Scripts/movement_component.gd" id="6_tg4i2"]
+[ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://shared/components/input_component.gd" id="5_u83yh"]
+[ext_resource type="Script" uid="uid://brk0tgnhcqlad" path="res://shared/components/movement_component.gd" id="6_tg4i2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yci4h"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

@@ -26,6 +26,14 @@ var handbrake: bool = false
 @export var suspension_stiffness_value: float = 180
 
 
+@export_group("Stability Control")
+@export var roll_influence: float = 0.5
+@export var anti_roll_torque: Vector3
+@export var downforce :Vector3
+@export var anti_roll_force:  float = 20
+@export var downforce_factor: float = 50
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -41,6 +49,7 @@ func _process(delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	_handle_vehicle_control(delta)
 	_handle_engine_velocity()
+	_handle_anti_roll()
 
 
 func _handle_vehicle_control(delta) -> void:
@@ -55,3 +64,17 @@ func _handle_engine_velocity() -> void:
 	var speed_factor = 1 - min(vehicle_linear_velocity/max_speed, 1)
 
 	engine_force = throttle * acceleration * speed_factor
+
+
+func _handle_anti_roll() -> void:
+	# Apply anti-roll force
+	
+	anti_roll_torque = -global_transform.basis.z * global_rotation.z * anti_roll_force * max_speed
+	apply_torque(anti_roll_torque)
+	
+	#Apply speed-based down force
+	downforce = -global_transform.basis.y * linear_velocity * downforce_factor
+	apply_central_force(downforce)
+
+	for wheel in [front_right_wheel, front_left_wheel, rear_left_wheel , rear_right_wheel]:
+		wheel.wheel_roll_influence = roll_influence

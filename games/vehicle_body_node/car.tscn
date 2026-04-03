@@ -30,6 +30,7 @@ radius = 0.3328057
 
 [node name="Car" type="VehicleBody3D" unique_id=2010514660 node_paths=PackedStringArray("front_left_wheel", "front_right_wheel", "rear_left_wheel", "rear_right_wheel")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+angular_damp = 10.0
 script = ExtResource("1_v8p8b")
 front_left_wheel = NodePath("wheel_front_left")
 front_right_wheel = NodePath("wheel_front_right")

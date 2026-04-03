@@ -26,3 +26,7 @@ func _on_quit_pressed() -> void:
 
 func _on_composition_pressed() -> void:
 	get_tree().change_scene_to_file("res://games/composition/composition.tscn")
+
+
+func _on_vehicle_body_node_v_2_pressed() -> void:
+	get_tree().change_scene_to_file('res://games/vehicle_body_node/track.tscn')

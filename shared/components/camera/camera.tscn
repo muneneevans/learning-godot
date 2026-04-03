@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://by8nyqwuvhsh"]
+
+[ext_resource type="Script" uid="uid://cbq5eyb857bjg" path="res://shared/components/camera/camera.gd" id="1_bc2vb"]
+
+[node name="Camera" type="Node3D" unique_id=1782717557]
+script = ExtResource("1_bc2vb")
+
+[node name="camera_mount" type="Node3D" parent="." unique_id=1353928730]
+unique_name_in_owner = true
+
+[node name="Camera3D" type="Camera3D" parent="camera_mount" unique_id=360343717]
+transform = Transform3D(-1, -2.2986084e-08, -9.049876e-08, -4.5972172e-08, 0.9648149, 0.2629302, 8.127081e-08, 0.2629302, -0.96481484, 0.04661718, 3.3453648, -5.1229377)

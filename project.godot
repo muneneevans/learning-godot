@@ -85,6 +85,26 @@ jump={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":0,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
+pan_up={
+"deadzone": 0.2,
+"events": []
+}
+pan_down={
+"deadzone": 0.2,
+"events": []
+}
+pan_left={
+"deadzone": 0.2,
+"events": []
+}
+pan_right={
+"deadzone": 0.2,
+"events": []
+}
+brake={
+"deadzone": 0.2,
+"events": []
+}
 
 [physics]
 

@@ -33,6 +33,7 @@ shadow_enabled = true
 [node name="Car" parent="." unique_id=2010514660 instance=ExtResource("2_4u4e2")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.05939281, 0)
 suspension_stiffness_value = 50.0
+roll_influence = 18.5
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=757479380]
 use_collision = true

@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://bwcyjwuujg851"]
+
+[ext_resource type="Texture2D" uid="uid://bn8wfhbs1omgo" path="res://assets/textures/grids/Dark/texture_08.png" id="1_0xm8d"]
+[ext_resource type="Script" uid="uid://c2gur7jywx0au" path="res://games/vehicle_body_node/car.gd" id="2_4u4e2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4u4e2"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_77tjw"]
+sky_material = SubResource("ProceduralSkyMaterial_4u4e2")
+
+[sub_resource type="Environment" id="Environment_tq2yb"]
+background_mode = 2
+sky = SubResource("Sky_77tjw")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l4h5v"]
+albedo_texture = ExtResource("1_0xm8d")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_0xm8d"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1rnhp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k8b2p"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0xm8d"]
+
+[node name="VehicleBody" type="Node3D" unique_id=614606078]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=693321818]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 10.210548, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=431352421]
+environment = SubResource("Environment_tq2yb")
+
+[node name="floor" type="CSGBox3D" parent="." unique_id=1506143333]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
+use_collision = true
+size = Vector3(200, 0.1, 200)
+material = SubResource("StandardMaterial3D_l4h5v")
+
+[node name="car" type="VehicleBody3D" parent="." unique_id=1927562694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0221245, 0)
+script = ExtResource("2_4u4e2")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="car" unique_id=591022667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.3576932, 0, 0.5174049, 0.7716501)
+mesh = SubResource("BoxMesh_0xm8d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="car" unique_id=540540468]
+transform = Transform3D(2.1672199, 0, 0, 0, 0.4324372, 0, 0, 0, 4.04821, 0, 0.2810303, 0)
+mesh = SubResource("BoxMesh_1rnhp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="car" unique_id=1476175685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.31296968, 0)
+shape = SubResource("BoxShape3D_k8b2p")
+
+[node name="wheel_front_left" type="VehicleWheel3D" parent="car" unique_id=1531343006]
+transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, -1.1637704, -0.35, -1.8417742)
+use_as_steering = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_front_left" unique_id=574699396]
+transform = Transform3D(4.3711385e-08, -0.078999996, 8.742278e-08, -0.99999994, -3.4531995e-09, 0, 3.8213705e-15, -6.906399e-09, -1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_0xm8d")
+
+[node name="wheel_front_right" type="VehicleWheel3D" parent="car" unique_id=935401471]
+transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, 1.138138, -0.35, -1.6122391)
+use_as_steering = true
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="car/wheel_front_right" unique_id=1994808300]
+transform = Transform3D(4.3711385e-08, -0.078999996, 8.742277e-08, -0.9999999, -3.4531995e-09, 0, 3.8213705e-15, -6.906399e-09, -0.99999994, 0, 0, 0)
+mesh = SubResource("CylinderMesh_0xm8d")
+
+[node name="wheel_rear_right" type="VehicleWheel3D" parent="car" unique_id=2035457541]
+transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, 1.138138, -0.35, 1.7324138)
+use_as_traction = true
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="car/wheel_rear_right" unique_id=296823772]
+transform = Transform3D(4.3711385e-08, -0.07899998, 8.742277e-08, -0.9999999, -3.4531988e-09, 0, 3.8213705e-15, -6.9063977e-09, -0.9999999, 0, 0, 0)
+mesh = SubResource("CylinderMesh_0xm8d")
+
+[node name="wheel_rear_left" type="VehicleWheel3D" parent="car" unique_id=216482733]
+transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, -1.1637704, -0.35, 1.7324138)
+use_as_traction = true
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="car/wheel_rear_left" unique_id=1157852045]
+transform = Transform3D(4.3711385e-08, -0.07899998, -8.742276e-08, -0.99999994, -3.4531988e-09, 0, -3.8213705e-15, 6.9063977e-09, -0.9999998, 4.7683716e-07, 0, 0)
+mesh = SubResource("CylinderMesh_0xm8d")
+
+[node name="camera_rig" type="Node3D" parent="car" unique_id=666093632]
+
+[node name="Camera3D" type="Camera3D" parent="car/camera_rig" unique_id=2073722183]
+transform = Transform3D(1, 0, 0, 0, 0.9558238, 0.29394022, 0, -0.29394022, 0.9558238, 0, 2.2886224, 5.1161613)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=183773837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7692499, 1.0007253, -4.831076)
+use_collision = true

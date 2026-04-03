@@ -13,10 +13,10 @@ offset_bottom = 40.0
 
 [node name="quit" type="Button" parent="Button Manager" unique_id=1083877553]
 layout_mode = 0
-offset_left = 777.0
-offset_top = 482.0
-offset_right = 1138.0
-offset_bottom = 629.0
+offset_left = 40.0
+offset_top = 311.0
+offset_right = 401.0
+offset_bottom = 362.0
 text = "quit"
 
 [node name="kenney_city" type="Button" parent="Button Manager" unique_id=1069278846]
@@ -43,7 +43,17 @@ offset_right = 401.0
 offset_bottom = 223.0
 text = "Composition"
 
+[node name="vehicle_body_node" type="Button" parent="Button Manager" unique_id=738517892]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 237.0
+offset_right = 401.0
+offset_bottom = 289.0
+text = "Vechicle Body Node
+"
+
 [connection signal="pressed" from="Button Manager/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Button Manager/kenney_city" to="." method="_on_kenney_city_pressed"]
 [connection signal="pressed" from="Button Manager/raycast_city" to="." method="_on_raycast_city_pressed"]
 [connection signal="pressed" from="Button Manager/composition" to="." method="_on_composition_pressed"]
+[connection signal="pressed" from="Button Manager/vehicle_body_node" to="." method="_on_vehicle_body_node_pressed"]

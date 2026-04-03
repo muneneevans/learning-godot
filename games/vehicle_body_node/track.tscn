@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bxl7wkhno5r0v"]
 
 [ext_resource type="Texture2D" uid="uid://bn8wfhbs1omgo" path="res://assets/textures/grids/Dark/texture_08.png" id="1_0xm8d"]
-[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://games/vehicle_body_node/car.tscn" id="2_4u4e2"]
+[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://shared/components/car/car.tscn" id="2_4u4e2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4u4e2"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

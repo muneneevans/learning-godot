@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bxl7wkhno5r0v"]
+
+[ext_resource type="Texture2D" uid="uid://bn8wfhbs1omgo" path="res://assets/textures/grids/Dark/texture_08.png" id="1_0xm8d"]
+[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://games/vehicle_body_node/car.tscn" id="2_4u4e2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4u4e2"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_77tjw"]
+sky_material = SubResource("ProceduralSkyMaterial_4u4e2")
+
+[sub_resource type="Environment" id="Environment_tq2yb"]
+background_mode = 2
+sky = SubResource("Sky_77tjw")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4u4e2"]
+albedo_texture = ExtResource("1_0xm8d")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[node name="Track" type="Node3D" unique_id=1812476164]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1036550749]
+environment = SubResource("Environment_tq2yb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=448643763]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Car" parent="." unique_id=2010514660 instance=ExtResource("2_4u4e2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.05939281, 0)
+suspension_stiffness_value = 50.0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=757479380]
+use_collision = true
+size = Vector3(500, 0.1, 500)
+material = SubResource("StandardMaterial3D_4u4e2")

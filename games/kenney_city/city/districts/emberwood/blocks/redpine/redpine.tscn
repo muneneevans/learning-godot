@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dp3uphpluccrc"]
 
-[ext_resource type="Texture2D" uid="uid://t8tihhyq1b87" path="res://games/kenney_city/assets/textures/brick_pavement/textures/brick_pavement_03_diff_4k.jpg" id="1_r4ix7"]
+[ext_resource type="Texture2D" uid="uid://t8tihhyq1b87" path="res://assets/textures/photo_realistic/brick_pavement/textures/brick_pavement_03_diff_4k.jpg" id="1_r4ix7"]
 [ext_resource type="PackedScene" uid="uid://dsi2stnqaqafv" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-b.glb" id="2_38jdt"]
 [ext_resource type="PackedScene" uid="uid://b28sofh60holk" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-e.glb" id="3_xc1l8"]
 [ext_resource type="PackedScene" uid="uid://dw0sv10hfxp4t" path="res://games/kenney_city/assets/kenney_city-kit-industrial/Models/GLB format/building-m.glb" id="4_n1ilc"]

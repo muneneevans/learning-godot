@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://k74q57ys3tkt"]
 
-[ext_resource type="ArrayMesh" uid="uid://c7twhlk4wrfho" path="res://games/composition/Models/extracted/SM_Character_Female_01.mesh" id="1_7sn1j"]
-[ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://games/composition/Materials/PolygonStarter_Mat_01_mat.tres" id="3_k4c1f"]
-[ext_resource type="ArrayMesh" uid="uid://dcgoyopm6vvd" path="res://games/composition/Models/extracted/SM_Character_Male_01.mesh" id="3_q8b56"]
-[ext_resource type="Shape3D" uid="uid://cj5gwdnnnm3q3" path="res://games/composition/Models/Collision/extracted/Synty_Character_Collider.tres" id="4_q8b56"]
+[ext_resource type="ArrayMesh" uid="uid://c7twhlk4wrfho" path="res://assets/polygon/Models/extracted/SM_Character_Female_01.mesh" id="1_7sn1j"]
+[ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://assets/polygon/Materials/PolygonStarter_Mat_01_mat.tres" id="3_k4c1f"]
+[ext_resource type="ArrayMesh" uid="uid://dcgoyopm6vvd" path="res://assets/polygon/Models/extracted/SM_Character_Male_01.mesh" id="3_q8b56"]
+[ext_resource type="Shape3D" uid="uid://cj5gwdnnnm3q3" path="res://assets/polygon/Models/Collision/extracted/Synty_Character_Collider.tres" id="4_q8b56"]
 
 [sub_resource type="Skin" id="Skin_7sn1j"]
 resource_name = "Skin"

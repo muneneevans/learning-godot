@@ -12,6 +12,7 @@
 [ext_resource type="ArrayMesh" uid="uid://bdht7ik3xtbkk" path="res://assets/polygon/Models/extracted/SM_PolygonCity_Veh_Car_Small_Plates.res" id="9_tyqlc"]
 [ext_resource type="ArrayMesh" uid="uid://cendhe2iw5xj2" path="res://assets/polygon/Models/extracted/SM_PolygonCity_Veh_Car_Small_SteeringW.res" id="10_cdrd7"]
 [ext_resource type="ArrayMesh" uid="uid://co7tw8r3n2dqu" path="res://assets/polygon/Models/extracted/SM_PolygonCity_Veh_Car_Small_01.res" id="11_tshex"]
+[ext_resource type="PackedScene" uid="uid://by8nyqwuvhsh" path="res://shared/components/camera.tscn" id="13_njfe4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mook4"]
 size = Vector3(1.6745605, 1.3144531, 4.008301)
@@ -143,7 +144,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06698948, 0, -1.4901161e-0
 shape = SubResource("SphereShape3D_n674b")
 disabled = true
 
-[node name="camera_rig" type="Node3D" parent="." unique_id=2124408164]
-
-[node name="Camera3D" type="Camera3D" parent="camera_rig" unique_id=313369820]
-transform = Transform3D(-1, -2.2986082e-08, -9.049876e-08, -4.5972172e-08, 0.9648149, 0.2629302, 8.127081e-08, 0.2629302, -0.96481484, 0.04661718, 3.3453648, -5.1229377)
+[node name="Camera" parent="." unique_id=1782717557 instance=ExtResource("13_njfe4")]

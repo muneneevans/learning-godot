@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cxdswma8ojowj"]
+
+[ext_resource type="Script" uid="uid://23se325nxte4" path="res://assets/polygon/Scenes/player.gd" id="1_b77t3"]
+[ext_resource type="PackedScene" uid="uid://bd17mls38jwj0" path="res://shared/entities/characters/SM_Bean_Cop_01.tscn" id="2_ay5fq"]
+[ext_resource type="Script" uid="uid://cj6k7xfwe2y6a" path="res://shared/components/input_component.gd" id="3_7k3gi"]
+[ext_resource type="Script" uid="uid://brk0tgnhcqlad" path="res://shared/components/movement_component.gd" id="4_app3u"]
+[ext_resource type="PackedScene" uid="uid://by8nyqwuvhsh" path="res://shared/components/camera/camera.tscn" id="5_3rcbp"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ygsld"]
+
+[node name="player" type="CharacterBody3D" unique_id=1773828600]
+script = ExtResource("1_b77t3")
+
+[node name="cop_body" parent="." unique_id=274645962 instance=ExtResource("2_ay5fq")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="player_collision" type="CollisionShape3D" parent="." unique_id=826594144]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_ygsld")
+
+[node name="InputComponent" type="Node" parent="." unique_id=1602999524]
+script = ExtResource("3_7k3gi")
+metadata/_custom_type_script = "uid://cj6k7xfwe2y6a"
+
+[node name="MovementComponent" type="Node" parent="." unique_id=47831128 node_paths=PackedStringArray("body", "model")]
+script = ExtResource("4_app3u")
+body = NodePath("..")
+model = NodePath("../cop_body")
+speed = 8.0
+jump_velocity = 12.0
+gravity_multiplier = 3.0
+metadata/_custom_type_script = "uid://brk0tgnhcqlad"
+
+[node name="Camera" parent="." unique_id=1782717557 instance=ExtResource("5_3rcbp")]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0, 0, 0)

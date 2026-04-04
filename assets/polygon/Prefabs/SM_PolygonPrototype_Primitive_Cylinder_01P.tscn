@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bnch63c12e72w"]
 
 [ext_resource type="ArrayMesh" uid="uid://chpwihjbxh6bn" path="res://assets/polygon/Models/extracted/SM_PolygonPrototype_Primitive_Cylander_01P.res" id="1_526hh"]
-[ext_resource type="Material" path="res://Assets/Synty/PolygonStarter/Materials/PolygonStarter_Mat_01_mat.tres" id="2_3x4kl"]
+[ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://assets/polygon/Materials/PolygonStarter_Mat_01_mat.tres" id="2_3x4kl"]
 [ext_resource type="Shape3D" uid="uid://bys1mulrrxo8c" path="res://assets/polygon/Models/Collision/extracted/SM_Primitive_Cylinder_02.res" id="3_3x4kl"]
 
 [node name="SM_PolygonPrototype_Primitive_Cylinder_01P" type="MeshInstance3D"]

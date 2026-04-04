@@ -145,4 +145,4 @@ shape = SubResource("SphereShape3D_n674b")
 disabled = true
 
 [node name="Camera" parent="." unique_id=1782717557 instance=ExtResource("13_njfe4")]
-transform = Transform3D(1, -2.3227422e-08, 3.1421195e-09, 2.3227422e-08, 0.96405834, -0.26569074, 3.1421195e-09, 0.26569074, 0.96405834, 5.02478e-07, 1.7943707, -5.747678)
+transform = Transform3D(1, -3.746148e-08, 8.433041e-09, 3.7461486e-08, 0.90353733, -0.4285094, 8.433034e-09, 0.4285094, 0.90353733, 1.2174154e-06, 6.7447515, -13.925609)

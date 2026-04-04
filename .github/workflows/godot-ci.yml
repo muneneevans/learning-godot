@@ -30,6 +30,8 @@ jobs:
           mkdir -v -p ~/.config/
           mv /root/.config/godot ~/.config/godot
           mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          DEBIAN_FRONTEND=noninteractive apt-get update -qq && apt-get install -y --no-install-recommends blender
+          printf '[gd_resource type="EditorSettings" format=3]\n\n[resource]\nfilesystem/import/blender/blender_path = "/usr/bin/blender"\n' > ~/.config/godot/editor_settings-4.tres
       - name: Windows Build
         run: |
           mkdir -v -p build/windows
@@ -55,7 +57,10 @@ jobs:
       - name: Setup
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates/
+          mkdir -v -p ~/.config/godot
           mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          DEBIAN_FRONTEND=noninteractive apt-get update -qq && apt-get install -y --no-install-recommends blender
+          printf '[gd_resource type="EditorSettings" format=3]\n\n[resource]\nfilesystem/import/blender/blender_path = "/usr/bin/blender"\n' > ~/.config/godot/editor_settings-4.tres
       - name: Linux Build
         run: |
           mkdir -v -p build/linux
@@ -81,7 +86,10 @@ jobs:
       - name: Setup
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates/
+          mkdir -v -p ~/.config/godot
           mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          DEBIAN_FRONTEND=noninteractive apt-get update -qq && apt-get install -y --no-install-recommends blender
+          printf '[gd_resource type="EditorSettings" format=3]\n\n[resource]\nfilesystem/import/blender/blender_path = "/usr/bin/blender"\n' > ~/.config/godot/editor_settings-4.tres
       - name: Web Build
         run: |
           mkdir -v -p build/web
@@ -115,7 +123,10 @@ jobs:
       - name: Setup
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates/
+          mkdir -v -p ~/.config/godot
           mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          DEBIAN_FRONTEND=noninteractive apt-get update -qq && apt-get install -y --no-install-recommends blender
+          printf '[gd_resource type="EditorSettings" format=3]\n\n[resource]\nfilesystem/import/blender/blender_path = "/usr/bin/blender"\n' > ~/.config/godot/editor_settings-4.tres
       - name: Mac Build
         run: |
           mkdir -v -p build/mac

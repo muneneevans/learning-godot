@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cesyumn34bsd5"
 path.s3tc="res://.godot/imported/Skyline_01.tga-e78babe5dacc5cd844d7e843e3053535.s3tc.ctex"
+path.etc2="res://.godot/imported/Skyline_01.tga-e78babe5dacc5cd844d7e843e3053535.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/polygon_city/Textures/Skyline_01.tga"
-dest_files=["res://.godot/imported/Skyline_01.tga-e78babe5dacc5cd844d7e843e3053535.s3tc.ctex"]
+dest_files=["res://.godot/imported/Skyline_01.tga-e78babe5dacc5cd844d7e843e3053535.s3tc.ctex", "res://.godot/imported/Skyline_01.tga-e78babe5dacc5cd844d7e843e3053535.etc2.ctex"]
 
 [params]
 

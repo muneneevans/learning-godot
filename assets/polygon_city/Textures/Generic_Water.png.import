@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://fl7g06tpk0wq"
 path.s3tc="res://.godot/imported/Generic_Water.png-acbcf06fd5349a4fc67a10b3f3212b54.s3tc.ctex"
+path.etc2="res://.godot/imported/Generic_Water.png-acbcf06fd5349a4fc67a10b3f3212b54.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/polygon_city/Textures/Generic_Water.png"
-dest_files=["res://.godot/imported/Generic_Water.png-acbcf06fd5349a4fc67a10b3f3212b54.s3tc.ctex"]
+dest_files=["res://.godot/imported/Generic_Water.png-acbcf06fd5349a4fc67a10b3f3212b54.s3tc.ctex", "res://.godot/imported/Generic_Water.png-acbcf06fd5349a4fc67a10b3f3212b54.etc2.ctex"]
 
 [params]
 

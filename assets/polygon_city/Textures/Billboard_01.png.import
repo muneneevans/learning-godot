@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://v4vs4y7i0vda"
 path.s3tc="res://.godot/imported/Billboard_01.png-76f2e6394ee0358a692f9fcf190220d4.s3tc.ctex"
+path.etc2="res://.godot/imported/Billboard_01.png-76f2e6394ee0358a692f9fcf190220d4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/polygon_city/Textures/Billboard_01.png"
-dest_files=["res://.godot/imported/Billboard_01.png-76f2e6394ee0358a692f9fcf190220d4.s3tc.ctex"]
+dest_files=["res://.godot/imported/Billboard_01.png-76f2e6394ee0358a692f9fcf190220d4.s3tc.ctex", "res://.godot/imported/Billboard_01.png-76f2e6394ee0358a692f9fcf190220d4.etc2.ctex"]
 
 [params]
 

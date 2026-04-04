@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://djasxklb5e7kx"
 path.s3tc="res://.godot/imported/PolygonStarter_Texture_04.png-d5d18e042cf0093c5c5dffba201f951f.s3tc.ctex"
+path.etc2="res://.godot/imported/PolygonStarter_Texture_04.png-d5d18e042cf0093c5c5dffba201f951f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/polygon/Textures/PolygonStarter_Texture_04.png"
-dest_files=["res://.godot/imported/PolygonStarter_Texture_04.png-d5d18e042cf0093c5c5dffba201f951f.s3tc.ctex"]
+dest_files=["res://.godot/imported/PolygonStarter_Texture_04.png-d5d18e042cf0093c5c5dffba201f951f.s3tc.ctex", "res://.godot/imported/PolygonStarter_Texture_04.png-d5d18e042cf0093c5c5dffba201f951f.etc2.ctex"]
 
 [params]
 

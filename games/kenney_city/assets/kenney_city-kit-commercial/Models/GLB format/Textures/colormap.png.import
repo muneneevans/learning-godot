@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hldi2t6h5d6j"
 path.s3tc="res://.godot/imported/colormap.png-0910f7062e969e557367297da938345d.s3tc.ctex"
+path.etc2="res://.godot/imported/colormap.png-0910f7062e969e557367297da938345d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/Textures/colormap.png"
-dest_files=["res://.godot/imported/colormap.png-0910f7062e969e557367297da938345d.s3tc.ctex"]
+dest_files=["res://.godot/imported/colormap.png-0910f7062e969e557367297da938345d.s3tc.ctex", "res://.godot/imported/colormap.png-0910f7062e969e557367297da938345d.etc2.ctex"]
 
 [params]
 

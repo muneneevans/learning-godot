@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7e0w4l6g64i8"
 path.s3tc="res://.godot/imported/Emissive_04.png-97e63337b806b8bd6e36b3697efaedb1.s3tc.ctex"
+path.etc2="res://.godot/imported/Emissive_04.png-97e63337b806b8bd6e36b3697efaedb1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/polygon_city/Textures/Emissive_04.png"
-dest_files=["res://.godot/imported/Emissive_04.png-97e63337b806b8bd6e36b3697efaedb1.s3tc.ctex"]
+dest_files=["res://.godot/imported/Emissive_04.png-97e63337b806b8bd6e36b3697efaedb1.s3tc.ctex", "res://.godot/imported/Emissive_04.png-97e63337b806b8bd6e36b3697efaedb1.etc2.ctex"]
 
 [params]
 

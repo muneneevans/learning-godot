@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bum7xudwa4ibp"
 path.s3tc="res://.godot/imported/forrest_ground_01_rough_4k.jpg-2bb145414b5d0abfcf6a91ce85753516.s3tc.ctex"
+path.etc2="res://.godot/imported/forrest_ground_01_rough_4k.jpg-2bb145414b5d0abfcf6a91ce85753516.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/photo_realistic/forrest_ground_01_4k.blend/textures/forrest_ground_01_rough_4k.jpg"
-dest_files=["res://.godot/imported/forrest_ground_01_rough_4k.jpg-2bb145414b5d0abfcf6a91ce85753516.s3tc.ctex"]
+dest_files=["res://.godot/imported/forrest_ground_01_rough_4k.jpg-2bb145414b5d0abfcf6a91ce85753516.s3tc.ctex", "res://.godot/imported/forrest_ground_01_rough_4k.jpg-2bb145414b5d0abfcf6a91ce85753516.etc2.ctex"]
 
 [params]
 

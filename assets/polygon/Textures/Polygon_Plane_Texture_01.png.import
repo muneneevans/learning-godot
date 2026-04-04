@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3l0nlcap7w6r"
 path.s3tc="res://.godot/imported/Polygon_Plane_Texture_01.png-1960936e52ba6ead5ed6d102638f91d0.s3tc.ctex"
+path.etc2="res://.godot/imported/Polygon_Plane_Texture_01.png-1960936e52ba6ead5ed6d102638f91d0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/polygon/Textures/Polygon_Plane_Texture_01.png"
-dest_files=["res://.godot/imported/Polygon_Plane_Texture_01.png-1960936e52ba6ead5ed6d102638f91d0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Polygon_Plane_Texture_01.png-1960936e52ba6ead5ed6d102638f91d0.s3tc.ctex", "res://.godot/imported/Polygon_Plane_Texture_01.png-1960936e52ba6ead5ed6d102638f91d0.etc2.ctex"]
 
 [params]
 

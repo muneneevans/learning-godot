@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b3ng7wd5nvt7q"]
 
 [ext_resource type="ArrayMesh" uid="uid://b1bh2dssyi8ac" path="res://assets/polygon/Models/extracted/SM_Generic_Small_Rocks_03.res" id="1_3je4x"]
-[ext_resource type="Material" path="res://Assets/Synty/PolygonStarter/Materials/PolygonStarter_Mat_01_mat.tres" id="2_1kjql"]
+[ext_resource type="Material" uid="uid://bprw8jx500qd0" path="res://assets/polygon/Materials/PolygonStarter_Mat_01_mat.tres" id="2_1kjql"]
 
 [node name="SM_Generic_Small_Rocks_03" type="MeshInstance3D"]
 gi_mode = 2

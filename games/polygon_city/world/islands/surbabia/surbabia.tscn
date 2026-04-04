@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ceaf026gsyjru"]
+
+[ext_resource type="Texture2D" uid="uid://b58xv1joypxo5" path="res://assets/textures/grids/Orange/texture_09.png" id="1_bn77w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mw0c7"]
+albedo_texture = ExtResource("1_bn77w")
+
+[node name="Surbabia" type="Node3D" unique_id=12103502]
+
+[node name="surbabia" type="CSGBox3D" parent="." unique_id=1099111823]
+transform = Transform3D(0.9720061, 0, -0.23495549, 0, 1, 0, 0.23495549, 0, 0.9720061, 0, 0, 0)
+size = Vector3(400, 0.01, 600)
+material = SubResource("StandardMaterial3D_mw0c7")

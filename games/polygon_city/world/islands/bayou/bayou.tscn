@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c682gav4ey02t"]
+
+[ext_resource type="Texture2D" uid="uid://djg8y25y06h5n" path="res://assets/textures/grids/Green/texture_09.png" id="1_14ckw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rvekm"]
+albedo_texture = ExtResource("1_14ckw")
+
+[node name="Bayou" type="Node3D" unique_id=1059605655]
+
+[node name="bayou" type="CSGBox3D" parent="." unique_id=922721498]
+transform = Transform3D(0.9981444, 0, -0.06089175, 0, 1, 0, 0.06089175, 0, 0.9981444, 0, 0, 0)
+size = Vector3(800, 0.01, 800)
+material = SubResource("StandardMaterial3D_rvekm")

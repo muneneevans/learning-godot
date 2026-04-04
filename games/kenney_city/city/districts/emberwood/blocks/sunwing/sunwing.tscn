@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dv7lxkdex315p"]
 
-[ext_resource type="Texture2D" uid="uid://c77ica8bsukp8" path="res://assets/textures/photo_realistic/rocky_terrain/textures/rocky_terrain_02_diff_4k.jpg" id="1_qu7m1"]
+[ext_resource type="Texture2D" uid="uid://d223qxjvy58hj" path="res://assets/textures/grids/Dark/texture_09.png" id="1_qu7m1"]
 [ext_resource type="PackedScene" uid="uid://bj7xfh4x644yf" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-k.glb" id="2_itdq4"]
 [ext_resource type="PackedScene" uid="uid://bccxwph5f2l5p" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-m.glb" id="3_8owrd"]
 [ext_resource type="PackedScene" uid="uid://biljqnoutvpkf" path="res://games/kenney_city/assets/kenney_city-kit-commercial/Models/GLB format/building-d.glb" id="4_8n06s"]

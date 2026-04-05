@@ -63,11 +63,6 @@ transform = Transform3D(0.9720061, 0, -0.23495549, 0, 1, 0, 0.23495549, 0, 0.972
 size = Vector3(400, 0.01, 600)
 material = SubResource("StandardMaterial3D_3etut")
 
-[node name="surbabia2" type="CSGBox3D" parent="." unique_id=1174955059]
-transform = Transform3D(0.9720061, 0, -0.23495549, 0, 1, 0, 0.23495549, 0, 0.9720061, -192.5763, 0, -784.9164)
-size = Vector3(400, 0.01, 600)
-material = SubResource("StandardMaterial3D_3etut")
-
 [node name="castle_town" type="CSGBox3D" parent="." unique_id=690686500]
 transform = Transform3D(0.98185956, 0, -0.18960956, 0, 1, 0, 0.18960956, 0, 0.98185956, 343.66382, 0, -697.17444)
 size = Vector3(600, 0.01, 600)

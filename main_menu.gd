@@ -34,3 +34,7 @@ func _on_vehicle_body_node_v_2_pressed() -> void:
 
 func _on_polygon_city_pressed() -> void:
 	get_tree().change_scene_to_file("res://games/polygon_city/metropolis.tscn")
+
+
+func _on_third_person_controller_pressed() -> void:
+	get_tree().change_scene_to_file("res://games/third_person_controller/main.tscn")

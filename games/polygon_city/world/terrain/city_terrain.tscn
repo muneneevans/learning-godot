@@ -1,0 +1,1821 @@
+[gd_scene format=3 uid="uid://ci13w7juvuijl"]
+
+[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://shared/components/car/car.tscn" id="1_p6kh7"]
+[ext_resource type="Texture2D" uid="uid://b84yffxfcd6ro" path="res://assets/references/Frame 1.png" id="2_8n7mr"]
+[ext_resource type="PackedScene" uid="uid://iwhtv5dvwe5e" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Pizza_01.tscn" id="2_o0nvf"]
+[ext_resource type="PackedScene" uid="uid://bbe8hrir65adt" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Pub_01.tscn" id="3_s00qu"]
+[ext_resource type="PackedScene" uid="uid://wwyimfg5pfew" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_Cover_02.tscn" id="4_sy201"]
+[ext_resource type="PackedScene" uid="uid://baxbxq1p6b3cv" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_Cover_01.tscn" id="5_dve1e"]
+[ext_resource type="PackedScene" uid="uid://dr1ocykkv315b" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_Cover_03.tscn" id="6_jnrxe"]
+[ext_resource type="PackedScene" uid="uid://q4jq13aiiyb1" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_ShopInterior_Desk_02.tscn" id="7_txl5e"]
+[ext_resource type="PackedScene" uid="uid://bys56mshgn2xl" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Aircon_01.tscn" id="8_nsohh"]
+[ext_resource type="PackedScene" uid="uid://dpxecvyjr2b1a" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_PlanterWindow_02.tscn" id="9_ae2ak"]
+[ext_resource type="PackedScene" uid="uid://nllxmvwy8btx" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_PlanterWindow_01.tscn" id="10_qxqng"]
+[ext_resource type="PackedScene" uid="uid://cijke5t2xshkf" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_FireEscape_01.tscn" id="11_g60yn"]
+[ext_resource type="PackedScene" uid="uid://dy2g7jc3f3r4k" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_FireEscape_03.tscn" id="12_2lel1"]
+[ext_resource type="PackedScene" uid="uid://ur3vtnts8g2j" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_FireEscape_02.tscn" id="13_ts73e"]
+[ext_resource type="PackedScene" uid="uid://c5vmfxv7sjuoa" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Vents_Exhaust_01.tscn" id="14_002uh"]
+[ext_resource type="PackedScene" uid="uid://dbbw4uobfom81" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Vents_End_01.tscn" id="15_00dfx"]
+[ext_resource type="PackedScene" uid="uid://c4fbpwnblyxcg" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Washingline_03.tscn" id="16_tu6xa"]
+[ext_resource type="Material" uid="uid://bvsfyp6etpp6v" path="res://assets/polygon_city/Materials/Alts/PolygonCity_02_C_mat.tres" id="17_il6h1"]
+[ext_resource type="PackedScene" uid="uid://c7hixtei7iatg" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Hotel_01.tscn" id="18_6x173"]
+[ext_resource type="PackedScene" uid="uid://c7gta6ix1q5b2" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Attachment_02.tscn" id="19_x3yq4"]
+[ext_resource type="PackedScene" uid="uid://1nkd8hfxtsir" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Billboard_Roof_01.tscn" id="20_2xtjj"]
+[ext_resource type="PackedScene" uid="uid://d0laniltelfdl" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Billboard_Sign_03.tscn" id="21_hg15q"]
+[ext_resource type="PackedScene" uid="uid://cgfrs42t5oug3" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Vents_Corner_02.tscn" id="22_fsdab"]
+[ext_resource type="PackedScene" uid="uid://c426dyrpkxsgj" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Vents_Transition_01.tscn" id="23_ql3nn"]
+[ext_resource type="PackedScene" uid="uid://bwehloeihkp62" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Washingline_02.tscn" id="24_my3jr"]
+[ext_resource type="PackedScene" uid="uid://b0c2ewcvf7ei4" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_ShopInterior_Table_01.tscn" id="25_4m1x4"]
+[ext_resource type="PackedScene" uid="uid://cmxfi6sp6uaeu" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Attachment_03.tscn" id="26_nfedp"]
+[ext_resource type="PackedScene" uid="uid://g44nwpcye0dg" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_LargeSign_Pizza_01.tscn" id="27_mulae"]
+[ext_resource type="PackedScene" uid="uid://0pui6olnngk8" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_DeliPizza_01.tscn" id="28_5864a"]
+[ext_resource type="PackedScene" uid="uid://cbuenks3358qq" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Roof_Aircon_01.tscn" id="29_8xek3"]
+[ext_resource type="PackedScene" uid="uid://bsq80umjgi5dm" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Vents_Corner_01.tscn" id="30_2etbx"]
+[ext_resource type="PackedScene" uid="uid://djm4tsjgsaemb" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Vents_Straight_01.tscn" id="31_0j2xi"]
+[ext_resource type="PackedScene" uid="uid://dpiir5fiiywxb" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_XXX_01.tscn" id="32_pt7tw"]
+[ext_resource type="PackedScene" uid="uid://bkgqpyjay6b1b" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Poster_Frame_01.tscn" id="33_nj4kn"]
+[ext_resource type="PackedScene" uid="uid://ctmut15tmd27h" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Poster_03.tscn" id="34_2ngaf"]
+[ext_resource type="PackedScene" uid="uid://dtdsgnxa5l6p" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_PowerBox_01.tscn" id="35_v0evp"]
+[ext_resource type="PackedScene" uid="uid://iu42wx7y4l05" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_PotPlant_01.tscn" id="36_jhs1p"]
+[ext_resource type="PackedScene" uid="uid://cr8guenxd152k" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_SecurityCamera_01.tscn" id="37_o2h1h"]
+[ext_resource type="PackedScene" uid="uid://ddi8mp1uip3x1" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_SatDish_01.tscn" id="38_q2y7j"]
+[ext_resource type="PackedScene" uid="uid://55ob0cwyiw15" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Couch_01.tscn" id="39_hj7vo"]
+[ext_resource type="PackedScene" uid="uid://nch3sg6j1eay" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Roof_Aircon_03.tscn" id="40_7cfoh"]
+[ext_resource type="PackedScene" uid="uid://05qotce6ifgy" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Roof_Access_01.tscn" id="41_g8kg0"]
+[ext_resource type="PackedScene" uid="uid://clyk1fk5hrt7i" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Planter_01.tscn" id="42_pm85n"]
+[ext_resource type="PackedScene" uid="uid://bfb6yn5522gd2" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Roof_Aircon_02.tscn" id="43_us0bx"]
+[ext_resource type="PackedScene" uid="uid://b1buihcxs31w5" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Table_02.tscn" id="44_yvolh"]
+[ext_resource type="PackedScene" uid="uid://1fefcnatm1cr" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_SecurityCamera_Arm_01.tscn" id="45_krxhx"]
+[ext_resource type="PackedScene" uid="uid://mn6u7tpsujyw" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Billboard_Sign_04.tscn" id="46_mh3yu"]
+[ext_resource type="PackedScene" uid="uid://d3bjh5mxan0m4" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Billboard_Sign_06.tscn" id="47_qe6fj"]
+[ext_resource type="PackedScene" uid="uid://hxvmwjsybcg2" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_LargeSign_Noodles_01.tscn" id="48_7i43m"]
+[ext_resource type="PackedScene" uid="uid://knxfufb6gvtq" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Billboard_Sign_01.tscn" id="49_0yrq1"]
+[ext_resource type="PackedScene" uid="uid://d2oie8ar6b05m" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Warning_01.tscn" id="50_jp4wa"]
+[ext_resource type="PackedScene" uid="uid://csfviw0o5qn8s" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Pipe_Preset_03.tscn" id="51_rdqdq"]
+[ext_resource type="PackedScene" uid="uid://dktctn8166kwa" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Pipe_Small_01.tscn" id="52_mydb7"]
+[ext_resource type="PackedScene" uid="uid://db2xh4mf2o8b8" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_ShopInterior_Shelf_03.tscn" id="53_wx0t0"]
+[ext_resource type="PackedScene" uid="uid://bdi7pv5t4o6l1" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Washingline_01.tscn" id="54_dneyu"]
+[ext_resource type="PackedScene" uid="uid://r58qwcs8oir2" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_PotPlant_02.tscn" id="55_fmuit"]
+[ext_resource type="PackedScene" uid="uid://pnswtcgw7s84" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Skylight_01.tscn" id="56_0vsjp"]
+[ext_resource type="PackedScene" uid="uid://cniaa6q5w7sox" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Planter_02.tscn" id="57_gaure"]
+[ext_resource type="PackedScene" uid="uid://b5m2baj34j6vr" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Door_02.tscn" id="58_ckto6"]
+[ext_resource type="PackedScene" uid="uid://b725ykglrblrm" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Window_01.tscn" id="59_im82k"]
+[ext_resource type="PackedScene" uid="uid://5f7dhbcv2fvu" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_ATM_01.tscn" id="60_jfs5b"]
+[ext_resource type="PackedScene" uid="uid://glhl3nogrctg" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Sign_Chinese_Noodles_01.tscn" id="61_piw4r"]
+[ext_resource type="PackedScene" uid="uid://bycht4afpxirf" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_Cover_05.tscn" id="62_qbnh0"]
+[ext_resource type="PackedScene" uid="uid://b737xbty4dvpu" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Corner_01.tscn" id="63_ug8q3"]
+[ext_resource type="PackedScene" uid="uid://bb1nba0o2p7ei" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Corner_02.tscn" id="64_ogkt1"]
+[ext_resource type="Material" uid="uid://iuuwjxvsfqs0" path="res://assets/polygon_city/Materials/Alts/PolygonCity_03_A_mat.tres" id="65_tky60"]
+[ext_resource type="PackedScene" uid="uid://colhq0vhrsliw" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.tscn" id="66_tu3dx"]
+[ext_resource type="Material" uid="uid://bi7l7jkwqgy4l" path="res://assets/polygon_city/Materials/Alts/PolygonCity_02_A_mat.tres" id="67_vwak3"]
+[ext_resource type="PackedScene" uid="uid://byirq48xyggud" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Roof_02.tscn" id="68_8makc"]
+[ext_resource type="PackedScene" uid="uid://binv1mqt5n7jh" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Roof_01.tscn" id="69_v35se"]
+[ext_resource type="PackedScene" uid="uid://dxnp5xj2mh4oc" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stack_02.tscn" id="70_i02rh"]
+[ext_resource type="PackedScene" uid="uid://cn1l80ex3huew" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Roof_03.tscn" id="71_haf2f"]
+[ext_resource type="PackedScene" uid="uid://d327xkgihrurk" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_02.tscn" id="72_o8yyo"]
+[ext_resource type="PackedScene" uid="uid://dpvarj0tmpd6h" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.tscn" id="73_5c8pr"]
+[ext_resource type="PackedScene" uid="uid://c6rxc2n8h4hi8" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_03.tscn" id="74_5bygr"]
+[ext_resource type="PackedScene" uid="uid://46ict7y1skdu" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_01.tscn" id="75_vaq3d"]
+[ext_resource type="Material" uid="uid://byn6e364ua674" path="res://assets/polygon_city/Materials/Alts/PolygonCity_04_A_mat.tres" id="76_uar3a"]
+[ext_resource type="PackedScene" uid="uid://bmqn30eoxsjy" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stack_03.tscn" id="77_x4c3t"]
+[ext_resource type="PackedScene" uid="uid://c8voayf0aefhy" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_02.tscn" id="78_nudob"]
+[ext_resource type="PackedScene" uid="uid://b1ses7vn8nsxk" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.tscn" id="79_cvus4"]
+[ext_resource type="PackedScene" uid="uid://tovugdsdadyd" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_03.tscn" id="80_wc5iu"]
+[ext_resource type="PackedScene" uid="uid://lo63iybqo821" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_06.tscn" id="81_755l3"]
+[ext_resource type="PackedScene" uid="uid://dh5cqddiqf27r" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_03.tscn" id="82_qjq40"]
+[ext_resource type="PackedScene" uid="uid://doptih145kufp" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Door_02.tscn" id="83_ynp3y"]
+[ext_resource type="PackedScene" uid="uid://35yjysby62ld" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_02.tscn" id="84_ilk8f"]
+[ext_resource type="PackedScene" uid="uid://csnorfqtr7556" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_Corner_02.tscn" id="85_humif"]
+[ext_resource type="PackedScene" uid="uid://bsmql228seaoo" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_Corner_01.tscn" id="86_wgsjo"]
+[ext_resource type="PackedScene" uid="uid://6rtp0x2krose" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_04.tscn" id="87_cc7mo"]
+[ext_resource type="PackedScene" uid="uid://r3pmc3qqc3q" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Door_01.tscn" id="88_mj3p4"]
+[ext_resource type="PackedScene" uid="uid://d1iyuyb2a4u3u" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_01.tscn" id="89_4iaui"]
+[ext_resource type="PackedScene" uid="uid://bon16cgpjbk2k" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Shop_05.tscn" id="90_1ngfr"]
+[ext_resource type="PackedScene" uid="uid://dcdsfth1lu0bg" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Station_02.tscn" id="92_s00qu"]
+[ext_resource type="PackedScene" uid="uid://cxdswma8ojowj" path="res://assets/polygon/Scenes/player.tscn" id="93_sy201"]
+[ext_resource type="PackedScene" uid="uid://cqoc1xfsamlqw" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_TrashBag_03.tscn" id="94_tu6xa"]
+[ext_resource type="PackedScene" uid="uid://tllg71rtsoja" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_TrashBag_01.tscn" id="95_il6h1"]
+[ext_resource type="PackedScene" uid="uid://iwiyujdmiffq" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Tree_03.tscn" id="96_6x173"]
+[ext_resource type="PackedScene" uid="uid://c22b4g8gjg4fx" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Tree_02.tscn" id="97_x3yq4"]
+[ext_resource type="PackedScene" uid="uid://h3u14leqnxw3" path="res://assets/polygon_city/Prefabs/Props/SM_Prop_Skip_01.tscn" id="98_2xtjj"]
+[ext_resource type="PackedScene" uid="uid://b6cqmeq6h4xk2" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Tree_01.tscn" id="99_hg15q"]
+[ext_resource type="PackedScene" uid="uid://bpgklllvpqx2t" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stairs_Planter_01.tscn" id="100_fsdab"]
+[ext_resource type="PackedScene" uid="uid://cnr6xsho8ggpb" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stairs_Planter_02.tscn" id="101_ql3nn"]
+[ext_resource type="PackedScene" uid="uid://s27i3j2f3l86" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stairs_01.tscn" id="102_my3jr"]
+[ext_resource type="PackedScene" uid="uid://c2r3ifu1t5q83" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.tscn" id="103_4m1x4"]
+[ext_resource type="PackedScene" uid="uid://dbkd3aa787w57" path="res://assets/polygon_city/Prefabs/Buildings/Custom/SM_Bld_Apartment_Stairs_Corner_01.tscn" id="104_nfedp"]
+[ext_resource type="PackedScene" uid="uid://dgijjdy4xyyjb" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_Apartment_Stairs_03.tscn" id="105_mulae"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_13cfj"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_fbvcw"]
+sky_material = SubResource("ProceduralSkyMaterial_13cfj")
+
+[sub_resource type="Environment" id="Environment_gqf86"]
+background_mode = 2
+sky = SubResource("Sky_fbvcw")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwxi3"]
+albedo_texture = ExtResource("2_8n7mr")
+uv1_triplanar_sharpness = 0.012947458
+uv1_world_triplanar = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1wftw"]
+points = PackedVector3Array(5.0750957, 3.0356026, 0.09647226, 1.2086804, 3.0356026, 0.09647226, 5.0750957, -0.0046921074, 0.09647226, 5.0750957, 3.0356026, -5.074733, -0.08483857, 3.0356026, -1.1902549, 1.2086804, -0.0046921074, 0.09647226, 5.0750957, -0.0046921074, -5.074733, -0.08483857, 3.0356026, -5.074733, -0.08483857, -0.0046921074, -1.1902549, -0.08483857, -0.0046921074, -5.074733)
+
+[node name="CityTerrain" type="Node3D" unique_id=658643497]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1104025992]
+environment = SubResource("Environment_gqf86")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1794647559]
+transform = Transform3D(-0.8660254, -0.49979725, 0.014239907, 0, 0.028479844, 0.9995944, -0.50000006, 0.8656741, -0.024664283, 104.0778, 659.67816, -180.268)
+shadow_enabled = true
+
+[node name="castle_town" type="CSGBox3D" parent="." unique_id=1640069951]
+use_collision = true
+flip_faces = true
+size = Vector3(2425.7173, 0.1, 2188.4414)
+material = SubResource("StandardMaterial3D_dwxi3")
+
+[node name="Car" parent="castle_town" unique_id=2010514660 instance=ExtResource("1_p6kh7")]
+transform = Transform3D(-0.105951615, 0, -0.9943713, 0, 1, 0, 0.9943713, 0, -0.105951615, -984.3591, -0.049991608, 462.70157)
+
+[node name="player" parent="castle_town" unique_id=1773828600 instance=ExtResource("93_sy201")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -990.076, -0.050014496, 461.45184)
+
+[node name="Node3D" type="Node3D" parent="castle_town" unique_id=1817766505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -928.6527, 171.70221, 1531.0077)
+
+[node name="block" type="Node3D" parent="castle_town/Node3D" unique_id=1225653995]
+
+[node name="Apartment_Block_02" type="Node3D" parent="castle_town/Node3D/block" unique_id=963876552]
+transform = Transform3D(0.89689595, 0, -0.44224167, 0, 1, 0, 0.44224167, 0, 0.89689595, -40.969, -171.09865, -1055.0295)
+
+[node name="SM_Prop_Sign_Pizza_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=683425055 instance=ExtResource("2_o0nvf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.411871, 2.2112782, -14.186548)
+
+[node name="SM_Prop_Sign_Pub_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2017672083 instance=ExtResource("3_s00qu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.797869, 0.7352765, -14.303547)
+
+[node name="SM_Bld_Shop_Cover_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=238666118 instance=ExtResource("4_sy201")]
+transform = Transform3D(-1, 0, -4.351139e-06, 0, 1, 0, 4.351139e-06, 0, -1, -10.431871, 2.373277, -26.131548)
+
+[node name="SM_Bld_Shop_Cover_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=249799506 instance=ExtResource("5_dve1e")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, -0.4318714, 2.373277, -26.131548)
+
+[node name="SM_Bld_Shop_Cover_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=919584719 instance=ExtResource("6_jnrxe")]
+transform = Transform3D(-1, 0, -3.1292434e-06, 0, 1, 0, 3.1292434e-06, 0, -1, -25.431871, 2.873277, -26.131548)
+
+[node name="SM_Prop_ShopInterior_Desk_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=37114340 instance=ExtResource("7_txl5e")]
+transform = Transform3D(-0.7071042, 0, 0.7071092, 0, 1, 0, -0.7071092, 0, -0.7071042, 4.1651287, -0.376723, -21.720549)
+
+[node name="SM_Prop_Aircon_28" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=557782918 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-3.0994415e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -3.0994415e-06, 6.6881285, 5.813276, -20.511547)
+
+[node name="SM_Prop_Aircon_27" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1573008268 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-3.0994415e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -3.0994415e-06, 6.6881285, 2.8432782, -20.511547)
+
+[node name="SM_Prop_Aircon_26" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=765321813 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-3.0994415e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -3.0994415e-06, 6.6881285, 5.7932754, -8.751549)
+
+[node name="SM_Prop_Aircon_25" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=551335582 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-3.0994415e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -3.0994415e-06, 6.6881285, 8.763276, -8.751549)
+
+[node name="SM_Prop_Aircon_24" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1356353785 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -3.7648716, 2.5412762, -24.131548)
+
+[node name="SM_Prop_Aircon_23" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1411382729 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, 2.9681282, 2.7832768, -24.131548)
+
+[node name="SM_Prop_Aircon_22" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1958323520 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, 2.9681282, 5.7532783, -24.131548)
+
+[node name="SM_Prop_Aircon_21" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=709314247 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -8.821871, 8.763276, -24.131548)
+
+[node name="SM_Prop_Aircon_20" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=866553651 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -8.821871, 5.7932754, -24.131548)
+
+[node name="SM_Prop_PlanterWindow_21" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=788175128 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -10.421869, 2.7732785, -24.631548)
+
+[node name="SM_Prop_PlanterWindow_20" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2050452169 instance=ExtResource("10_qxqng")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -11.991869, 5.823278, -24.631548)
+
+[node name="SM_Prop_PlanterWindow_19" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1017122379 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -33.82187, 5.3432784, -24.631548)
+
+[node name="SM_Prop_PlanterWindow_18" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1180619346 instance=ExtResource("10_qxqng")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -32.051872, 2.793275, -24.631548)
+
+[node name="SM_Prop_PlanterWindow_17" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2003935433 instance=ExtResource("10_qxqng")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -7.041872, 8.473275, -24.631548)
+
+[node name="SM_Prop_PlanterWindow_16" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=265960625 instance=ExtResource("10_qxqng")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -22.061872, 5.493276, -24.631548)
+
+[node name="SM_Prop_PlanterWindow_15" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1264852666 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(-1, 0, -8.34465e-07, 0, 1, 0, 8.34465e-07, 0, -1, -27.30187, 8.863275, -24.631548)
+
+[node name="SM_Bld_FireEscape_14" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=396163132 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -17.931871, 11.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=731999780 instance=ExtResource("12_2lel1")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -17.931871, 2.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1121293482 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -17.931871, 8.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1552053018 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -17.931871, 5.373277, -24.631548)
+
+[node name="SM_Prop_Vents_Exhaust_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1421977123 instance=ExtResource("14_002uh")]
+transform = Transform3D(1, 0, 8.85129e-06, 0, 1, 0, -8.85129e-06, 0, 1, -27.431871, 14.873277, -22.131548)
+
+[node name="SM_Prop_Vents_End_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1837242519 instance=ExtResource("15_00dfx")]
+transform = Transform3D(-1, 0, -1.3202429e-05, 0, 1, 0, 1.3202429e-05, 0, -1, -27.431871, 14.873277, -22.131548)
+
+[node name="SM_Bld_FireEscape_16" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1855087546 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, 7.0681286, 8.373277, -4.881548)
+
+[node name="SM_Bld_FireEscape_03" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_16" unique_id=1038837684 instance=ExtResource("12_2lel1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="SM_Bld_FireEscape_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1878433163 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, 7.0681286, 5.373277, -4.881548)
+
+[node name="SM_Bld_FireEscape_10" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2051486509 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -32.93187, 8.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1284232358 instance=ExtResource("12_2lel1")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -32.93187, 2.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=878352869 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -32.93187, 5.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_13" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1893063186 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, 7.0681286, 8.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_02" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_13" unique_id=217440724 instance=ExtResource("13_ts73e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+
+[node name="SM_Bld_FireEscape_03" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_13" unique_id=898316430 instance=ExtResource("12_2lel1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="SM_Bld_FireEscape_15" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1109721172 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, 7.0681286, 8.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1342539784 instance=ExtResource("12_2lel1")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, 7.0681286, 2.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_09" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2139575426 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, 7.0681286, 5.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_12" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=712098773 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -12.931871, 11.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_11" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=479801616 instance=ExtResource("12_2lel1")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -12.931871, 2.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_17" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=650396023 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -12.931871, 8.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_18" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1707149604 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -12.931871, 5.373277, -24.631548)
+
+[node name="SM_Prop_Washingline_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=553447265 instance=ExtResource("16_tu6xa")]
+transform = Transform3D(0.75458324, 0, -0.6562043, 0, 1, 0, 0.6562043, 0, 0.75458324, -2.9318714, 5.4632773, -9.631548)
+surface_material_override/0 = ExtResource("17_il6h1")
+
+[node name="SM_Prop_Sign_Hotel_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=534254318 instance=ExtResource("18_6x173")]
+transform = Transform3D(2.221265e-06, 0, -1, 0, 1, 0, 1, 0, 2.221265e-06, -3.4318714, 3.873277, -8.631548)
+
+[node name="SM_Prop_Sign_Attachment_02" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Hotel_01" unique_id=575212616 instance=ExtResource("19_x3yq4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.319, 1.771, -0.5)
+
+[node name="SM_Prop_Aircon_18" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=146566408 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -28.80187, 8.503278, -24.261547)
+
+[node name="SM_Prop_Aircon_17" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1879390499 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -37.050873, 8.5022745, -24.261547)
+
+[node name="SM_Prop_Billboard_Roof_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1908899807 instance=ExtResource("20_2xtjj")]
+transform = Transform3D(-1, 0, 3.2584137e-07, 0, 1, 0, -3.2584137e-07, 0, -1, -20.431871, 14.873277, -24.381548)
+
+[node name="SM_Prop_Billboard_Sign_03" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Roof_04" unique_id=1206039877 instance=ExtResource("21_hg15q")]
+
+[node name="SM_Bld_FireEscape_19" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=547293083 instance=ExtResource("11_g60yn")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.93187, 8.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_20" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1042307296 instance=ExtResource("12_2lel1")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.93187, 2.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_21" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1489489666 instance=ExtResource("13_ts73e")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.93187, 5.373277, -24.631548)
+
+[node name="SM_Prop_Vents_Exhaust_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=718024503 instance=ExtResource("14_002uh")]
+transform = Transform3D(1, 0, 2.3841858e-07, 0, 1, 0, -2.3841858e-07, 0, 1, -32.93187, 11.873277, -20.881548)
+
+[node name="SM_Prop_Vents_Corner_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=976902383 instance=ExtResource("22_fsdab")]
+transform = Transform3D(-1, 0, -4.8875804e-06, 0, 1, 0, 4.8875804e-06, 0, -1, -32.93187, 11.873277, -20.881548)
+
+[node name="SM_Prop_Vents_Transition_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=735213903 instance=ExtResource("23_ql3nn")]
+transform = Transform3D(2.5629997e-06, 0, -1, 0, 1, 0, 1, 0, 2.5629997e-06, -27.931871, 11.873277, -23.38155)
+
+[node name="SM_Prop_Vents_Corner_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1426039661 instance=ExtResource("22_fsdab")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -13.431871, 14.873277, -22.881548)
+
+[node name="SM_Prop_Vents_End_01" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_03" unique_id=114271321 instance=ExtResource("15_00dfx")]
+transform = Transform3D(-1, 0, -4.053116e-06, 0, 1, 0, 4.053116e-06, 0, -1, 0, 0, 0)
+
+[node name="SM_Prop_Vents_Exhaust_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=236984639 instance=ExtResource("14_002uh")]
+transform = Transform3D(1.7881393e-06, 0, -1, 0, 1, 0, 1, 0, 1.7881393e-06, -15.931871, 14.873277, -20.381554)
+
+[node name="SM_Prop_Washingline_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2120767355 instance=ExtResource("24_my3jr")]
+transform = Transform3D(0.87760526, 0, 0.47938403, 0, 1, 0, -0.47938403, 0, 0.87760526, -12.931871, 11.623277, -19.631548)
+
+[node name="SM_Prop_ShopInterior_Table_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=466560650 instance=ExtResource("25_4m1x4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.931871, 8.873277, -16.631548)
+
+[node name="SM_Prop_Vents_Exhaust_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1654030673 instance=ExtResource("14_002uh")]
+transform = Transform3D(2.5629997e-06, 0, -1, 0, 1, 0, 1, 0, 2.5629997e-06, -3.1818714, 11.873277, -16.131548)
+
+[node name="SM_Prop_Vents_End_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=435844832 instance=ExtResource("15_00dfx")]
+transform = Transform3D(-7.033348e-06, 0, 1, 0, 1, 0, -1, 0, -7.033348e-06, -3.1818714, 11.873277, -16.131548)
+
+[node name="SM_Prop_Sign_Attachment_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=205623084 instance=ExtResource("26_nfedp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.431871, 8.373277, -14.631548)
+
+[node name="SM_Prop_LargeSign_Pizza_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2139972958 instance=ExtResource("27_mulae")]
+transform = Transform3D(0.03802395, 0.050269067, 0.99801165, 0.8309247, 0.5531919, -0.059521794, -0.55508405, 0.83153576, -0.020735264, -25.431871, 8.623277, -13.881548)
+
+[node name="SM_Prop_Sign_DeliPizza_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=427424317 instance=ExtResource("28_5864a")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -24.681871, 1.123277, -14.131548)
+
+[node name="SM_Prop_Sign_Attachment_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=383408951 instance=ExtResource("19_x3yq4")]
+transform = Transform3D(1, 0, 1.7748908e-06, 0, 1, 0, -9.536742e-07, 0, 1.8611082, -24.681871, 1.123277, -14.881548)
+
+[node name="SM_Prop_Vents_Corner_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=366782657 instance=ExtResource("22_fsdab")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -24.181871, 11.873277, -18.381548)
+
+[node name="SM_Prop_Vents_End_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=133252315 instance=ExtResource("15_00dfx")]
+transform = Transform3D(-6.3180923e-06, 0, 1, 0, 1, 0, -1, 0, -6.3180923e-06, -24.181871, 11.873277, -18.381548)
+
+[node name="SM_Prop_Roof_Aircon_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=657261958 instance=ExtResource("29_8xek3")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -20.431871, 11.873277, -16.131548)
+
+[node name="SM_Prop_Aircon_19" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1666050615 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -28.80187, 5.533277, -24.261547)
+
+[node name="SM_Prop_Vents_Exhaust_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=701064473 instance=ExtResource("14_002uh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, 0.8181286, 11.873277, -23.881548)
+
+[node name="SM_Prop_Vents_Corner_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1253722306 instance=ExtResource("30_2etbx")]
+transform = Transform3D(-7.0770593e-06, 0, 1, 0, 1, 0, -1, 0, -7.0770593e-06, 0.8181286, 11.873277, -23.881548)
+
+[node name="SM_Prop_Vents_Straight_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=282168504 instance=ExtResource("31_0j2xi")]
+transform = Transform3D(1, 0, 9.23872e-06, 0, 1, 0, -9.23872e-06, 0, 1, 3.3181286, 11.873277, -21.381548)
+
+[node name="SM_Prop_Vents_Corner_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=126308736 instance=ExtResource("22_fsdab")]
+transform = Transform3D(1.168251e-05, 0, -1, 0, 1, 0, 1, 0, 1.168251e-05, 5.8181286, 11.873277, -16.381548)
+
+[node name="SM_Prop_Vents_End_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=116749053 instance=ExtResource("15_00dfx")]
+transform = Transform3D(-1.5974045e-05, 0, 1, 0, 1, 0, -1, 0, -1.5974045e-05, 5.8181286, 11.873277, -16.381548)
+
+[node name="SM_Prop_Vents_Straight_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1467562819 instance=ExtResource("31_0j2xi")]
+transform = Transform3D(1.1503696e-05, 0, -1, 0, 1, 0, 1, 0, 1.1503696e-05, 3.0681286, 11.873277, -21.381548)
+
+[node name="SM_Prop_Vents_End_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=298615811 instance=ExtResource("15_00dfx")]
+transform = Transform3D(1.1503696e-05, 0, -1, 0, 1, 0, 1, 0, 1.1503696e-05, -4.4318714, 11.873277, -21.381462)
+
+[node name="SM_Prop_Vents_Straight_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1795509843 instance=ExtResource("31_0j2xi")]
+transform = Transform3D(1.1503696e-05, 0, -1, 0, 1, 0, 1, 0, 1.1503696e-05, 0.5681286, 11.873277, -21.381548)
+
+[node name="SM_Prop_Vents_Straight_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=414698302 instance=ExtResource("31_0j2xi")]
+transform = Transform3D(1.1503696e-05, 0, -1, 0, 1, 0, 1, 0, 1.1503696e-05, -1.9318714, 11.873277, -21.381548)
+
+[node name="SM_Prop_Aircon_16" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1019049129 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -2.592802e-06, 0, 1, 0, 2.592802e-06, 0, -1, -37.050873, 5.5322776, -24.261547)
+
+[node name="SM_Prop_Sign_XXX_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1611415206 instance=ExtResource("32_pt7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.431871, 1.623277, -13.881548)
+
+[node name="SM_Prop_Sign_Attachment_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1384899982 instance=ExtResource("19_x3yq4")]
+transform = Transform3D(1, 0, 0, 0, 0.5299131, 0, 0, 0, 2.0499644, -15.431871, 2.123277, -14.631548)
+
+[node name="SM_Prop_Sign_Attachment_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=654750344 instance=ExtResource("19_x3yq4")]
+transform = Transform3D(1, 0, 0, 0, 0.5299131, 0, 0, 0, 2.0499644, -14.681871, 2.123277, -14.631548)
+
+[node name="SM_Prop_Sign_Attachment_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=615123856 instance=ExtResource("19_x3yq4")]
+transform = Transform3D(1, 0, 0, 0, 0.5299131, 0, 0, 0, 2.0499644, -16.181871, 2.123277, -14.631548)
+
+[node name="SM_Prop_Poster_Frame_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1648198220 instance=ExtResource("33_nj4kn")]
+transform = Transform3D(1.6040282, 0, 0, 0, 1.6040285, 0, 0, 0, 1.6040285, -12.018869, 0.16227847, -14.587547)
+
+[node name="SM_Prop_Poster_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1786985743 instance=ExtResource("34_2ngaf")]
+transform = Transform3D(1.6040282, 0, 0, 0, 1.6040285, 0, 0, 0, 1.6040285, -12.018869, 0.16227847, -14.587547)
+
+[node name="SM_Prop_PowerBox_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1196247598 instance=ExtResource("35_v0evp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.181871, 11.873277, -22.131548)
+
+[node name="SM_Prop_PotPlant_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=871550783 instance=ExtResource("36_jhs1p")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.43187, 11.873277, -24.131548)
+
+[node name="SM_Prop_SecurityCamera_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1392405961 instance=ExtResource("37_o2h1h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.181871, 10.373277, -14.631548)
+
+[node name="SM_Prop_SatDish_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=845623017 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.431871, 11.873277, -14.381548)
+
+[node name="SM_Prop_Aircon_15" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1377743911 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.531868, 8.978276, -15.314548)
+
+[node name="SM_Prop_SatDish_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1718070536 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3181286, 11.873277, -15.631548)
+
+[node name="SM_Prop_Aircon_13" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1334116690 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.52887, 8.473275, -20.498547)
+
+[node name="SM_Prop_ShopInterior_Desk_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2067631423 instance=ExtResource("7_txl5e")]
+transform = Transform3D(0.7071076, 0, -0.70710593, 0, 1, 0, 0.70710593, 0, 0.7071076, -34.93187, -0.376723, -17.631548)
+
+[node name="SM_Prop_PlanterWindow_14" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=189759861 instance=ExtResource("10_qxqng")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.911873, 5.5182776, -17.110548)
+
+[node name="SM_Prop_Aircon_14" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1443681084 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.52887, 5.5032783, -20.498547)
+
+[node name="SM_Prop_Couch_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2039885675 instance=ExtResource("39_hj7vo")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, -34.93187, 11.873277, -23.381548)
+
+[node name="SM_Prop_Roof_Aircon_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1783505982 instance=ExtResource("40_7cfoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6818714, 11.873277, -14.131548)
+
+[node name="SM_Prop_Roof_Aircon_10" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1490556470 instance=ExtResource("29_8xek3")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, 6.5681286, 11.873277, -20.881548)
+
+[node name="SM_Bld_Roof_Access_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=515870005 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(-7.1525574e-07, 0, -1, 0, 1, 0, 1, 0, -7.1525574e-07, 1.5681286, 11.873277, -19.631548)
+
+[node name="SM_Prop_Planter_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1454381314 instance=ExtResource("42_pm85n")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, -34.93187, 11.873277, -24.131548)
+
+[node name="SM_Prop_Roof_Aircon_09" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1682236590 instance=ExtResource("43_us0bx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.681871, 11.873277, -20.381548)
+
+[node name="SM_Prop_Roof_Aircon_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1114868540 instance=ExtResource("40_7cfoh")]
+transform = Transform3D(-1, 0, -4.351139e-06, 0, 1, 0, 4.351139e-06, 0, -1, -28.181871, 11.873277, -18.881548)
+
+[node name="SM_Prop_Roof_Aircon_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=430675074 instance=ExtResource("43_us0bx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.931871, 11.873277, -20.381548)
+
+[node name="SM_Prop_Planter_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1887765128 instance=ExtResource("42_pm85n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.431871, 8.873277, -15.131548)
+
+[node name="SM_Prop_Couch_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1254078273 instance=ExtResource("39_hj7vo")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, -12.431871, 8.873277, -18.631548)
+
+[node name="SM_Prop_Roof_Aircon_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=350006584 instance=ExtResource("40_7cfoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.68187, 11.873277, -19.131548)
+
+[node name="SM_Prop_Aircon_11" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1575016551 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.6818714, 8.763276, -0.5155487)
+
+[node name="SM_Prop_SatDish_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1608467634 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.931871, 14.873277, -24.631548)
+
+[node name="SM_Prop_Table_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1778633366 instance=ExtResource("44_yvolh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -34.93187, 11.873277, -21.631548)
+
+[node name="SM_Prop_SecurityCamera_Arm_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1382201898 instance=ExtResource("45_krxhx")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -37.746872, 4.373277, -14.631548)
+
+[node name="SM_Prop_SecurityCamera_Head_01" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_03" index="1"]
+transform = Transform3D(0.8315162, 0, 0.5555005, 0, 1, 0, -0.5555005, 0, 0.8315162, 3.7885593e-06, 0.17607546, 0.43852425)
+
+[node name="SM_Prop_SecurityCamera_Arm_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=743868906 instance=ExtResource("45_krxhx")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -14.60887, 4.373277, -14.631548)
+
+[node name="SM_Prop_SecurityCamera_Head_01" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_02" index="1"]
+transform = Transform3D(0.8371773, 0, -0.5469316, 0, 1, 0, 0.5469316, 0, 0.8371773, 1.8812106e-06, 0.17607546, 0.43852425)
+
+[node name="SM_Prop_SatDish_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2042609394 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4318714, 11.873277, 0.6184521)
+
+[node name="SM_Prop_SatDish_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=337884632 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.68187, 11.873277, -14.381548)
+
+[node name="SM_Prop_Planter_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=646187364 instance=ExtResource("42_pm85n")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.43187, 11.873277, -21.631548)
+
+[node name="SM_Prop_PowerBox_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=671602633 instance=ExtResource("35_v0evp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4318714, 11.873277, -20.631548)
+
+[node name="SM_Bld_FireEscape_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=726259511 instance=ExtResource("11_g60yn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.93187, 8.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_22" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=365334361 instance=ExtResource("12_2lel1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.93187, 2.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_23" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=286031990 instance=ExtResource("13_ts73e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.93187, 5.373277, -14.631548)
+
+[node name="SM_Prop_Planter_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2062229319 instance=ExtResource("42_pm85n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.931871, 8.873277, -15.131548)
+
+[node name="SM_Prop_SecurityCamera_Arm_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1987063167 instance=ExtResource("45_krxhx")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -37.90387, 4.373277, -14.824547)
+
+[node name="SM_Prop_SecurityCamera_Head_01" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_04" index="1"]
+transform = Transform3D(0.8955019, 0, 0.4450577, 0, 1, 0, -0.4450577, 0, 0.8955019, 3.8012668e-06, 0.17607546, 0.43852234)
+
+[node name="SM_Prop_Couch_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1813638658 instance=ExtResource("39_hj7vo")]
+transform = Transform3D(2.3841858e-06, 0, 1, 0, 1, 0, -1, 0, 2.3841858e-06, -36.68187, 11.873277, -21.631548)
+
+[node name="SM_Prop_Billboard_Roof_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=569040444 instance=ExtResource("20_2xtjj")]
+transform = Transform3D(-1.1920929e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.1920929e-07, -1.9318714, 11.873277, -7.631548)
+
+[node name="SM_Prop_Billboard_Sign_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=739145962 instance=ExtResource("46_mh3yu")]
+transform = Transform3D(-1.1920929e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.1920929e-07, -1.9318714, 11.873277, -7.631548)
+
+[node name="SM_Prop_PlanterWindow_09" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1825906793 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.841871, 2.800279, -14.631548)
+
+[node name="SM_Prop_ShopInterior_Desk_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1837068346 instance=ExtResource("7_txl5e")]
+transform = Transform3D(0.7071076, 0, -0.70710593, 0, 1, 0, 0.70710593, 0, 0.7071076, -0.4318714, -0.376723, -2.131548)
+
+[node name="SM_Prop_Billboard_Roof_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1025765730 instance=ExtResource("20_2xtjj")]
+transform = Transform3D(-0.6950847, 0, 0.718928, 0, 1, 0, -0.718928, 0, -0.6950847, 5.3181286, 11.873277, -22.881548)
+
+[node name="SM_Prop_Billboard_Sign_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2536458 instance=ExtResource("47_qe6fj")]
+transform = Transform3D(-0.6950847, 0, 0.718928, 0, 1, 0, -0.718928, 0, -0.6950847, 5.3181286, 11.873277, -22.881548)
+
+[node name="SM_Prop_Sign_Attachment_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=760063838 instance=ExtResource("26_nfedp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1958714, 4.915277, 0.283453)
+
+[node name="SM_Prop_LargeSign_Noodles_01" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_07" unique_id=1022313027 instance=ExtResource("48_7i43m")]
+transform = Transform3D(0.9456448, -0.23213997, -0.22774321, 0.15593258, 0.93823266, -0.30887628, 0.28537863, 0.25657463, 0.923433, 0.43, -0.59, 1.68)
+
+[node name="SM_Prop_Sign_Attachment_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=647888209 instance=ExtResource("26_nfedp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1958714, 5.915277, 0.283453)
+
+[node name="SM_Prop_Billboard_Roof_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=623480841 instance=ExtResource("20_2xtjj")]
+transform = Transform3D(0.75665396, 0, -0.65381557, 0, 1, 0, 0.65381557, 0, 0.75665396, -36.18187, 11.873277, -16.131548)
+
+[node name="SM_Prop_Billboard_Sign_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=243713692 instance=ExtResource("49_0yrq1")]
+transform = Transform3D(0.75665396, 0, -0.65381557, 0, 1, 0, 0.65381557, 0, 0.75665396, -36.18187, 11.873277, -16.131548)
+
+[node name="SM_Prop_Aircon_10" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1387159476 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.6818714, 5.7932754, -0.5155487)
+
+[node name="SM_Prop_Sign_Warning_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=798961103 instance=ExtResource("50_jp4wa")]
+transform = Transform3D(1.9669533e-06, 0, -1, 0, 1, 0, 1, 0, 1.9669533e-06, -2.9318714, -0.12672299, -5.131548)
+
+[node name="SM_Prop_Poster_Frame_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1937617840 instance=ExtResource("33_nj4kn")]
+transform = Transform3D(1.6040282, 0, 0, 0, 1.6040285, 0, 0, 0, 1.6040285, -8.840872, 0.16227847, -14.587547)
+
+[node name="SM_Prop_PlanterWindow_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1939293831 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.811869, 5.849275, -14.631548)
+
+[node name="SM_Prop_Couch_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1839231956 instance=ExtResource("39_hj7vo")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, -16.931871, 8.873277, -16.631548)
+
+[node name="SM_Prop_Pipe_Preset_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=397663088 instance=ExtResource("51_rdqdq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.931871, 8.873277, -19.631548)
+
+[node name="SM_Prop_Pipe_Small_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=429301941 instance=ExtResource("52_mydb7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.931871, -0.626723, -14.631548)
+
+[node name="SM_Bld_FireEscape_24" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=297511969 instance=ExtResource("11_g60yn")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9318714, 8.373277, -4.631548)
+
+[node name="SM_Bld_FireEscape_25" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=222714946 instance=ExtResource("12_2lel1")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9318714, 2.373277, -4.631548)
+
+[node name="SM_Bld_FireEscape_26" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=994596763 instance=ExtResource("13_ts73e")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9318714, 5.373277, -4.631548)
+
+[node name="SM_Prop_Aircon_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=197240731 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -28.811872, 8.843278, -14.951548)
+
+[node name="SM_Prop_Aircon_12" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1695215926 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, 6.2051287, 5.4872756, 0.048452377)
+
+[node name="SM_Prop_PlanterWindow_13" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=552059044 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.548128, 2.5232785, 0.36845207)
+
+[node name="SM_Prop_PlanterWindow_12" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=379073639 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1781282, 8.855279, 0.36845207)
+
+[node name="SM_Prop_ShopInterior_Shelf_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=812068791 instance=ExtResource("53_wx0t0")]
+transform = Transform3D(1, 0, -1.19209275e-07, 0, 1, 0, 1.19209275e-07, 0, 1, 1.0681286, -0.376723, -0.13154793)
+
+[node name="SM_Prop_ShopInterior_Shelf_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=161199627 instance=ExtResource("53_wx0t0")]
+transform = Transform3D(1.9669533e-06, 0, -1, 0, 1, 0, 1, 0, 1.9669533e-06, -2.4318714, -0.376723, -3.631548)
+
+[node name="SM_Prop_PlanterWindow_11" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=756468540 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.911871, 2.8252766, -0.52954865)
+
+[node name="SM_Prop_PlanterWindow_10" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1131067212 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9158707, 8.464276, -12.116549)
+
+[node name="SM_Prop_PlanterWindow_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=55870838 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.317873, 8.889276, -14.631548)
+
+[node name="SM_Prop_PlanterWindow_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1642773593 instance=ExtResource("10_qxqng")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9218712, 8.980279, -5.2645473)
+
+[node name="SM_Prop_PlanterWindow_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=658788676 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.064871, 8.832276, -14.631548)
+
+[node name="SM_Prop_Washingline_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=351080024 instance=ExtResource("54_dneyu")]
+transform = Transform3D(0.75902, 0, -0.6510674, 0, 1, 0, 0.6510674, 0, 0.75902, -2.9318714, 8.453279, -9.631548)
+
+[node name="SM_Prop_PlanterWindow_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1696743209 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.082872, 2.5142758, -14.631548)
+
+[node name="SM_Prop_SecurityCamera_Arm_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=137042356 instance=ExtResource("45_krxhx")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9318714, 4.373277, 0.11845207)
+
+[node name="SM_Prop_SecurityCamera_Head_01" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_01" index="1"]
+transform = Transform3D(0.6460657, 0, 0.7632818, 0, 1, 0, -0.7632818, 0, 0.6460657, 9.402396e-07, 0.17607546, 0.43852425)
+
+[node name="SM_Prop_Roof_Aircon_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=450449910 instance=ExtResource("29_8xek3")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, 2.3181286, 11.873277, -5.381548)
+
+[node name="SM_Prop_Roof_Aircon_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=94861327 instance=ExtResource("43_us0bx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5681286, 11.873277, -8.881548)
+
+[node name="SM_Prop_Roof_Aircon_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1993189006 instance=ExtResource("40_7cfoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0681286, 11.873277, -7.381548)
+
+[node name="SM_Prop_PotPlant_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=648057387 instance=ExtResource("55_fmuit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8181286, 11.873277, -4.631548)
+
+[node name="SM_Prop_Skylight_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=515061337 instance=ExtResource("56_0vsjp")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, 6.0681286, 11.873277, -2.131548)
+
+[node name="SM_Prop_Skylight_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=71446208 instance=ExtResource("56_0vsjp")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, 4.0681286, 11.873277, -2.131548)
+
+[node name="SM_Prop_Couch_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1942564618 instance=ExtResource("39_hj7vo")]
+transform = Transform3D(-1, 0, 4.649162e-06, 0, 1, 0, -4.649162e-06, 0, -1, 0.068128586, 11.873277, -0.8815479)
+
+[node name="SM_Prop_Couch_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=254026561 instance=ExtResource("39_hj7vo")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, -1.6818714, 11.873277, -2.631548)
+
+[node name="SM_Prop_Table_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1625137127 instance=ExtResource("44_yvolh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.068128586, 11.873277, -2.631548)
+
+[node name="SM_Bld_Roof_Access_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1683718112 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(1, 0, -2.8312204e-06, 0, 1, 0, 2.8312204e-06, 0, 1, 0.5681286, 11.873277, -6.631548)
+
+[node name="SM_Prop_Planter_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=60450037 instance=ExtResource("57_gaure")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, 1.5681286, 11.873277, -2.631548)
+
+[node name="SM_Prop_PotPlant_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1785081351 instance=ExtResource("36_jhs1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4318714, 11.873277, -0.13154793)
+
+[node name="SM_Prop_Planter_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=690207052 instance=ExtResource("42_pm85n")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, -2.4318714, 11.873277, -2.631548)
+
+[node name="SM_Prop_Planter_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1426880329 instance=ExtResource("42_pm85n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.068128586, 11.873277, -0.13154793)
+
+[node name="SM_Bld_FireEscape_27" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1551963624 instance=ExtResource("11_g60yn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.931871, 8.373277, -14.631548)
+
+[node name="SM_Prop_Door_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=386305565 instance=ExtResource("58_ckto6")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, -12.931871, 11.873277, -22.131548)
+
+[node name="SM_Prop_Window_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1753698613 instance=ExtResource("59_im82k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.431871, 11.873277, -19.631548)
+
+[node name="SM_Prop_PlanterWindow_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1575453399 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.840874, 5.373277, -14.631548)
+
+[node name="SM_Bld_Roof_Access_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=364867425 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(1, 0, -2.8312206e-06, 0, 1, 0, 2.8312206e-06, 0, 1, -9.431871, 8.873277, -18.131548)
+
+[node name="SM_Prop_PlanterWindow_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1925864608 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.409874, 2.3432782, -14.631548)
+
+[node name="SM_Prop_ATM_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=653015500 instance=ExtResource("60_jfs5b")]
+transform = Transform3D(1.3112899, 0, 0, 0, 1.4667035, 0, 0, 0, 1.3112901, -32.01187, 0.9322751, -14.491547)
+
+[node name="SM_Prop_Aircon_09" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1529175850 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -18.782873, 8.471276, -14.951548)
+
+[node name="SM_Prop_Aircon_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1732573316 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -3.8208714, 8.705277, -14.951548)
+
+[node name="SM_Prop_Aircon_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=157575247 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -17.04387, 5.7912765, -14.951548)
+
+[node name="SM_Prop_Aircon_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=517509603 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -17.04387, 2.821275, -14.951548)
+
+[node name="SM_Prop_Aircon_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=209463708 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -37.051872, 2.5332768, -14.951548)
+
+[node name="SM_Prop_Aircon_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1718862053 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -37.051872, 5.5032783, -14.951548)
+
+[node name="SM_Prop_Aircon_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=188336162 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -28.80887, 5.873277, -14.947548)
+
+[node name="SM_Prop_Sign_Chinese_Noodles_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2021007783 instance=ExtResource("61_piw4r")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, 0.8981285, 0.6532758, 0.28845215)
+
+[node name="SM_Bld_Shop_Cover_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=745823915 instance=ExtResource("62_qbnh0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9318714, 2.373277, 0.36845207)
+
+[node name="SM_Prop_Sign_Chinese_Noodles_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1593208404 instance=ExtResource("61_piw4r")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.852871, 0.5872777, -3.4985485)
+
+[node name="SM_Bld_Apartment_Corner_40" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=74765213 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9318714, 8.373277, 0.36845207)
+
+[node name="SM_Bld_Shop_Cover_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=411357923 instance=ExtResource("62_qbnh0")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, 7.0681286, 2.373277, -24.631548)
+
+[node name="SM_Bld_FireEscape_28" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=948128160 instance=ExtResource("11_g60yn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9318714, 8.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_29" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=436620805 instance=ExtResource("13_ts73e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.931871, 5.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_30" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=654757519 instance=ExtResource("12_2lel1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.931871, 2.373277, -14.631548)
+
+[node name="SM_Prop_PlanterWindow_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1722699584 instance=ExtResource("10_qxqng")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -2.9248714, 2.5612767, -10.477549)
+
+[node name="SM_Prop_Aircon_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=450681109 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -3.8208714, 5.7352767, -14.951548)
+
+[node name="SM_Bld_FireEscape_31" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1482019246 instance=ExtResource("12_2lel1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9318714, 2.373277, -14.631548)
+
+[node name="SM_Bld_FireEscape_32" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=765833520 instance=ExtResource("13_ts73e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9318714, 5.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Corner_28" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1252653022 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.93187, 2.373277, -14.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Stack_18" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=577861986 instance=ExtResource("66_tu3dx")]
+transform = Transform3D(-1, 0, 1.7881393e-07, 0, 1, 0, -1.7881393e-07, 0, -1, -27.931871, 2.373277, -24.631548)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Roof_34" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1656474562 instance=ExtResource("68_8makc")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -2.9318714, 11.373277, -9.631548)
+
+[node name="SM_Bld_Apartment_Roof_32" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=311227883 instance=ExtResource("68_8makc")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -2.9318714, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_33" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1928749628 instance=ExtResource("69_v35se")]
+transform = Transform3D(-5.9604645e-07, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-07, -2.9318714, 11.373277, -19.631548)
+
+[node name="SM_Bld_Apartment_Roof_30" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=198758435 instance=ExtResource("68_8makc")]
+transform = Transform3D(-5.9604645e-07, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-07, 7.0681286, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Stack_25" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=518620261 instance=ExtResource("70_i02rh")]
+transform = Transform3D(-5.9604645e-07, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-07, 7.0681286, 2.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_29" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1168639377 instance=ExtResource("68_8makc")]
+transform = Transform3D(-5.9604645e-07, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-07, 7.0681286, 11.373277, -9.631548)
+
+[node name="SM_Bld_Apartment_Roof_28" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1316526731 instance=ExtResource("71_haf2f")]
+transform = Transform3D(-5.9604645e-07, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-07, 7.0681286, 11.373277, -4.631548)
+
+[node name="SM_Bld_Apartment_Roof_Corner_26" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1142739650 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9318714, 11.373277, 0.36845207)
+
+[node name="SM_Bld_Apartment_Roof_Corner_25" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=358117371 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, 7.0681286, 11.373277, 0.36845207)
+
+[node name="SM_Bld_Apartment_Corner_37" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1376187520 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, 7.0681286, 5.373277, 0.36845207)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_36" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=551022407 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, 7.0681286, 8.373277, 0.36845207)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_39" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=268966822 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9318714, 5.373277, 0.36845207)
+
+[node name="SM_Bld_Apartment_Corner_38" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1549293665 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9318714, 2.373277, 0.36845207)
+
+[node name="SM_Bld_Apartment_Corner_35" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=345621611 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, 7.0681286, 2.373277, 0.36845207)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_34" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1121656707 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, 7.0681286, 2.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Roof_Access_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=661708509 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(-4.7683716e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.7683716e-07, -19.431871, 11.873277, -18.131548)
+
+[node name="SM_Bld_Apartment_Roof_27" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=707155819 instance=ExtResource("71_haf2f")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, 2.0681286, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Roof_26" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1371633277 instance=ExtResource("68_8makc")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, -7.9318714, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Corner_33" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2086767354 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(-5.9604645e-07, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-07, -37.93187, 2.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_43" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1062300042 instance=ExtResource("74_5bygr")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, -22.931871, 2.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_42" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1518969320 instance=ExtResource("74_5bygr")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, -12.931871, 2.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_41" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=48744217 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, 2.0681286, 2.373277, -24.631548)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Stack_20" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1489520951 instance=ExtResource("66_tu3dx")]
+transform = Transform3D(-1, 0, 1.7881393e-07, 0, 1, 0, -1.7881393e-07, 0, -1, -7.9318714, 2.373277, -24.631548)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Stack_19" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=295045131 instance=ExtResource("70_i02rh")]
+transform = Transform3D(-1, 0, -1.1324883e-06, 0, 1, 0, 1.1324883e-06, 0, -1, -2.9318714, 2.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Corner_32" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1057537265 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(8.940697e-07, 0, -1, 0, 1, 0, 1, 0, 8.940697e-07, -37.93187, 5.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Corner_31" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1129120281 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(8.940697e-07, 0, -1, 0, 1, 0, 1, 0, 8.940697e-07, -37.93187, 8.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_40" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2031988232 instance=ExtResource("74_5bygr")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, 2.0681286, 5.373277, -24.631548)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_30" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1450182573 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, 7.0681286, 8.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Corner_29" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=617957968 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, 7.0681286, 5.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Stack_24" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1631061547 instance=ExtResource("77_x4c3t")]
+transform = Transform3D(-5.9604645e-07, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-07, 7.0681286, 2.373277, -9.631548)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Stack_23" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1778601127 instance=ExtResource("66_tu3dx")]
+transform = Transform3D(-5.9604645e-07, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-07, 7.0681286, 2.373277, -4.631548)
+
+[node name="SM_Bld_Apartment_39" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1714715869 instance=ExtResource("74_5bygr")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, 2.0681286, 8.373277, -24.631548)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Stack_13" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1370554030 instance=ExtResource("70_i02rh")]
+transform = Transform3D(-1, 0, -1.1324883e-06, 0, 1, 0, 1.1324883e-06, 0, -1, -17.931871, 2.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_38" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=265665812 instance=ExtResource("74_5bygr")]
+transform = Transform3D(1, 0, -1.3430887e-06, 0, 1, 0, -1.3430887e-06, 0, -1, -27.931871, 8.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_37" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1008290412 instance=ExtResource("74_5bygr")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, -22.931871, 5.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_36" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2006739506 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(-1, 0, 1.7881393e-07, 0, 1, 0, -1.7881393e-07, 0, -1, -12.931871, 5.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Stack_22" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2053256845 instance=ExtResource("70_i02rh")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -2.9318714, 2.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_35" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=790234771 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(1, 0, 1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, -17.931871, 8.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Stack_21" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1786611259 instance=ExtResource("77_x4c3t")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -2.9318714, 2.373277, -9.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_34" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1364547738 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(-1, 0, 1.7881393e-07, 0, 1, 0, -1.7881393e-07, 0, -1, -12.931871, 11.373277, -24.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_33" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=496609962 instance=ExtResource("78_nudob")]
+transform = Transform3D(-1, 0, 1.7881393e-07, 0, 1, 0, -1.7881393e-07, 0, -1, -17.931871, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_32" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1071902629 instance=ExtResource("74_5bygr")]
+transform = Transform3D(-1, 0, -1.4603138e-06, 0, 1, 0, 1.4603138e-06, 0, -1, -22.931871, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Roof_Corner_24" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1410306440 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(-1, 0, 1.7881393e-07, 0, 1, 0, -1.7881393e-07, 0, -1, 7.0681286, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Roof_25" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=874676866 instance=ExtResource("68_8makc")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, -2.9318714, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Roof_Corner_23" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2016057878 instance=ExtResource("79_cvus4")]
+transform = Transform3D(-1, 0, 9.834766e-07, 0, 1, 0, -9.834766e-07, 0, -1, -12.931871, 14.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Roof_Corner_22" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1912185849 instance=ExtResource("79_cvus4")]
+transform = Transform3D(-1.3113022e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.3113022e-06, -27.931871, 14.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Roof_24" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1170535876 instance=ExtResource("69_v35se")]
+transform = Transform3D(-1, 0, 9.834766e-07, 0, 1, 0, -9.834766e-07, 0, -1, -17.931871, 14.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Stack_17" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=752698049 instance=ExtResource("66_tu3dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.93187, 2.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_23" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=335671783 instance=ExtResource("71_haf2f")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, -27.931871, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Stack_16" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1573747571 instance=ExtResource("77_x4c3t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.931871, 2.373277, -14.631548)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Roof_Corner_18" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=827250192 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(-4.7683716e-07, 0, -1, 0, 1, 0, 1, 0, -4.7683716e-07, -37.93187, 11.373277, -24.631548)
+
+[node name="SM_Bld_Apartment_Stack_15" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1112180355 instance=ExtResource("70_i02rh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.931871, 2.373277, -14.631548)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_31" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=384378460 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.931871, 2.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_29" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=524723779 instance=ExtResource("74_5bygr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.931871, 5.373277, -14.631548)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_28" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1104205321 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -12.931871, 5.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Corner_27" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=688550739 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.93187, 8.373277, -14.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Corner_26" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=897986521 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.93187, 5.373277, -14.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Roof_Corner_21" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=909690578 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.93187, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_22" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1838127293 instance=ExtResource("71_haf2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.93187, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_21" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1091052096 instance=ExtResource("68_8makc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.931871, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_Corner_20" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=280455381 instance=ExtResource("80_wc5iu")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, -17.931871, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_20" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1892148823 instance=ExtResource("69_v35se")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.931871, 8.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_19" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=808672393 instance=ExtResource("69_v35se")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.931871, 8.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Roof_Corner_19" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1976280950 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9318714, 11.373277, -14.631548)
+
+[node name="SM_Bld_Apartment_Stack_14" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=847692484 instance=ExtResource("66_tu3dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9318714, 2.373277, -14.631548)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_30" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=557985131 instance=ExtResource("78_nudob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.931871, 2.373277, -14.631548)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Shop_11" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2040416068 instance=ExtResource("81_755l3")]
+transform = Transform3D(1, 0, 4.3809414e-06, 0, 1, 0, -4.3809414e-06, 0, 1, -22.931871, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_14" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1277033037 instance=ExtResource("82_qjq40")]
+transform = Transform3D(-1, 0, 2.592802e-06, 0, 1, 0, -2.592802e-06, 0, -1, -17.931871, -0.626723, -24.631548)
+
+[node name="SM_Bld_Apartment_Door_10" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1775163379 instance=ExtResource("83_ynp3y")]
+transform = Transform3D(1, 0, 1.9669533e-06, 0, 1, 0, -1.9669533e-06, 0, 1, -32.93187, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_16" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=690668090 instance=ExtResource("84_ilk8f")]
+transform = Transform3D(1, 0, 5.185604e-06, 0, 1, 0, -5.185604e-06, 0, 1, -27.931871, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_Corner_06" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=512972663 instance=ExtResource("85_humif")]
+transform = Transform3D(1, 0, 5.3346157e-06, 0, 1, 0, -5.3346157e-06, 0, 1, -2.9318714, -0.626723, 0.36845207)
+
+[node name="SM_Bld_Shop_Corner_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1194542394 instance=ExtResource("85_humif")]
+transform = Transform3D(1, 0, 5.3346157e-06, 0, 1, 0, -5.3346157e-06, 0, 1, -37.93187, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_Cover_07" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1023168713 instance=ExtResource("62_qbnh0")]
+transform = Transform3D(1, 0, 5.3346157e-06, 0, 1, 0, -5.3346157e-06, 0, 1, -37.93187, 2.373277, -14.631548)
+
+[node name="SM_Bld_Shop_Corner_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1295844988 instance=ExtResource("86_wgsjo")]
+transform = Transform3D(5.841255e-06, 0, -1, 0, 1, 0, 1, 0, 5.841255e-06, -37.93187, -0.626723, -24.631548)
+
+[node name="SM_Bld_Shop_15" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1726519158 instance=ExtResource("87_cc7mo")]
+transform = Transform3D(-1, 0, -1.7285347e-06, 0, 1, 0, 1.7285347e-06, 0, -1, -27.931871, -0.626723, -24.631548)
+
+[node name="SM_Bld_Apartment_Door_09" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=559422439 instance=ExtResource("83_ynp3y")]
+transform = Transform3D(1, 0, 1.9669533e-06, 0, 1, 0, -1.9669533e-06, 0, 1, -12.931871, -0.626723, -14.631548)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Door_08" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1672523098 instance=ExtResource("88_mj3p4")]
+transform = Transform3D(-5.9604645e-07, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-07, -2.9318714, -0.626723, -9.631548)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Shop_10" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1597109111 instance=ExtResource("89_4iaui")]
+transform = Transform3D(1, 0, -7.4207774e-06, 0, 1, 0, 7.4207774e-06, 0, 1, -17.931871, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_Corner_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=698062177 instance=ExtResource("86_wgsjo")]
+transform = Transform3D(-7.1525574e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -7.1525574e-06, 7.0681286, -0.626723, 0.36845207)
+
+[node name="SM_Bld_Shop_09" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=936410600 instance=ExtResource("81_755l3")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -12.931871, -0.626723, -24.631548)
+
+[node name="SM_Bld_Shop_01" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1945950107 instance=ExtResource("89_4iaui")]
+transform = Transform3D(-1, 0, 4.649162e-06, 0, 1, 0, -4.649162e-06, 0, -1, 2.0681286, -0.626723, -24.631548)
+
+[node name="SM_Bld_Shop_05" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=972128844 instance=ExtResource("90_1ngfr")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -7.9318714, -0.626723, -24.631548)
+
+[node name="SM_Bld_Shop_04" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=44898008 instance=ExtResource("87_cc7mo")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, 7.0681286, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_Corner_02" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=625362888 instance=ExtResource("85_humif")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, 7.0681286, -0.626723, -24.631548)
+
+[node name="CollisionShape3D" parent="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Corner_02/MeshCollider" index="0"]
+shape = SubResource("ConvexPolygonShape3D_1wftw")
+
+[node name="SM_Bld_Shop_13" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=1812907639 instance=ExtResource("87_cc7mo")]
+transform = Transform3D(1, 0, 1.7881391e-06, 0, 1, 0, -1.7881391e-06, 0, 1, -7.9318714, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_12" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=2057633469 instance=ExtResource("90_1ngfr")]
+transform = Transform3D(-3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, -3.5762787e-07, -2.9318714, -0.626723, -14.631548)
+
+[node name="SM_Bld_Shop_03" parent="castle_town/Node3D/block/Apartment_Block_02" unique_id=671387532 instance=ExtResource("82_qjq40")]
+transform = Transform3D(2.3245811e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 2.3245811e-06, 7.0681286, -0.626723, -4.631548)
+
+[node name="SM_Bld_Station_11" parent="castle_town/Node3D/block" unique_id=1550767423 instance=ExtResource("92_s00qu")]
+transform = Transform3D(0.9567081, 0, 0.2910494, 0, 1, 0, -0.2910494, 0, 0.9567081, -81.01495, -171.73903, -1036.4565)
+
+[node name="SM_Bld_Station_12" parent="castle_town/Node3D/block" unique_id=829798933 instance=ExtResource("92_s00qu")]
+transform = Transform3D(0.9567081, 0, 0.2910494, 0, 1, 0, -0.2910494, 0, 0.9567081, -72.06018, -171.73903, -1039.1808)
+
+[node name="Apartment_Block_04" type="Node3D" parent="castle_town/Node3D/block" unique_id=865446388]
+transform = Transform3D(0.38950974, 0, -0.92102236, 0, 1, 0, 0.92102236, 0, 0.38950974, -60.763153, -164.76578, -1066.2208)
+
+[node name="SM_Prop_TrashBag_13" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1083539852 instance=ExtResource("94_tu6xa")]
+transform = Transform3D(0.78596395, 0, 0.6182723, 0, 1, 0, -0.6182723, 0, 0.78596395, -19.799446, -4.65411, 4.8259773)
+
+[node name="SM_Prop_TrashBag_12" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=972258265 instance=ExtResource("95_il6h1")]
+transform = Transform3D(0.95731044, 0, 0.2890617, 0, 1, 0, -0.2890617, 0, 0.95731044, -19.299446, -4.65411, 4.8259773)
+
+[node name="SM_Prop_SatDish_21" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1502813717 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.799446, 6.358425, 25.325974)
+
+[node name="SM_Prop_SatDish_22" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=180510210 instance=ExtResource("38_q2y7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.299446, 7.358425, 20.325974)
+
+[node name="SM_Env_Tree_42" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=2061087700 instance=ExtResource("96_6x173")]
+transform = Transform3D(0.2997142, 0, 0.954029, 0, 1, 0, -0.954029, 0, 0.2997142, -2.799446, -4.141575, 28.325974)
+
+[node name="SM_Env_Tree_41" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=39400994 instance=ExtResource("97_x3yq4")]
+transform = Transform3D(-0.5694449, 0, 0.8220296, 0, 1, 0, -0.8220296, 0, -0.5694449, -25.799446, -4.141575, 5.3259735)
+
+[node name="SM_Bld_FireEscape_76" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=15435279 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-6.7949295e-06, 0, 1, 0, 1, 0, -1, 0, -6.7949295e-06, -12.799446, 4.34589, 15.225971)
+
+[node name="SM_Bld_FireEscape_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=40999219 instance=ExtResource("12_2lel1")]
+transform = Transform3D(-6.7949295e-06, 0, 1, 0, 1, 0, -1, 0, -6.7949295e-06, -12.799446, -1.65411, 15.225971)
+
+[node name="SM_Bld_FireEscape_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=2044770732 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-6.7949295e-06, 0, 1, 0, 1, 0, -1, 0, -6.7949295e-06, -12.799446, 1.34589, 15.225971)
+
+[node name="SM_Bld_FireEscape_77" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=350920783 instance=ExtResource("11_g60yn")]
+transform = Transform3D(-6.7949295e-06, 0, 1, 0, 1, 0, -1, 0, -6.7949295e-06, -2.799446, 2.8584251, 25.325974)
+
+[node name="SM_Bld_FireEscape_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=39804374 instance=ExtResource("12_2lel1")]
+transform = Transform3D(-6.7949295e-06, 0, 1, 0, 1, 0, -1, 0, -6.7949295e-06, -2.799446, -3.15411, 25.325974)
+
+[node name="SM_Bld_FireEscape_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=519426311 instance=ExtResource("13_ts73e")]
+transform = Transform3D(-6.7949295e-06, 0, 1, 0, 1, 0, -1, 0, -6.7949295e-06, -2.799446, -0.14157486, 25.325974)
+
+[node name="SM_Bld_FireEscape_75" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1910352999 instance=ExtResource("11_g60yn")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.799446, 2.84589, 15.3259735)
+
+[node name="SM_Bld_FireEscape_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=797844904 instance=ExtResource("12_2lel1")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.799446, -3.15411, 15.3259735)
+
+[node name="SM_Bld_FireEscape_07" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=586377386 instance=ExtResource("13_ts73e")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.799446, -0.15410995, 15.3259735)
+
+[node name="SM_Prop_Skip_22" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1762219100 instance=ExtResource("98_2xtjj")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -21.359444, -4.7541084, 4.425968)
+
+[node name="SM_Prop_Aircon_151" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1290766563 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, -12.9394455, 4.465893, 11.235973)
+
+[node name="SM_Prop_Aircon_150" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=246001992 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, -12.940453, 1.8288918, 11.236973)
+
+[node name="SM_Prop_Aircon_149" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1216406817 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -6.95945, 1.7928886, 15.632969)
+
+[node name="SM_Prop_Aircon_148" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1528413187 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -6.95945, -1.5391121, 15.632969)
+
+[node name="SM_Prop_Aircon_147" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=381891282 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -18.659447, 0.3358879, 5.5759773)
+
+[node name="SM_Prop_Aircon_146" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1202401611 instance=ExtResource("8_nsohh")]
+transform = Transform3D(-1, 0, -4.649162e-06, 0, 1, 0, 4.649162e-06, 0, -1, -18.659447, 3.3558922, 5.5759773)
+
+[node name="SM_Prop_Aircon_145" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=352592972 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.419441, 3.3558922, 9.445972)
+
+[node name="SM_Prop_Aircon_144" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1321283481 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.419441, 0.3358879, 9.445972)
+
+[node name="SM_Prop_Aircon_143" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=773822319 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.419441, -0.044109344, 22.825977)
+
+[node name="SM_Prop_Aircon_142" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=317137781 instance=ExtResource("8_nsohh")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -22.419441, 3.255886, 22.825977)
+
+[node name="SM_Prop_Aircon_141" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=416529897 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -5.299446, 3.34589, 25.036976)
+
+[node name="SM_Prop_PlanterWindow_99" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=648795446 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.705452, 3.3588905, 25.331974)
+
+[node name="SM_Prop_Aircon_140" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=161626047 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -5.299446, 0.34589005, 25.036976)
+
+[node name="SM_Prop_PlanterWindow_98" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1650292077 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.313454, 0.022891998, 25.334972)
+
+[node name="SM_Prop_PlanterWindow_97" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1174421786 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.428444, 3.5408897, 25.366978)
+
+[node name="SM_Prop_PlanterWindow_96" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1331543144 instance=ExtResource("10_qxqng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.94944, 0.38589096, 25.345974)
+
+[node name="SM_Prop_Aircon_139" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=741725791 instance=ExtResource("8_nsohh")]
+transform = Transform3D(1, 0, 5.9604638e-08, 0, 1, 0, -5.9604638e-08, 0, 1, -13.678444, 3.335888, 24.938976)
+
+[node name="SM_Prop_PlanterWindow_95" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1830787820 instance=ExtResource("9_ae2ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.717445, 3.3508873, 25.359974)
+
+[node name="SM_Prop_Vents_Corner_11" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1258731469 instance=ExtResource("22_fsdab")]
+transform = Transform3D(-6.914139e-06, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -6.914139e-06, -16.799446, 7.84589, 9.825977)
+
+[node name="SM_Prop_Vents_End_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1292676780 instance=ExtResource("15_00dfx")]
+transform = Transform3D(1.0967255e-05, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 1.0967255e-05, -16.799446, 7.84589, 9.825977)
+
+[node name="SM_Prop_Vents_Exhaust_26" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1122562587 instance=ExtResource("14_002uh")]
+transform = Transform3D(-7.033348e-06, 0, 1, 0, 1, 0, -1, 0, -7.033348e-06, -5.299446, 7.84589, 16.325974)
+
+[node name="SM_Prop_Vents_End_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=619699626 instance=ExtResource("15_00dfx")]
+transform = Transform3D(1.13248825e-05, 0, -1, 0, 1, 0, 1, 0, 1.13248825e-05, -5.299446, 7.84589, 16.325974)
+
+[node name="SM_Prop_Vents_Corner_12" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1426613710 instance=ExtResource("22_fsdab")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -19.799446, 6.34589, 20.325974)
+
+[node name="SM_Prop_Vents_End_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=346486808 instance=ExtResource("15_00dfx")]
+transform = Transform3D(-6.3180923e-06, 0, 1, 0, 1, 0, -1, 0, -6.3180923e-06, -19.799446, 6.34589, 20.325974)
+
+[node name="SM_Prop_Vents_Exhaust_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=848126520 instance=ExtResource("14_002uh")]
+transform = Transform3D(-1, 0, -4.11272e-06, 0, 1, 0, 4.11272e-06, 0, -1, -22.299446, 6.34589, 17.825977)
+
+[node name="SM_Bld_Apartment_Roof_Corner_14" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1902942127 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(-1.1920929e-06, 0, 1, 0, 1, 0, -1, 0, -1.1920929e-06, -2.799446, 5.84589, 25.325974)
+
+[node name="SM_Bld_Apartment_Roof_Corner_13" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=789452550 instance=ExtResource("80_wc5iu")]
+transform = Transform3D(-4.7683716e-07, 0, -1, 0, 1, 0, 1, 0, -4.7683716e-07, -22.799446, 5.84589, 5.3259735)
+
+[node name="SM_Bld_Apartment_Roof_Corner_15" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=51852963 instance=ExtResource("80_wc5iu")]
+transform = Transform3D(1, 0, -9.23872e-07, 0, 1, 0, 9.23872e-07, 0, 1, -22.799446, 5.84589, 25.325974)
+
+[node name="SM_Bld_Roof_Access_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=498455244 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(-5.9604645e-07, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-07, -14.799446, 7.84589, 13.3259735)
+
+[node name="SM_Bld_Shop_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=944177931 instance=ExtResource("81_755l3")]
+transform = Transform3D(-1, 0, -4.7683716e-07, 0, 1, 0, 4.7683716e-07, 0, -1, -2.799446, -4.65411, 15.3259735)
+
+[node name="SM_Prop_Skylight_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1275416244 instance=ExtResource("56_0vsjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.469444, 6.3538933, 22.105976)
+
+[node name="SM_Prop_Skylight_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1407409064 instance=ExtResource("56_0vsjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.469444, 6.3538933, 24.215977)
+
+[node name="SM_Bld_Apartment_Roof_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=795104358 instance=ExtResource("71_haf2f")]
+transform = Transform3D(-1.1920929e-06, 0, 1, 0, 1, 0, -1, 0, -1.1920929e-06, -12.799446, 7.34589, 15.3259735)
+
+[node name="SM_Bld_Apartment_08" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=903505014 instance=ExtResource("78_nudob")]
+transform = Transform3D(5.364418e-07, 0, 1, 0, 1, 0, -1, 0, 5.364418e-07, -12.799446, 4.34589, 20.325974)
+
+[node name="SM_Bld_Apartment_Roof_Corner_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=2012598166 instance=ExtResource("80_wc5iu")]
+transform = Transform3D(-1, 0, 1.4901161e-07, 0, 1, 0, -1.4901161e-07, 0, -1, -12.799446, 7.34589, 5.3259735)
+
+[node name="SM_Bld_Apartment_Corner_14" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1087444277 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -2.799446, 1.34589, 15.3259735)
+
+[node name="SM_Bld_Apartment_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1843310300 instance=ExtResource("75_vaq3d")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, -12.799446, 1.34589, 15.3259735)
+
+[node name="SM_Bld_Apartment_07" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=371048154 instance=ExtResource("78_nudob")]
+transform = Transform3D(5.364418e-07, 0, 1, 0, 1, 0, -1, 0, 5.364418e-07, -12.799446, 4.34589, 15.3259735)
+
+[node name="SM_Bld_Apartment_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1883331716 instance=ExtResource("78_nudob")]
+transform = Transform3D(5.364418e-07, 0, 1, 0, 1, 0, -1, 0, 5.364418e-07, -12.799446, -1.65411, 15.3259735)
+
+[node name="SM_Bld_Apartment_Corner_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1128848412 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, 2.84589, 5.3259735)
+
+[node name="SM_Bld_Apartment_Roof_07" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1122911529 instance=ExtResource("68_8makc")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -7.799446, 7.34589, 15.3259735)
+
+[node name="SM_Bld_Apartment_Roof_Corner_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=111044566 instance=ExtResource("79_cvus4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.799446, 7.34589, 20.325974)
+
+[node name="SM_Bld_Apartment_Roof_Corner_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1715137355 instance=ExtResource("72_o8yyo")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -2.799446, 7.358425, 15.3259735)
+
+[node name="SM_Bld_Apartment_Stack_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=369064888 instance=ExtResource("77_x4c3t")]
+transform = Transform3D(-1, 0, 2.0861626e-07, 0, 1, 0, -2.0861626e-07, 0, -1, -7.799446, -1.65411, 15.3259735)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Door_07" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=754111926 instance=ExtResource("88_mj3p4")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -7.799446, -4.65411, 15.3259735)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Corner_13" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1895417578 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -2.799446, -1.65411, 15.3259735)
+
+[node name="SM_Bld_Apartment_Corner_12" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=829705730 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -2.799446, 4.358425, 15.3259735)
+
+[node name="SM_Bld_Apartment_Corner_11" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=668579742 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(-1.3113022e-06, 0, 1, 0, 1, 0, -1, 0, -1.3113022e-06, -2.799446, -3.15411, 25.325974)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Roof_Access_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=2084882870 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.799446, 6.34589, 7.3259735)
+
+[node name="SM_Bld_Apartment_Corner_10" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1350690141 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(-1.3113022e-06, 0, 1, 0, 1, 0, -1, 0, -1.3113022e-06, -2.799446, -0.15410995, 25.325974)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Corner_09" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1681938199 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(-1.3113022e-06, 0, 1, 0, 1, 0, -1, 0, -1.3113022e-06, -2.799446, 2.84589, 25.325974)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Roof_Access_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1723616144 instance=ExtResource("41_g8kg0")]
+transform = Transform3D(-5.9604645e-07, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-07, -9.299446, 6.34589, 21.825977)
+
+[node name="SM_Env_Tree_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=2035340692 instance=ExtResource("96_6x173")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799446, -4.141575, 28.325974)
+
+[node name="SM_Env_Tree_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=408625963 instance=ExtResource("97_x3yq4")]
+transform = Transform3D(0.19298297, 0, -0.9812021, 0, 1, 0, 0.9812021, 0, 0.19298297, -7.799446, -4.141575, 28.825977)
+
+[node name="SM_Env_Tree_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1556868434 instance=ExtResource("99_hg15q")]
+transform = Transform3D(0.3244058, 0, 0.9459181, 0, 1, 0, -0.9459181, 0, 0.3244058, -17.799446, -4.141575, 28.825977)
+
+[node name="SM_Bld_Apartment_Stairs_Planter_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1627175241 instance=ExtResource("100_fsdab")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_Stairs_Planter_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1624502147 instance=ExtResource("100_fsdab")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_Stairs_Planter_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1920433494 instance=ExtResource("100_fsdab")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_Stairs_Planter_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1426123898 instance=ExtResource("101_ql3nn")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -27.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_Door_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1983146154 instance=ExtResource("83_ynp3y")]
+transform = Transform3D(3.5762787e-07, 0, 1, 0, 1, 0, -1, 0, 3.5762787e-07, -12.799446, -4.65411, 15.3259735)
+
+[node name="SM_Bld_Apartment_Stairs_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=460452686 instance=ExtResource("102_my3jr")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -12.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_Corner_08" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1720264034 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -12.799446, 4.34589, 5.3259735)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_07" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1530439634 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -12.799446, 1.34589, 5.3259735)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1963807615 instance=ExtResource("73_5c8pr")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -12.799446, -1.65411, 5.3259735)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Door_Corner_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1998784446 instance=ExtResource("103_4m1x4")]
+transform = Transform3D(-1, 0, -7.1525574e-07, 0, 1, 0, 7.1525574e-07, 0, -1, -12.799446, -4.65411, 5.3259735)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Roof_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=692711079 instance=ExtResource("71_haf2f")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, 5.84589, 10.3259735)
+
+[node name="SM_Bld_Apartment_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=602627635 instance=ExtResource("74_5bygr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799446, 2.8584251, 25.325974)
+
+[node name="SM_Bld_Apartment_Stairs_Planter_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1333483550 instance=ExtResource("100_fsdab")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=576499834 instance=ExtResource("74_5bygr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799446, -0.15410995, 25.325974)
+
+[node name="SM_Bld_Apartment_Corner_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=66965145 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, -0.15410995, 5.3259735)
+
+[node name="SM_Bld_Apartment_Corner_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1006499385 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, -3.15411, 5.3259735)
+
+[node name="SM_Bld_Apartment_Stack_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=12018554 instance=ExtResource("70_i02rh")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, -3.15411, 15.3259735)
+
+[node name="SM_Bld_Apartment_Stack_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=571582731 instance=ExtResource("66_tu3dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.799446, -3.15411, 25.325974)
+
+[node name="SM_Bld_Apartment_Door_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1855626892 instance=ExtResource("88_mj3p4")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, -6.15411, 5.3259735)
+
+[node name="SM_Bld_Apartment_Door_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1517979249 instance=ExtResource("83_ynp3y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799446, -3.15411, 25.325974)
+
+[node name="SM_Bld_Apartment_Stairs_Planter_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=392879373 instance=ExtResource("100_fsdab")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -27.799446, -4.641575, 5.3259735)
+
+[node name="SM_Bld_Apartment_Door_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=429213285 instance=ExtResource("83_ynp3y")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, -6.15411, 15.3259735)
+
+[node name="SM_Env_Tree_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1637271750 instance=ExtResource("97_x3yq4")]
+transform = Transform3D(-0.84101295, 0, 0.5410151, 0, 1, 0, -0.5410151, 0, -0.84101295, -26.299446, -5.141575, 28.825977)
+
+[node name="SM_Bld_Apartment_Roof_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1925021480 instance=ExtResource("71_haf2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799446, 5.84589, 25.325974)
+
+[node name="SM_Bld_Apartment_Roof_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1763553422 instance=ExtResource("68_8makc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.799446, 5.84589, 25.325974)
+
+[node name="SM_Bld_Apartment_Roof_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=491152479 instance=ExtResource("68_8makc")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, 5.84589, 15.3259735)
+
+[node name="SM_Bld_Apartment_Corner_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=58758706 instance=ExtResource("63_ug8q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.799446, 2.84589, 25.325974)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Corner_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=262055592 instance=ExtResource("64_ogkt1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.799446, -0.15410995, 25.325974)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=450228801 instance=ExtResource("74_5bygr")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, 2.8584251, 10.3259735)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1536488043 instance=ExtResource("74_5bygr")]
+transform = Transform3D(3.5762787e-07, 0, -1, 0, 1, 0, 1, 0, 3.5762787e-07, -22.799446, -0.14157486, 10.3259735)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Door_05" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=859179188 instance=ExtResource("88_mj3p4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.799446, -6.15411, 25.325974)
+surface_material_override/0 = ExtResource("65_tky60")
+
+[node name="SM_Bld_Apartment_Door_Corner_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1718354709 instance=ExtResource("103_4m1x4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.799446, -3.15411, 25.325974)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Door_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=1381105928 instance=ExtResource("88_mj3p4")]
+transform = Transform3D(-5.9604645e-07, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-07, -22.799446, -3.1415749, 10.3259735)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Stairs_Corner_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=87968168 instance=ExtResource("104_nfedp")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -27.799446, -4.641575, 20.325974)
+surface_material_override/0 = ExtResource("67_vwak3")
+
+[node name="SM_Bld_Apartment_Stairs_02" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=353612040 instance=ExtResource("102_my3jr")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -17.799446, -4.641575, 30.325974)
+
+[node name="SM_Bld_Apartment_Stairs_01" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=238345222 instance=ExtResource("102_my3jr")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -27.799446, -4.641575, 10.3259735)
+surface_material_override/0 = ExtResource("76_uar3a")
+
+[node name="SM_Bld_Apartment_Stairs_03" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=992034540 instance=ExtResource("105_mulae")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -27.799446, -4.65411, 15.3259735)
+
+[node name="SM_Bld_Apartment_Stairs_04" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=2132542845 instance=ExtResource("105_mulae")]
+transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2.3245811e-06, -27.799446, -4.641575, 5.3259735)
+
+[node name="SM_Bld_Apartment_Stairs_06" parent="castle_town/Node3D/block/Apartment_Block_04" unique_id=377658652 instance=ExtResource("105_mulae")]
+transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -7.799446, -4.641575, 30.325974)
+
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Pizza_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Pub_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Cover_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Cover_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Cover_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ShopInterior_Desk_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_28"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_27"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_26"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_25"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_24"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_23"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_20"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_20"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_19"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_18"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_17"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_16"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_15"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Exhaust_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_End_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_16"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_16/SM_Bld_FireEscape_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_13/SM_Bld_FireEscape_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_13/SM_Bld_FireEscape_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_15"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_11"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_17"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_18"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Washingline_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Hotel_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Hotel_01/SM_Prop_Sign_Attachment_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_18"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_17"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Roof_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Roof_04/SM_Prop_Billboard_Sign_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_19"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_20"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Exhaust_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Transition_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_03/SM_Prop_Vents_End_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Exhaust_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Washingline_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ShopInterior_Table_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Exhaust_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_End_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_LargeSign_Pizza_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_DeliPizza_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_End_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_19"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Exhaust_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Straight_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Corner_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_End_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Straight_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_End_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Straight_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Vents_Straight_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_16"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_XXX_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Poster_Frame_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Poster_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PowerBox_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PotPlant_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SatDish_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_15"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SatDish_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ShopInterior_Desk_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Couch_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Roof_Access_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Couch_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_11"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SatDish_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Table_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SatDish_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SatDish_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PowerBox_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_23"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Couch_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Roof_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Sign_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ShopInterior_Desk_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Roof_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Sign_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_07/SM_Prop_LargeSign_Noodles_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Attachment_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Roof_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Billboard_Sign_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Warning_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Poster_Frame_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Couch_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Pipe_Preset_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Pipe_Small_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_24"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_25"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_26"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ShopInterior_Shelf_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ShopInterior_Shelf_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_11"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Washingline_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_SecurityCamera_Arm_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Roof_Aircon_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PotPlant_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Skylight_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Skylight_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Couch_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Couch_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Table_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Roof_Access_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PotPlant_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Planter_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_27"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Door_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Window_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Roof_Access_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_ATM_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Chinese_Noodles_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Cover_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Sign_Chinese_Noodles_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_40"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Cover_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_28"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_29"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_30"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_PlanterWindow_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Prop_Aircon_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_31"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_FireEscape_32"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_28"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_18"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_34"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_32"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_33"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_30"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_25"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_29"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_28"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_26"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_25"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_37"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_36"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_39"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_38"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_35"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_34"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Roof_Access_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_27"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_26"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_33"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_43"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_42"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_41"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_20"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_19"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_32"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_31"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_40"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_30"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_29"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_24"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_23"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_39"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_38"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_37"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_36"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_35"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_34"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_33"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_32"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_24"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_25"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_23"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_24"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_17"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_23"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_16"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_18"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_15"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_31"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_29"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_28"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_27"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Corner_26"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_20"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_20"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_19"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Roof_Corner_19"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Stack_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_30"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_11"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Door_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_16"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Corner_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Corner_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Cover_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Corner_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_15"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Door_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Apartment_Door_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Corner_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_Corner_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_02/SM_Bld_Shop_03"]
+[editable path="castle_town/Node3D/block/SM_Bld_Station_11"]
+[editable path="castle_town/Node3D/block/SM_Bld_Station_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_TrashBag_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_TrashBag_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_SatDish_21"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_SatDish_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Env_Tree_42"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Env_Tree_41"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_76"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_77"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_75"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_FireEscape_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Skip_22"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_151"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_150"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_149"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_148"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_147"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_146"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_145"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_144"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_143"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_142"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_141"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_PlanterWindow_99"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_140"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_PlanterWindow_98"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_PlanterWindow_97"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_PlanterWindow_96"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Aircon_139"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_PlanterWindow_95"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_Corner_11"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_End_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_Exhaust_26"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_End_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_Corner_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_End_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Vents_Exhaust_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_Corner_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_Corner_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_Corner_15"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Roof_Access_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Shop_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Skylight_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Prop_Skylight_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_Corner_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_14"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_Corner_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_Corner_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stack_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_13"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_12"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_11"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Roof_Access_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_10"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_09"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Roof_Access_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Env_Tree_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Env_Tree_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Env_Tree_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Planter_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Planter_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Planter_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Planter_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_08"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_07"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_Corner_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Planter_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stack_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stack_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_06"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Planter_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Env_Tree_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Roof_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Corner_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_05"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_Corner_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Door_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_Corner_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_02"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_01"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_03"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_04"]
+[editable path="castle_town/Node3D/block/Apartment_Block_04/SM_Bld_Apartment_Stairs_06"]

@@ -14,9 +14,9 @@ offset_bottom = 40.0
 [node name="quit" type="Button" parent="Button Manager" unique_id=1083877553]
 layout_mode = 0
 offset_left = 39.0
-offset_top = 480.0
+offset_top = 551.0
 offset_right = 400.0
-offset_bottom = 528.0
+offset_bottom = 599.0
 text = "quit"
 
 [node name="kenney_city" type="Button" parent="Button Manager" unique_id=1069278846]
@@ -67,6 +67,14 @@ offset_right = 401.0
 offset_bottom = 447.0
 text = "third person controller"
 
+[node name="dashoe car library" type="Button" parent="Button Manager" unique_id=1353289762]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 474.0
+offset_right = 401.0
+offset_bottom = 526.0
+text = "dashoe car library"
+
 [connection signal="pressed" from="Button Manager/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Button Manager/kenney_city" to="." method="_on_kenney_city_pressed"]
 [connection signal="pressed" from="Button Manager/raycast_city" to="." method="_on_raycast_city_pressed"]
@@ -74,3 +82,4 @@ text = "third person controller"
 [connection signal="pressed" from="Button Manager/vehicle_body_node_v2" to="." method="_on_vehicle_body_node_v_2_pressed"]
 [connection signal="pressed" from="Button Manager/polygon_city" to="." method="_on_polygon_city_pressed"]
 [connection signal="pressed" from="Button Manager/third_person_controller" to="." method="_on_third_person_controller_pressed"]
+[connection signal="pressed" from="Button Manager/dashoe car library" to="." method="_on_dashoe_car_library_pressed"]

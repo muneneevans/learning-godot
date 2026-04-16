@@ -38,3 +38,7 @@ func _on_polygon_city_pressed() -> void:
 
 func _on_third_person_controller_pressed() -> void:
 	get_tree().change_scene_to_file("res://games/third_person_controller/main.tscn")
+
+
+func _on_dashoe_car_library_pressed() -> void:
+	get_tree().change_scene_to_file("res://games/dashoe_car/main.tscn")

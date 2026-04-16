@@ -263,7 +263,8 @@
 [ext_resource type="PackedScene" uid="uid://c0g5ucdccs0du" path="res://assets/polygon_city/Prefabs/Vehicles/SM_Veh_Car_Police_01.tscn" id="261_asukj"]
 [ext_resource type="Material" uid="uid://bett1a2r7gtvj" path="res://assets/polygon_city/Materials/Alts/PolygonCity_04_C_mat.tres" id="262_aphfk"]
 [ext_resource type="Material" uid="uid://bwkryipeqpa32" path="res://assets/polygon_city/Materials/Alts/PolygonCity_03_C_mat.tres" id="263_5iyfj"]
-[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://shared/components/car/car.tscn" id="264_xag0c"]
+[ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://addons/gevp/scenes/vehicle_controller.tscn" id="264_w5s1e"]
+[ext_resource type="PackedScene" uid="uid://c8uulnhxruiha" path="res://games/dashoe_car/car.tscn" id="265_pkoe7"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ghol4"]
 points = PackedVector3Array(-2.2914767, 2.6038015, -0.95225275, -2.2914767, 2.4605615, -0.45117444, -2.147923, 3.1049204, 0.121596694, -2.147923, 3.1049204, -0.3079431, -2.147923, 2.9616175, -0.73748285, 2.2914767, 2.8184404, -0.88056, 2.1874003, 2.4751315, -0.91663766, -2.1878488, 2.4751315, -0.91663766, 2.2914767, 2.4605615, -0.45117444, -2.147923, 2.532213, 0.6228292, -2.147923, 2.9616175, 0.47944367, 2.2914767, 3.1049204, 0.121596694, 2.2914767, 3.1049204, -0.3079431, 2.2914767, 2.9616175, -0.73748285, 2.2914767, 2.532213, 0.6228292, 2.2914767, 2.8185036, 0.6228292)
@@ -16376,7 +16377,17 @@ transform = Transform3D(-1, 0, 1.1026858e-06, 0, 1, 0, -1.1026858e-06, 0, -1, 30
 [node name="SM_Veh_Car_Ambo_11" parent="Road_Cars" unique_id=806278096 instance=ExtResource("209_o2pno")]
 transform = Transform3D(-1, 0, 1.1026858e-06, 0, 1, 0, -1.1026858e-06, 0, -1, 33.89, 0, -134.76)
 
-[node name="Car" parent="." unique_id=2010514660 instance=ExtResource("264_xag0c")]
+[node name="Node3D" type="Node3D" parent="." unique_id=2147297569]
+
+[node name="VehicleController" parent="Node3D" unique_id=2125648195 node_paths=PackedStringArray("vehicle_node") instance=ExtResource("264_w5s1e")]
+vehicle_node = NodePath("sedan")
+
+[node name="sedan" parent="Node3D/VehicleController" unique_id=1732270905 instance=ExtResource("265_pkoe7")]
+
+[node name="camera_rig" type="Node3D" parent="Node3D/VehicleController/sedan" unique_id=1298461977]
+
+[node name="Camera3D" type="Camera3D" parent="Node3D/VehicleController/sedan/camera_rig" unique_id=925082997]
+transform = Transform3D(1, 0, 0, 0, 0.8945368, 0.44699425, 0, -0.44699425, 0.8945368, 0.26390362, 5.2627096, 9.789875)
 
 [editable path="City_Area_01/SM_Prop_TrashBag_09"]
 [editable path="City_Area_01/SM_Env_Sidewalk_Panel_10"]

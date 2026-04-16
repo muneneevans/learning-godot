@@ -22,6 +22,6 @@ func start_navigation() -> void:
 
 	navigation_agent_3d.set_target_position(random_position)
 
-	print("reachable:", navigation_agent_3d.is_target_reachable(),
-		" dist:", navigation_agent_3d.distance_to_target(),
-		" final:", navigation_agent_3d.get_final_position())
+	print("[reachable]:", navigation_agent_3d.is_target_reachable(),
+		" [dist]:", navigation_agent_3d.distance_to_target(),
+		" [final]:", navigation_agent_3d.get_final_position())

@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="MovementState" format=3 uid="uid://y4c5yolq74o0"]
-
-[ext_resource type="Script" uid="uid://5phl5wjvkhkf" path="res://games/third_person_controller/scripts/movement_state.gd" id="1_s1co4"]
-
-[resource]
-script = ExtResource("1_s1co4")
-camera_fov = 70.0
-metadata/_custom_type_script = "uid://5phl5wjvkhkf"

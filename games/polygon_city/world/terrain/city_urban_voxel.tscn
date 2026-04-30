@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://ep8ic8sslma7"]
+
+[ext_resource type="Texture2D" uid="uid://b84yffxfcd6ro" path="res://assets/references/Frame 1.png" id="1_x7j77"]
+[ext_resource type="Script" uid="uid://d3kwniwn2pyhq" path="res://games/third_person_controller/scripts/player.gd" id="2_3bqgs"]
+[ext_resource type="Resource" uid="uid://d4jbf60bjua7o" path="res://games/third_person_controller/MovementStates/run.tres" id="3_8auoi"]
+[ext_resource type="Resource" uid="uid://dg2nbumuxku53" path="res://games/third_person_controller/MovementStates/sprint.tres" id="4_d1idx"]
+[ext_resource type="Resource" uid="uid://y4c5yolq74o0" path="res://games/third_person_controller/MovementStates/stand.tres" id="5_hknf1"]
+[ext_resource type="Resource" uid="uid://c57dod2rml5h" path="res://games/third_person_controller/MovementStates/walk.tres" id="6_bo30u"]
+[ext_resource type="Script" uid="uid://c1by03632dc4w" path="res://games/third_person_controller/scripts/movement_controller.gd" id="7_eptru"]
+[ext_resource type="Script" uid="uid://dt2flw26krltt" path="res://games/third_person_controller/scripts/animation_controller.gd" id="8_n4l56"]
+[ext_resource type="PackedScene" uid="uid://1ncbyl42vtyh" path="res://games/third_person_controller/player.tscn" id="9_5kj1t"]
+[ext_resource type="Script" uid="uid://di6bp2sg40hxa" path="res://games/third_person_controller/scripts/camer_controller.gd" id="10_ilmb0"]
+[ext_resource type="PackedScene" uid="uid://cxdswma8ojowj" path="res://assets/polygon/Scenes/player.tscn" id="11_yp10e"]
+[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://shared/components/car/car.tscn" id="12_1u0xb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_13cfj"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_fbvcw"]
+sky_material = SubResource("ProceduralSkyMaterial_13cfj")
+
+[sub_resource type="Environment" id="Environment_gqf86"]
+background_mode = 2
+sky = SubResource("Sky_fbvcw")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwxi3"]
+albedo_texture = ExtResource("1_x7j77")
+uv1_triplanar_sharpness = 0.012947458
+uv1_world_triplanar = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2ngaf"]
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_pbsh1"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_v0evp"]
+animation = &"Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jhs1p"]
+animation = &"Walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_o2h1h"]
+animation = &"Jog_Fwd"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q2y7j"]
+animation = &"Sprint"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_eoj8o"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_v0evp")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_jhs1p")
+blend_point_1/pos = 1.0
+blend_point_2/node = SubResource("AnimationNodeAnimation_o2h1h")
+blend_point_2/pos = 2.0
+blend_point_3/node = SubResource("AnimationNodeAnimation_q2y7j")
+blend_point_3/pos = 3.0
+min_space = 0.0
+max_space = 3.0
+snap = 1.0
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_hj7vo"]
+graph_offset = Vector2(-2171.1177, -798.38007)
+nodes/output/position = Vector2(-1300, -700)
+nodes/movement_blend/node = SubResource("AnimationNodeBlendSpace1D_eoj8o")
+nodes/movement_blend/position = Vector2(-1940, -720)
+nodes/movement_animation_speed/node = SubResource("AnimationNodeTimeScale_pbsh1")
+nodes/movement_animation_speed/position = Vector2(-1680, -720)
+node_connections = [&"output", 0, &"movement_animation_speed", &"movement_animation_speed", 0, &"movement_blend"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7cfoh"]
+radius = 0.07
+
+[node name="CityTerrain" type="Node3D" unique_id=658643497]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1104025992]
+environment = SubResource("Environment_gqf86")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1794647559]
+transform = Transform3D(-0.8660254, -0.49979725, 0.014239907, 0, 0.028479844, 0.9995944, -0.50000006, 0.8656741, -0.024664283, 104.0778, 659.67816, -180.268)
+shadow_enabled = true
+
+[node name="castle_town" type="CSGBox3D" parent="." unique_id=1640069951]
+use_collision = true
+flip_faces = true
+size = Vector3(2425.7173, 0.1, 2188.4414)
+material = SubResource("StandardMaterial3D_dwxi3")
+
+[node name="Player" type="CharacterBody3D" parent="castle_town" unique_id=972487198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -988.4266, 0, 463.2176)
+script = ExtResource("2_3bqgs")
+movement_states = {
+"run": ExtResource("3_8auoi"),
+"sprint": ExtResource("4_d1idx"),
+"stand": ExtResource("5_hknf1"),
+"walk": ExtResource("6_bo30u")
+}
+
+[node name="MovementController" type="Node" parent="castle_town/Player" unique_id=28330831 node_paths=PackedStringArray("player", "mesh_root")]
+script = ExtResource("7_eptru")
+player = NodePath("..")
+mesh_root = NodePath("../MeshRoot")
+
+[node name="AnimationController" type="Node" parent="castle_town/Player" unique_id=172520046 node_paths=PackedStringArray("animation_tree", "player")]
+script = ExtResource("8_n4l56")
+animation_tree = NodePath("../MeshRoot/AnimationTree")
+player = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="castle_town/Player" unique_id=1483036641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
+shape = SubResource("CapsuleShape3D_2ngaf")
+
+[node name="MeshRoot" type="Node3D" parent="castle_town/Player" unique_id=2056935778]
+
+[node name="UAL1_Standard" parent="castle_town/Player/MeshRoot" unique_id=626144487 instance=ExtResource("9_5kj1t")]
+
+[node name="GeneralSkeleton" parent="castle_town/Player/MeshRoot/UAL1_Standard/Armature" parent_id_path=PackedInt32Array(626144487, 381643302) index="0" unique_id=1965584152]
+bones/1/position = Vector3(0.0033961663, 0.870641, -0.08721454)
+bones/1/rotation = Quaternion(-0.040892627, -0.115916096, -0.0047763833, 0.9924055)
+bones/3/rotation = Quaternion(0.08581245, 0.000110838264, 0.00025738974, 0.9963113)
+bones/4/rotation = Quaternion(0.08581241, 0.00031517656, 0.00025085537, 0.9963113)
+bones/5/rotation = Quaternion(-0.0858124, -0.00021331347, -0.00026294176, 0.99631137)
+bones/6/rotation = Quaternion(0.048840076, 0.09529958, 0.012006613, 0.99417734)
+bones/7/rotation = Quaternion(0.49963763, 0.5224025, 0.53012013, -0.44320485)
+bones/8/rotation = Quaternion(-0.023923574, 0.82382345, -0.56625843, 0.009698904)
+bones/9/rotation = Quaternion(0.15893312, -0.68179816, 0.16642234, 0.69440275)
+bones/10/rotation = Quaternion(0.09913024, 0.70686626, 0.0629003, 0.69753635)
+bones/11/rotation = Quaternion(0.6295969, -4.0978193e-08, -4.61936e-06, 0.77692205)
+bones/12/rotation = Quaternion(0.62334186, 2.9802322e-08, -4.261732e-06, 0.78194946)
+bones/13/rotation = Quaternion(0.62334144, -2.2351742e-07, -4.4703484e-06, 0.78194976)
+bones/15/rotation = Quaternion(0.6288943, -0.0297349, -4.470348e-06, 0.7769219)
+bones/16/rotation = Quaternion(0.6227327, -0.02755458, -4.410744e-06, 0.7819494)
+bones/17/rotation = Quaternion(0.6226684, -0.028961532, -4.4703493e-06, 0.78194976)
+bones/19/rotation = Quaternion(0.6630008, -0.044529784, 0.07369417, 0.7436506)
+bones/20/rotation = Quaternion(0.6203661, -0.06229401, 0.015573084, 0.7816796)
+bones/21/rotation = Quaternion(0.62192154, -0.04205184, -4.4703484e-06, 0.78194964)
+bones/23/rotation = Quaternion(0.6291978, -0.022414071, -4.202128e-06, 0.77692205)
+bones/24/rotation = Quaternion(0.6229472, -0.022176376, -4.321337e-06, 0.78194946)
+bones/25/rotation = Quaternion(0.6228982, -0.023505477, -4.5001498e-06, 0.7819497)
+bones/27/rotation = Quaternion(-0.123819165, 0.7195233, 0.2018354, 0.65285325)
+bones/28/rotation = Quaternion(0.18180694, 0.11012423, 0.060063303, 0.9753006)
+bones/29/rotation = Quaternion(0.5994299, 0.27396563, 0.19463211, 0.7264606)
+bones/30/scale = Vector3(1.0001454, 1.0004877, 1.0005833)
+bones/31/rotation = Quaternion(0.5516482, -0.47173756, -0.47701746, -0.49558288)
+bones/32/rotation = Quaternion(0.077826366, 0.8227792, -0.562925, -0.0096419705)
+bones/33/rotation = Quaternion(0.29021496, 0.5494859, -0.20756815, 0.755484)
+bones/34/rotation = Quaternion(0.12024976, -0.69903094, -0.056890074, 0.702609)
+bones/35/rotation = Quaternion(0.6295971, 3.7252903e-08, 4.172325e-06, 0.7769218)
+bones/36/rotation = Quaternion(0.62334144, 1.825392e-07, 4.470348e-06, 0.7819497)
+bones/37/rotation = Quaternion(0.62334156, 1.00582824e-07, 4.2319293e-06, 0.78194964)
+bones/38/rotation = Quaternion(4.6566133e-09, 1, 4.295285e-08, -5.7654454e-08)
+bones/39/rotation = Quaternion(0.6288947, 0.029734796, 4.351139e-06, 0.77692175)
+bones/40/rotation = Quaternion(0.62273216, 0.027554482, 4.5001507e-06, 0.78194976)
+bones/41/rotation = Quaternion(0.62266874, 0.028961398, 4.3213377e-06, 0.78194946)
+bones/43/rotation = Quaternion(0.6630007, 0.044529956, -0.07369393, 0.7436508)
+bones/44/rotation = Quaternion(0.62036633, 0.06229363, -0.015572906, 0.7816794)
+bones/45/rotation = Quaternion(0.62192184, 0.04205143, 4.4703484e-06, 0.7819494)
+bones/46/rotation = Quaternion(-0.03375008, 0.99943036, 4.924054e-08, -5.6300305e-08)
+bones/47/rotation = Quaternion(0.6291981, 0.022413792, 4.11272e-06, 0.7769218)
+bones/48/rotation = Quaternion(0.62294656, 0.022176204, 4.470349e-06, 0.7819501)
+bones/49/rotation = Quaternion(0.6228987, 0.02350526, 4.1723247e-06, 0.7819493)
+bones/50/rotation = Quaternion(-0.018857837, 0.9998222, -1.5216909e-08, -2.369153e-07)
+bones/51/rotation = Quaternion(-0.12381923, -0.7195234, -0.2018356, 0.6528533)
+bones/52/rotation = Quaternion(0.18180703, -0.11012423, -0.060063303, 0.97530067)
+bones/53/rotation = Quaternion(0.5994302, -0.2739653, -0.19463223, 0.7264605)
+bones/54/scale = Vector3(1.0001454, 1.0004876, 1.0005835)
+bones/55/rotation = Quaternion(-0.0008208351, 0.14744575, 0.9820832, -0.11735283)
+bones/56/rotation = Quaternion(0.02037476, 0.97596526, -0.18680218, 0.110370725)
+bones/57/rotation = Quaternion(-0.09577427, 0.71711594, -0.6903152, 0.0060842508)
+bones/58/rotation = Quaternion(4.664862e-08, 1, 5.9604645e-08, 2.7766912e-08)
+bones/60/rotation = Quaternion(0.0009409818, -0.08358618, 0.9873772, 0.13453226)
+bones/61/rotation = Quaternion(-0.048575297, 0.92444, -0.13360733, -0.35383654)
+bones/62/rotation = Quaternion(0.17136426, 0.6254323, -0.76122695, 0.0015579242)
+bones/63/rotation = Quaternion(-6.703263e-08, 1, 8.940697e-08, 2.1454163e-09)
+
+[node name="AnimationTree" type="AnimationTree" parent="castle_town/Player/MeshRoot" unique_id=611608713]
+root_node = NodePath("../UAL1_Standard")
+tree_root = SubResource("AnimationNodeBlendTree_hj7vo")
+anim_player = NodePath("../UAL1_Standard/AnimationPlayer")
+parameters/movement_blend/blend_position = -0.0038192233
+parameters/movement_animation_speed/scale = 1.0
+
+[node name="CameraRoot" type="Node3D" parent="castle_town/Player" unique_id=969715655]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.6675882, 0)
+script = ExtResource("10_ilmb0")
+
+[node name="CameraYaw" type="Node3D" parent="castle_town/Player/CameraRoot" unique_id=742651470]
+
+[node name="CameraPitch" type="Node3D" parent="castle_town/Player/CameraRoot/CameraYaw" unique_id=934639001]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="castle_town/Player/CameraRoot/CameraYaw/CameraPitch" unique_id=2071077337]
+shape = SubResource("SphereShape3D_7cfoh")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="castle_town/Player/CameraRoot/CameraYaw/CameraPitch/SpringArm3D" unique_id=2094456224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7252903e-09, 0.61644363, 3.4740932)
+
+[node name="player" parent="castle_town" unique_id=1773828600 instance=ExtResource("11_yp10e")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -990.076, -0.050014496, 461.45184)
+
+[node name="Car" parent="castle_town" unique_id=2010514660 instance=ExtResource("12_1u0xb")]
+transform = Transform3D(-0.105951615, 0, -0.9943713, 0, 1, 0, 0.9943713, 0, -0.105951615, -984.3591, -0.049991608, 462.70157)
+
+[node name="Node3D" type="Node3D" parent="castle_town" unique_id=1744530725]
+
+[connection signal="set_movement_direction" from="castle_town/Player" to="castle_town/Player/MovementController" method="_on_set_movement_direction"]
+[connection signal="set_movement_state" from="castle_town/Player" to="castle_town/Player/MovementController" method="_on_set_movement_state"]
+[connection signal="set_movement_state" from="castle_town/Player" to="castle_town/Player/AnimationController" method="_on_set_movement_state"]
+[connection signal="set_movement_state" from="castle_town/Player" to="castle_town/Player/CameraRoot" method="_on_set_movement_state"]
+[connection signal="set_cam_rotation" from="castle_town/Player/CameraRoot" to="castle_town/Player/MovementController" method="_on_set_cam_rotation"]
+
+[editable path="castle_town/Player/MeshRoot/UAL1_Standard"]

@@ -117,6 +117,15 @@
 [ext_resource type="PackedScene" uid="uid://bjr6qxgt0nd27" path="res://assets/polygon/Prefabs/SM_PolygonApocalypse_Bld_House_01.tscn" id="115_nfedp"]
 [ext_resource type="PackedScene" uid="uid://43hkwjg6faej" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_OfficeOld_Large_01.tscn" id="116_5864a"]
 [ext_resource type="PackedScene" uid="uid://ud1cmb7d2p6" path="res://assets/polygon_city/Prefabs/Buildings/SM_Bld_OfficeOld_Small_01.tscn" id="117_8xek3"]
+[ext_resource type="PackedScene" uid="uid://cjj01b617e518" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Grass_01.tscn" id="118_0j2xi"]
+[ext_resource type="PackedScene" uid="uid://deexk0lprjq6q" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Sidewalk_Corner_01.tscn" id="118_o2h1h"]
+[ext_resource type="ArrayMesh" uid="uid://cfhvfdl6uush6" path="res://assets/polygon_city/Models/extracted/SM_Env_Grass_01.res" id="119_pt7tw"]
+[ext_resource type="ArrayMesh" uid="uid://b1raxejb3heqm" path="res://assets/polygon_city/Models/extracted/SM_Env_Sidewalk_Corner_01.res" id="119_q2y7j"]
+[ext_resource type="Material" uid="uid://bfyydshv32dtc" path="res://assets/polygon_city/Materials/Alts/PolygonCity_01_A_mat.tres" id="120_nj4kn"]
+[ext_resource type="PackedScene" uid="uid://bayas3akgjwqb" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Sidewalk_Straight_01.tscn" id="121_hj7vo"]
+[ext_resource type="ArrayMesh" uid="uid://crq7dwl285746" path="res://assets/polygon_city/Models/extracted/SM_Env_Sidewalk_Straight_01.res" id="122_7cfoh"]
+[ext_resource type="PackedScene" uid="uid://chspha8mqnvxn" path="res://assets/polygon_city/Prefabs/Environments/SM_Env_Sidewalk_Straight_02.tscn" id="123_g8kg0"]
+[ext_resource type="ArrayMesh" uid="uid://botvlifr3vy07" path="res://assets/polygon_city/Models/extracted/SM_Env_Sidewalk_Straight_02.res" id="124_pm85n"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_13cfj"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -227,15 +236,15 @@ shape = SubResource("CapsuleShape3D_2ngaf")
 [node name="UAL1_Standard" parent="castle_town/Player/MeshRoot" unique_id=626144487 instance=ExtResource("9_pt7tw")]
 
 [node name="GeneralSkeleton" parent="castle_town/Player/MeshRoot/UAL1_Standard/Armature" parent_id_path=PackedInt32Array(626144487, 381643302) index="0" unique_id=1965584152]
-bones/1/position = Vector3(0.00513395, 0.8765326, -0.08634152)
-bones/1/rotation = Quaternion(-0.047384553, -0.11588236, -0.0055346778, 0.99211663)
-bones/3/rotation = Quaternion(0.08912705, 0.000111710186, 0.0002556801, 0.9960203)
-bones/4/rotation = Quaternion(0.089127034, 0.00031791, 0.00024910396, 0.9960202)
-bones/5/rotation = Quaternion(-0.08912698, -0.00021509694, -0.00026161998, 0.9960202)
-bones/6/rotation = Quaternion(0.074382275, 0.09563797, 0.008908371, 0.9925932)
-bones/7/rotation = Quaternion(0.4883603, 0.52631867, 0.52665627, -0.45511124)
-bones/8/rotation = Quaternion(-0.059846774, 0.8180462, -0.5719466, 0.009796407)
-bones/9/rotation = Quaternion(0.18510404, -0.65373844, 0.17941706, 0.7114578)
+bones/1/position = Vector3(0.0053239143, 0.87686384, -0.08670233)
+bones/1/rotation = Quaternion(-0.04477944, -0.11589647, -0.005230396, 0.9922376)
+bones/3/rotation = Quaternion(0.09240868, 0.00011261431, 0.0002539156, 0.99572116)
+bones/4/rotation = Quaternion(0.092419125, 0.000320584, 0.00024733096, 0.99572015)
+bones/5/rotation = Quaternion(-0.09241911, -0.00021689152, -0.00026026857, 0.99572015)
+bones/6/rotation = Quaternion(0.08045725, 0.0957427, 0.0076906797, 0.99211943)
+bones/7/rotation = Quaternion(0.488026, 0.5264316, 0.5265518, -0.45545986)
+bones/8/rotation = Quaternion(-0.060801268, 0.81789875, -0.57205683, 0.009798391)
+bones/9/rotation = Quaternion(0.1920155, -0.65138155, 0.18542823, 0.71024543)
 bones/10/rotation = Quaternion(0.09913024, 0.70686626, 0.0629003, 0.69753635)
 bones/11/rotation = Quaternion(0.6295969, -4.0978193e-08, -4.61936e-06, 0.77692205)
 bones/12/rotation = Quaternion(0.62334186, 2.9802322e-08, -4.261732e-06, 0.78194946)
@@ -253,9 +262,9 @@ bones/27/rotation = Quaternion(-0.123819165, 0.7195233, 0.2018354, 0.65285325)
 bones/28/rotation = Quaternion(0.18180694, 0.11012423, 0.060063303, 0.9753006)
 bones/29/rotation = Quaternion(0.5994299, 0.27396563, 0.19463211, 0.7264606)
 bones/30/scale = Vector3(1.0001454, 1.0004877, 1.0005833)
-bones/31/rotation = Quaternion(0.54058385, -0.47429672, -0.474873, -0.5072549)
-bones/32/rotation = Quaternion(0.09245934, 0.8252304, -0.5570951, -0.009541938)
-bones/33/rotation = Quaternion(0.29265657, 0.5410638, -0.2042128, 0.76151127)
+bones/31/rotation = Quaternion(0.5402556, -0.47437027, -0.47480783, -0.50759655)
+bones/32/rotation = Quaternion(0.089300595, 0.82469845, -0.5583964, -0.00956442)
+bones/33/rotation = Quaternion(0.29217923, 0.542726, -0.20487498, 0.76033294)
 bones/34/rotation = Quaternion(0.12024976, -0.69903094, -0.056890074, 0.702609)
 bones/35/rotation = Quaternion(0.6295971, 3.7252903e-08, 4.172325e-06, 0.7769218)
 bones/36/rotation = Quaternion(0.62334144, 1.825392e-07, 4.470348e-06, 0.7819497)
@@ -276,13 +285,13 @@ bones/51/rotation = Quaternion(-0.12381923, -0.7195234, -0.2018356, 0.6528533)
 bones/52/rotation = Quaternion(0.18180703, -0.11012423, -0.060063303, 0.97530067)
 bones/53/rotation = Quaternion(0.5994302, -0.2739653, -0.19463223, 0.7264605)
 bones/54/scale = Vector3(1.0001454, 1.0004876, 1.0005835)
-bones/55/rotation = Quaternion(-0.00078055274, 0.121974796, 0.98623955, -0.11159376)
-bones/56/rotation = Quaternion(0.016544688, 0.98196936, -0.15091519, 0.112637274)
-bones/57/rotation = Quaternion(-0.09471974, 0.7284316, -0.6785116, 0.0061294707)
+bones/55/rotation = Quaternion(-0.00077987695, 0.1248075, 0.98589605, -0.11149675)
+bones/56/rotation = Quaternion(0.01657652, 0.9819321, -0.15110782, 0.11269911)
+bones/57/rotation = Quaternion(-0.094494015, 0.728621, -0.6783383, 0.0062802816)
 bones/58/rotation = Quaternion(4.664862e-08, 1, 5.9604645e-08, 2.7766912e-08)
-bones/60/rotation = Quaternion(0.0008130389, -0.110564545, 0.9870478, 0.1162388)
-bones/61/rotation = Quaternion(-0.029649055, 0.92885053, -0.08315491, -0.3597818)
-bones/62/rotation = Quaternion(0.171682, 0.645913, -0.74385166, -0.0025505135)
+bones/60/rotation = Quaternion(0.0008157326, -0.10711958, 0.98738205, 0.11662562)
+bones/61/rotation = Quaternion(-0.03004846, 0.9287411, -0.08417486, -0.359794)
+bones/62/rotation = Quaternion(0.17149554, 0.645649, -0.74412364, -0.0025595652)
 bones/63/rotation = Quaternion(-6.703263e-08, 1, 8.940697e-08, 2.1454163e-09)
 
 [node name="AnimationTree" type="AnimationTree" parent="castle_town/Player/MeshRoot" unique_id=611608713]
@@ -1584,6 +1593,205 @@ transform = Transform3D(2.3245811e-06, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 2
 
 [node name="SM_Bld_Apartment_Stairs_06" parent="block/MultiMeshInstance3D/Apartment_Block_04" unique_id=377658652 instance=ExtResource("105_mulae")]
 transform = Transform3D(1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, 1, -7.799446, -4.641575, 30.325974)
+
+[node name="block3" type="Node3D" parent="." unique_id=2020514607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -839.52386, 0, 428.56073)
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="block3" unique_id=2015665567]
+visible = false
+
+[node name="SM_Bld_OfficeOld_Large_01" parent="block3/MultiMeshInstance3D" unique_id=1060012427 instance=ExtResource("116_5864a")]
+transform = Transform3D(0.95632005, 0, 0.29232162, 0, 1, 0, -0.29232162, 0, 0.95632005, -20.273071, 0, 31.070587)
+
+[node name="SM_Bld_OfficeOld_Small_01" parent="block3/MultiMeshInstance3D" unique_id=1723811175 instance=ExtResource("117_8xek3")]
+transform = Transform3D(0.95368546, 0, 0.3008057, 0, 1, 0, -0.3008057, 0, 0.95368546, -4.927063, 0, 26.690033)
+
+[node name="SM_PolygonApocalypse_Bld_House_04" parent="block3/MultiMeshInstance3D" unique_id=140824449 instance=ExtResource("115_nfedp")]
+transform = Transform3D(0.9315771, 0, 0.36354393, 0, 1, 0, -0.36354393, 0, 0.9315771, -24.046936, -0.36616516, -16.749176)
+
+[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_04/MeshCollider" index="0"]
+shape = SubResource("ConcavePolygonShape3D_tu8gs")
+
+[node name="SM_PolygonApocalypse_Bld_House_05" parent="block3/MultiMeshInstance3D" unique_id=343456093 instance=ExtResource("115_nfedp")]
+transform = Transform3D(0.9890417, 0, -0.1476368, 0, 1, 0, 0.1476368, 0, 0.9890417, -13.579468, -0.36616516, -16.952332)
+
+[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_05/MeshCollider" index="0"]
+shape = SubResource("ConcavePolygonShape3D_tu8gs")
+
+[node name="SM_PolygonApocalypse_Bld_House_06" parent="block3/MultiMeshInstance3D" unique_id=1988068741 instance=ExtResource("115_nfedp")]
+transform = Transform3D(0.92512363, 0, -0.3796661, 0, 1, 0, 0.3796661, 0, 0.92512363, -0.17687988, -0.36616516, -12.542633)
+
+[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_06/MeshCollider" index="0"]
+shape = SubResource("ConcavePolygonShape3D_tu8gs")
+
+[node name="SM_PolygonApocalypse_Bld_House_07" parent="block3/MultiMeshInstance3D" unique_id=1892717676 instance=ExtResource("115_nfedp")]
+transform = Transform3D(0.92512363, 0, -0.3796661, 0, 1, 0, 0.3796661, 0, 0.92512363, 10.752197, -0.36616516, -6.073578)
+
+[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_07/MeshCollider" index="0"]
+shape = SubResource("ConcavePolygonShape3D_tu8gs")
+
+[node name="ground_2" type="Node3D" parent="block3" unique_id=280799149]
+
+[node name="SM_Env_Sidewalk_Corner_01" type="MeshInstance3D" parent="block3/ground_2" unique_id=700487911 instance=ExtResource("118_o2h1h")]
+transform = Transform3D(0.96126276, 0, 0.27563757, 0, 1, 0, -0.27563757, 0, 0.96126276, -22.476135, 0, 37.43927)
+gi_mode = 2
+mesh = ExtResource("119_q2y7j")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://deexk0lprjq6q"
+
+[node name="SM_Env_Sidewalk_Straight_01" type="MeshInstance3D" parent="block3/ground_2" unique_id=1886573954 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901736, 0, -0.95105743, 0, 1, 0, 0.95105743, 0, 0.30901736, -25.382019, 0, 28.01233)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (1)" type="MeshInstance3D" parent="block3/ground_2" unique_id=782864384 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901736, 0, -0.95105743, 0, 1, 0, 0.95105743, 0, 0.30901736, -26.933655, 0, 23.3609)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (2)" type="MeshInstance3D" parent="block3/ground_2" unique_id=453934359 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901745, 0, -0.9510578, 0, 1, 0, 0.9510578, 0, 0.30901745, -28.41217, 0, 18.647064)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (3)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1072945759 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901745, 0, -0.9510578, 0, 1, 0, 0.9510578, 0, 0.30901745, -29.952576, 0, 13.9045105)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (4)" type="MeshInstance3D" parent="block3/ground_2" unique_id=844963792 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901745, 0, -0.9510578, 0, 1, 0, 0.9510578, 0, 0.30901745, -31.485535, 0, 9.210541)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (5)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1579431230 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901745, 0, -0.9510578, 0, 1, 0, 0.9510578, 0, 0.30901745, -33.05255, 0, 4.4853516)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (6)" type="MeshInstance3D" parent="block3/ground_2" unique_id=472970413 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.30901745, 0, -0.9510578, 0, 1, 0, 0.9510578, 0, 0.30901745, -34.571594, 0, -0.13613892)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (7)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1172738341 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.24192233, 0, -0.97029746, 0, 1, 0, 0.97029746, 0, 0.24192233, -35.738586, 0, -5.059662)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (8)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1730149000 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.24192233, 0, -0.97029746, 0, 1, 0, 0.97029746, 0, 0.24192233, -36.933105, 0, -9.89389)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (9)" type="MeshInstance3D" parent="block3/ground_2" unique_id=303211134 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(0.20791207, 0, -0.97814935, 0, 1, 0, 0.97814935, 0, 0.20791207, -37.962402, 0, -14.73645)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Corner_01 (1)" type="MeshInstance3D" parent="block3/ground_2" unique_id=662338037 instance=ExtResource("118_o2h1h")]
+transform = Transform3D(0.20791233, 0, -0.97814953, 0, 1, 0, 0.97814953, 0, 0.20791233, -38.64435, 0, -18.006042)
+gi_mode = 2
+mesh = ExtResource("119_q2y7j")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://deexk0lprjq6q"
+
+[node name="SM_Env_Sidewalk_Straight_01 (10)" type="MeshInstance3D" parent="block3/ground_2" unique_id=927665662 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(-0.9781512, 0, -0.207912, 0, 1, 0, 0.207912, 0, -0.9781512, -28.958008, 0, -20.164948)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (11)" type="MeshInstance3D" parent="block3/ground_2" unique_id=655959436 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(-0.9781512, 0, -0.207912, 0, 1, 0, 0.207912, 0, -0.9781512, -24.519714, 0, -21.157288)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (12)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1428423637 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(-0.9702994, 0, -0.24192233, 0, 1, 0, 0.24192233, 0, -0.9702994, -19.84491, 0, -22.297485)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (13)" type="MeshInstance3D" parent="block3/ground_2" unique_id=934265154 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(-0.9702994, 0, -0.24192233, 0, 1, 0, 0.24192233, 0, -0.9702994, -15.167175, 0, -23.479889)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Straight_01 (14)" type="MeshInstance3D" parent="block3/ground_2" unique_id=2108950377 instance=ExtResource("121_hj7vo")]
+transform = Transform3D(-0.9781503, 0, -0.20791182, 0, 1, 0, 0.20791182, 0, -0.9781503, -10.25061, 0, -24.551697)
+gi_mode = 2
+mesh = ExtResource("122_7cfoh")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://bayas3akgjwqb"
+
+[node name="SM_Env_Sidewalk_Corner_01 (2)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1009112174 instance=ExtResource("118_o2h1h")]
+transform = Transform3D(-0.99027133, 0, -0.13917315, 0, 1, 0, 0.13917315, 0, -0.99027133, -5.5375977, 0, -25.317322)
+gi_mode = 2
+mesh = ExtResource("119_q2y7j")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://deexk0lprjq6q"
+
+[node name="SM_Env_Sidewalk_Straight_02" type="MeshInstance3D" parent="block3/ground_2" unique_id=2047215748 instance=ExtResource("123_g8kg0")]
+transform = Transform3D(-0.7880133, 0, 0.615664, 0, 1, 0, -0.615664, 0, -0.7880133, -2.7390137, 0, -21.1557)
+gi_mode = 2
+mesh = ExtResource("124_pm85n")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://chspha8mqnvxn"
+
+[node name="SM_Env_Sidewalk_Straight_02 (1)" type="MeshInstance3D" parent="block3/ground_2" unique_id=730780786 instance=ExtResource("123_g8kg0")]
+transform = Transform3D(-0.8480511, 0, 0.52992165, 0, 1, 0, -0.52992165, 0, -0.8480511, 1.0252075, 0, -18.791199)
+gi_mode = 2
+mesh = ExtResource("124_pm85n")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://chspha8mqnvxn"
+
+[node name="SM_Env_Sidewalk_Straight_02 (2)" type="MeshInstance3D" parent="block3/ground_2" unique_id=368468918 instance=ExtResource("123_g8kg0")]
+transform = Transform3D(-0.8480511, 0, 0.52992165, 0, 1, 0, -0.52992165, 0, -0.8480511, 5.1035767, 0, -16.313538)
+gi_mode = 2
+mesh = ExtResource("124_pm85n")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://chspha8mqnvxn"
+
+[node name="SM_Env_Sidewalk_Straight_02 (3)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1349821128 instance=ExtResource("123_g8kg0")]
+transform = Transform3D(-0.8480512, 0, 0.52992177, 0, 1, 0, -0.52992177, 0, -0.8480512, 9.347168, 0, -13.686829)
+gi_mode = 2
+mesh = ExtResource("124_pm85n")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://chspha8mqnvxn"
+
+[node name="SM_Env_Sidewalk_Straight_02 (4)" type="MeshInstance3D" parent="block3/ground_2" unique_id=1418275883 instance=ExtResource("123_g8kg0")]
+transform = Transform3D(-0.8480512, 0, 0.52992177, 0, 1, 0, -0.52992177, 0, -0.8480512, 13.535767, 0, -11.145721)
+gi_mode = 2
+mesh = ExtResource("124_pm85n")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://chspha8mqnvxn"
 
 [node name="block2" type="Node3D" parent="." unique_id=1860709473]
 transform = Transform3D(0.79319394, 0, 0.6089691, 0, 1, 0, -0.6089691, 0, 0.79319394, -919.7108, 0, 427.01187)
@@ -2911,40 +3119,43 @@ transform = Transform3D(0.5189225, 0, 0.8548213, 0, 1, 0, -0.8548213, 0, 0.51892
 [node name="CollisionShape3D" parent="block2/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_03/MeshCollider" index="0"]
 shape = SubResource("ConcavePolygonShape3D_tu8gs")
 
-[node name="block3" type="Node3D" parent="." unique_id=2020514607]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -839.52386, 0, 428.56073)
+[node name="ground" type="MultiMeshInstance3D" parent="block2" unique_id=793365434]
+transform = Transform3D(0.79319394, 0, -0.6089691, 0, 1, 0, 0.6089691, 0, 0.79319394, 0, 0, 0)
 
-[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="block3" unique_id=2015665567]
+[node name="SM_Env_Grass_01" type="MeshInstance3D" parent="block2/ground" unique_id=507775291 instance=ExtResource("118_0j2xi")]
+transform = Transform3D(11.306511, 0, 3.2420952, 0, 11.762098, 0, -3.2420952, 0, 11.306511, 43.65277, -1.348927, 40.7446)
+gi_mode = 2
+mesh = ExtResource("119_pt7tw")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://cjj01b617e518"
 
-[node name="SM_Bld_OfficeOld_Large_01" parent="block3/MultiMeshInstance3D" unique_id=1060012427 instance=ExtResource("116_5864a")]
-transform = Transform3D(0.95632005, 0, 0.29232162, 0, 1, 0, -0.29232162, 0, 0.95632005, -20.273071, 0, 31.070587)
+[node name="SM_Env_Grass_01 (1)" type="MeshInstance3D" parent="block2/ground" unique_id=235194674 instance=ExtResource("118_0j2xi")]
+transform = Transform3D(11.533772, 0, 3.3072615, 0, 11.998517, 0, -3.3072615, 0, 11.533772, 33.097412, -1.5357597, 3.6403198)
+gi_mode = 2
+mesh = ExtResource("119_pt7tw")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://cjj01b617e518"
 
-[node name="SM_Bld_OfficeOld_Small_01" parent="block3/MultiMeshInstance3D" unique_id=1723811175 instance=ExtResource("117_8xek3")]
-transform = Transform3D(0.95368546, 0, 0.3008057, 0, 1, 0, -0.3008057, 0, 0.95368546, -4.927063, 0, 26.690033)
+[node name="SM_Env_Grass_01 (2)" type="MeshInstance3D" parent="block2/ground" unique_id=1173692167 instance=ExtResource("118_0j2xi")]
+transform = Transform3D(5.3134413, 0, 9.203157, 0, 10.626798, 0, -9.203157, 0, 5.3134413, -10.837952, -1.357352, -28.333008)
+gi_mode = 2
+mesh = ExtResource("119_pt7tw")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://cjj01b617e518"
 
-[node name="SM_PolygonApocalypse_Bld_House_04" parent="block3/MultiMeshInstance3D" unique_id=140824449 instance=ExtResource("115_nfedp")]
-transform = Transform3D(0.9315771, 0, 0.36354393, 0, 1, 0, -0.36354393, 0, 0.9315771, -24.046936, -0.36616516, -16.749176)
+[node name="SM_Env_Grass_01 (3)" type="MeshInstance3D" parent="block2/ground" unique_id=186638683 instance=ExtResource("118_0j2xi")]
+transform = Transform3D(3.1739788, 0, 3.5250607, 0, 4.7433877, 0, -3.5250607, 0, 3.1739788, -6.456543, -0.33147717, 12.296051)
+gi_mode = 2
+mesh = ExtResource("119_pt7tw")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://cjj01b617e518"
 
-[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_04/MeshCollider" index="0"]
-shape = SubResource("ConcavePolygonShape3D_tu8gs")
-
-[node name="SM_PolygonApocalypse_Bld_House_05" parent="block3/MultiMeshInstance3D" unique_id=343456093 instance=ExtResource("115_nfedp")]
-transform = Transform3D(0.9890417, 0, -0.1476368, 0, 1, 0, 0.1476368, 0, 0.9890417, -13.579468, -0.36616516, -16.952332)
-
-[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_05/MeshCollider" index="0"]
-shape = SubResource("ConcavePolygonShape3D_tu8gs")
-
-[node name="SM_PolygonApocalypse_Bld_House_06" parent="block3/MultiMeshInstance3D" unique_id=1988068741 instance=ExtResource("115_nfedp")]
-transform = Transform3D(0.92512363, 0, -0.3796661, 0, 1, 0, 0.3796661, 0, 0.92512363, -0.17687988, -0.36616516, -12.542633)
-
-[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_06/MeshCollider" index="0"]
-shape = SubResource("ConcavePolygonShape3D_tu8gs")
-
-[node name="SM_PolygonApocalypse_Bld_House_07" parent="block3/MultiMeshInstance3D" unique_id=1892717676 instance=ExtResource("115_nfedp")]
-transform = Transform3D(0.92512363, 0, -0.3796661, 0, 1, 0, 0.3796661, 0, 0.92512363, 10.752197, -0.36616516, -6.073578)
-
-[node name="CollisionShape3D" parent="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_07/MeshCollider" index="0"]
-shape = SubResource("ConcavePolygonShape3D_tu8gs")
+[node name="SM_Env_Grass_01 (4)" type="MeshInstance3D" parent="block2/ground" unique_id=1513010062 instance=ExtResource("118_0j2xi")]
+transform = Transform3D(2.3717208, 0, 4.1079383, 0, 4.7433877, 0, -4.1079383, 0, 2.3717208, -3.6395874, -0.33147717, 8.877106)
+gi_mode = 2
+mesh = ExtResource("119_pt7tw")
+surface_material_override/0 = ExtResource("120_nj4kn")
+metadata/asset_placer_res_id = "uid://cjj01b617e518"
 
 [connection signal="set_movement_direction" from="castle_town/Player" to="castle_town/Player/MovementController" method="_on_set_movement_direction"]
 [connection signal="set_movement_state" from="castle_town/Player" to="castle_town/Player/MovementController" method="_on_set_movement_state"]
@@ -3353,6 +3564,12 @@ shape = SubResource("ConcavePolygonShape3D_tu8gs")
 [editable path="block/MultiMeshInstance3D/Apartment_Block_04/SM_Bld_Apartment_Stairs_03"]
 [editable path="block/MultiMeshInstance3D/Apartment_Block_04/SM_Bld_Apartment_Stairs_04"]
 [editable path="block/MultiMeshInstance3D/Apartment_Block_04/SM_Bld_Apartment_Stairs_06"]
+[editable path="block3/MultiMeshInstance3D/SM_Bld_OfficeOld_Large_01"]
+[editable path="block3/MultiMeshInstance3D/SM_Bld_OfficeOld_Small_01"]
+[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_04"]
+[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_05"]
+[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_06"]
+[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_07"]
 [editable path="block2/MultiMeshInstance3D/Apartment_Block_02/SM_Prop_Sign_Pizza_01"]
 [editable path="block2/MultiMeshInstance3D/Apartment_Block_02/SM_Prop_Sign_Pub_01"]
 [editable path="block2/MultiMeshInstance3D/Apartment_Block_02/SM_Bld_Shop_Cover_02"]
@@ -3764,9 +3981,3 @@ shape = SubResource("ConcavePolygonShape3D_tu8gs")
 [editable path="block2/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_07"]
 [editable path="block2/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_02"]
 [editable path="block2/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_03"]
-[editable path="block3/MultiMeshInstance3D/SM_Bld_OfficeOld_Large_01"]
-[editable path="block3/MultiMeshInstance3D/SM_Bld_OfficeOld_Small_01"]
-[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_04"]
-[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_05"]
-[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_06"]
-[editable path="block3/MultiMeshInstance3D/SM_PolygonApocalypse_Bld_House_07"]

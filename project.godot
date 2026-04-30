@@ -27,6 +27,10 @@ window/size/mode=2
 
 project/assembly_name="Learning"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/asset_placer/plugin.cfg")
+
 [input]
 
 accelerate={

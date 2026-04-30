@@ -263,7 +263,17 @@
 [ext_resource type="PackedScene" uid="uid://c0g5ucdccs0du" path="res://assets/polygon_city/Prefabs/Vehicles/SM_Veh_Car_Police_01.tscn" id="261_asukj"]
 [ext_resource type="Material" uid="uid://bett1a2r7gtvj" path="res://assets/polygon_city/Materials/Alts/PolygonCity_04_C_mat.tres" id="262_aphfk"]
 [ext_resource type="Material" uid="uid://bwkryipeqpa32" path="res://assets/polygon_city/Materials/Alts/PolygonCity_03_C_mat.tres" id="263_5iyfj"]
-[ext_resource type="PackedScene" uid="uid://dg6sa2o6sctxq" path="res://shared/components/car/car.tscn" id="264_xag0c"]
+[ext_resource type="PackedScene" uid="uid://1ncbyl42vtyh" path="res://games/third_person_controller/player.tscn" id="264_pkoe7"]
+[ext_resource type="Script" uid="uid://d3kwniwn2pyhq" path="res://games/third_person_controller/scripts/player.gd" id="264_uvv4b"]
+[ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://addons/gevp/scenes/vehicle_controller.tscn" id="264_w5s1e"]
+[ext_resource type="Resource" uid="uid://d4jbf60bjua7o" path="res://games/third_person_controller/MovementStates/run.tres" id="265_3xyh3"]
+[ext_resource type="PackedScene" uid="uid://c8uulnhxruiha" path="res://games/dashoe_car/car.tscn" id="265_pkoe7"]
+[ext_resource type="Resource" uid="uid://dg2nbumuxku53" path="res://games/third_person_controller/MovementStates/sprint.tres" id="266_b5b17"]
+[ext_resource type="Resource" uid="uid://y4c5yolq74o0" path="res://games/third_person_controller/MovementStates/stand.tres" id="267_0e83q"]
+[ext_resource type="Resource" uid="uid://c57dod2rml5h" path="res://games/third_person_controller/MovementStates/walk.tres" id="268_2a53c"]
+[ext_resource type="Script" uid="uid://c1by03632dc4w" path="res://games/third_person_controller/scripts/movement_controller.gd" id="269_r42jw"]
+[ext_resource type="Script" uid="uid://dt2flw26krltt" path="res://games/third_person_controller/scripts/animation_controller.gd" id="270_6r10k"]
+[ext_resource type="Script" uid="uid://di6bp2sg40hxa" path="res://games/third_person_controller/scripts/camer_controller.gd" id="272_r5wa8"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ghol4"]
 points = PackedVector3Array(-2.2914767, 2.6038015, -0.95225275, -2.2914767, 2.4605615, -0.45117444, -2.147923, 3.1049204, 0.121596694, -2.147923, 3.1049204, -0.3079431, -2.147923, 2.9616175, -0.73748285, 2.2914767, 2.8184404, -0.88056, 2.1874003, 2.4751315, -0.91663766, -2.1878488, 2.4751315, -0.91663766, 2.2914767, 2.4605615, -0.45117444, -2.147923, 2.532213, 0.6228292, -2.147923, 2.9616175, 0.47944367, 2.2914767, 3.1049204, 0.121596694, 2.2914767, 3.1049204, -0.3079431, 2.2914767, 2.9616175, -0.73748285, 2.2914767, 2.532213, 0.6228292, 2.2914767, 2.8185036, 0.6228292)
@@ -273,6 +283,47 @@ points = PackedVector3Array(2.2914765, 2.4605055, -0.45103788, 1.0020761, 0.6700
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j6uvg"]
 points = PackedVector3Array(5.0750957, 3.0356026, 0.09647226, 1.2086804, 3.0356026, 0.09647226, 5.0750957, -0.0046921074, 0.09647226, 5.0750957, 3.0356026, -5.074733, -0.08483857, 3.0356026, -1.1902549, 1.2086804, -0.0046921074, 0.09647226, 5.0750957, -0.0046921074, -5.074733, -0.08483857, 3.0356026, -5.074733, -0.08483857, -0.0046921074, -1.1902549, -0.08483857, -0.0046921074, -5.074733)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kx222"]
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_pbsh1"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xo6v4"]
+animation = &"Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xjo65"]
+animation = &"Walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ojkjq"]
+animation = &"Jog_Fwd"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xrj0u"]
+animation = &"Sprint"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_eoj8o"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_xo6v4")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_xjo65")
+blend_point_1/pos = 1.0
+blend_point_2/node = SubResource("AnimationNodeAnimation_ojkjq")
+blend_point_2/pos = 2.0
+blend_point_3/node = SubResource("AnimationNodeAnimation_xrj0u")
+blend_point_3/pos = 3.0
+min_space = 0.0
+max_space = 3.0
+snap = 1.0
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_eod66"]
+graph_offset = Vector2(-2171.1177, -798.38007)
+nodes/output/position = Vector2(-1300, -700)
+nodes/movement_blend/node = SubResource("AnimationNodeBlendSpace1D_eoj8o")
+nodes/movement_blend/position = Vector2(-1940, -720)
+nodes/movement_animation_speed/node = SubResource("AnimationNodeTimeScale_pbsh1")
+nodes/movement_animation_speed/position = Vector2(-1680, -720)
+node_connections = [&"output", 0, &"movement_animation_speed", &"movement_animation_speed", 0, &"movement_blend"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_h5mc4"]
+radius = 0.07
 
 [node name="Main" type="Node3D" unique_id=576735638]
 
@@ -16376,7 +16427,132 @@ transform = Transform3D(-1, 0, 1.1026858e-06, 0, 1, 0, -1.1026858e-06, 0, -1, 30
 [node name="SM_Veh_Car_Ambo_11" parent="Road_Cars" unique_id=806278096 instance=ExtResource("209_o2pno")]
 transform = Transform3D(-1, 0, 1.1026858e-06, 0, 1, 0, -1.1026858e-06, 0, -1, 33.89, 0, -134.76)
 
-[node name="Car" parent="." unique_id=2010514660 instance=ExtResource("264_xag0c")]
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1276312315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.457529, 0, 2.4796839)
+script = ExtResource("264_uvv4b")
+movement_states = {
+"run": ExtResource("265_3xyh3"),
+"sprint": ExtResource("266_b5b17"),
+"stand": ExtResource("267_0e83q"),
+"walk": ExtResource("268_2a53c")
+}
+
+[node name="MovementController" type="Node" parent="Player" unique_id=927966753 node_paths=PackedStringArray("player", "mesh_root")]
+script = ExtResource("269_r42jw")
+player = NodePath("..")
+mesh_root = NodePath("../MeshRoot")
+
+[node name="AnimationController" type="Node" parent="Player" unique_id=446470917 node_paths=PackedStringArray("animation_tree", "player")]
+script = ExtResource("270_6r10k")
+animation_tree = NodePath("../MeshRoot/AnimationTree")
+player = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1794354827]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
+shape = SubResource("CapsuleShape3D_kx222")
+
+[node name="MeshRoot" type="Node3D" parent="Player" unique_id=35723554]
+
+[node name="UAL1_Standard" parent="Player/MeshRoot" unique_id=626144487 instance=ExtResource("264_pkoe7")]
+
+[node name="GeneralSkeleton" parent="Player/MeshRoot/UAL1_Standard/Armature" parent_id_path=PackedInt32Array(626144487, 381643302) index="0" unique_id=1965584152]
+bones/1/position = Vector3(-0.0021985583, 0.87624186, -0.08659752)
+bones/1/rotation = Quaternion(-0.0463539, -0.115888074, -0.005414285, 0.9921653)
+bones/3/rotation = Quaternion(0.09097203, 0.00011223606, 0.00025470913, 0.9958535)
+bones/4/rotation = Quaternion(0.09097195, 0.00031940086, 0.00024810742, 0.9958534)
+bones/5/rotation = Quaternion(-0.09098776, -0.00021612349, -0.00026086246, 0.99585193)
+bones/6/rotation = Quaternion(0.078591116, 0.095705375, 0.00814863, 0.99226886)
+bones/7/rotation = Quaternion(0.4878771, 0.52648187, 0.52650535, -0.45561492)
+bones/8/rotation = Quaternion(-0.061814886, 0.81774265, -0.5721711, 0.009800295)
+bones/9/rotation = Quaternion(0.18977387, -0.6511257, 0.18288851, 0.7117395)
+bones/10/rotation = Quaternion(0.09913024, 0.70686626, 0.0629003, 0.69753635)
+bones/11/rotation = Quaternion(0.6295969, -4.0978193e-08, -4.61936e-06, 0.77692205)
+bones/12/rotation = Quaternion(0.62334186, 2.9802322e-08, -4.261732e-06, 0.78194946)
+bones/13/rotation = Quaternion(0.62334144, -2.2351742e-07, -4.4703484e-06, 0.78194976)
+bones/15/rotation = Quaternion(0.6288943, -0.0297349, -4.470348e-06, 0.7769219)
+bones/16/rotation = Quaternion(0.6227327, -0.02755458, -4.410744e-06, 0.7819494)
+bones/17/rotation = Quaternion(0.6226684, -0.028961532, -4.4703493e-06, 0.78194976)
+bones/19/rotation = Quaternion(0.6630008, -0.044529784, 0.07369417, 0.7436506)
+bones/20/rotation = Quaternion(0.6203661, -0.06229401, 0.015573084, 0.7816796)
+bones/21/rotation = Quaternion(0.62192154, -0.04205184, -4.4703484e-06, 0.78194964)
+bones/23/rotation = Quaternion(0.6291978, -0.022414071, -4.202128e-06, 0.77692205)
+bones/24/rotation = Quaternion(0.6229472, -0.022176376, -4.321337e-06, 0.78194946)
+bones/25/rotation = Quaternion(0.6228982, -0.023505477, -4.5001498e-06, 0.7819497)
+bones/27/rotation = Quaternion(-0.123819165, 0.7195233, 0.2018354, 0.65285325)
+bones/28/rotation = Quaternion(0.18180694, 0.11012423, 0.060063303, 0.9753006)
+bones/29/rotation = Quaternion(0.5994299, 0.27396563, 0.19463211, 0.7264606)
+bones/30/scale = Vector3(1.0001454, 1.0004877, 1.0005833)
+bones/31/rotation = Quaternion(0.5401097, -0.47440282, -0.4747789, -0.5077484)
+bones/32/rotation = Quaternion(0.09101562, 0.8249872, -0.5576928, -0.009552132)
+bones/33/rotation = Quaternion(0.2924715, 0.5417093, -0.20446998, 0.7610543)
+bones/34/rotation = Quaternion(0.12024976, -0.69903094, -0.056890074, 0.702609)
+bones/35/rotation = Quaternion(0.6295971, 3.7252903e-08, 4.172325e-06, 0.7769218)
+bones/36/rotation = Quaternion(0.62334144, 1.825392e-07, 4.470348e-06, 0.7819497)
+bones/37/rotation = Quaternion(0.62334156, 1.00582824e-07, 4.2319293e-06, 0.78194964)
+bones/38/rotation = Quaternion(4.6566133e-09, 1, 4.295285e-08, -5.7654454e-08)
+bones/39/rotation = Quaternion(0.6288947, 0.029734796, 4.351139e-06, 0.77692175)
+bones/40/rotation = Quaternion(0.62273216, 0.027554482, 4.5001507e-06, 0.78194976)
+bones/41/rotation = Quaternion(0.62266874, 0.028961398, 4.3213377e-06, 0.78194946)
+bones/43/rotation = Quaternion(0.6630007, 0.044529956, -0.07369393, 0.7436508)
+bones/44/rotation = Quaternion(0.62036633, 0.06229363, -0.015572906, 0.7816794)
+bones/45/rotation = Quaternion(0.62192184, 0.04205143, 4.4703484e-06, 0.7819494)
+bones/46/rotation = Quaternion(-0.03375008, 0.99943036, 4.924054e-08, -5.6300305e-08)
+bones/47/rotation = Quaternion(0.6291981, 0.022413792, 4.11272e-06, 0.7769218)
+bones/48/rotation = Quaternion(0.62294656, 0.022176204, 4.470349e-06, 0.7819501)
+bones/49/rotation = Quaternion(0.6228987, 0.02350526, 4.1723247e-06, 0.7819493)
+bones/50/rotation = Quaternion(-0.018857837, 0.9998222, -1.5216909e-08, -2.369153e-07)
+bones/51/rotation = Quaternion(-0.12381923, -0.7195234, -0.2018356, 0.6528533)
+bones/52/rotation = Quaternion(0.18180703, -0.11012423, -0.060063303, 0.97530067)
+bones/53/rotation = Quaternion(0.5994302, -0.2739653, -0.19463223, 0.7264605)
+bones/54/scale = Vector3(1.0001454, 1.0004876, 1.0005835)
+bones/55/rotation = Quaternion(-0.0008036048, 0.11733793, 0.9864237, -0.11488922)
+bones/56/rotation = Quaternion(0.015522979, 0.9832876, -0.14216538, 0.11266617)
+bones/57/rotation = Quaternion(-0.09807164, 0.73118025, -0.67502874, 0.009682299)
+bones/58/rotation = Quaternion(4.664862e-08, 1, 5.9604645e-08, 2.7766912e-08)
+bones/60/rotation = Quaternion(0.00078913127, -0.109110594, 0.9876058, 0.11282319)
+bones/61/rotation = Quaternion(-0.030826699, 0.92855436, -0.0861835, -0.35973465)
+bones/62/rotation = Quaternion(0.1693911, 0.6418246, -0.74790907, -0.0002380386)
+bones/63/rotation = Quaternion(-6.703263e-08, 1, 8.940697e-08, 2.1454163e-09)
+
+[node name="AnimationTree" type="AnimationTree" parent="Player/MeshRoot" unique_id=1748157427]
+root_node = NodePath("../UAL1_Standard")
+tree_root = SubResource("AnimationNodeBlendTree_eod66")
+anim_player = NodePath("../UAL1_Standard/AnimationPlayer")
+parameters/movement_blend/blend_position = -0.0038192233
+parameters/movement_animation_speed/scale = 1.0
+
+[node name="CameraRoot" type="Node3D" parent="Player" unique_id=520350229]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.6675882, 0)
+script = ExtResource("272_r5wa8")
+
+[node name="CameraYaw" type="Node3D" parent="Player/CameraRoot" unique_id=2035379580]
+
+[node name="CameraPitch" type="Node3D" parent="Player/CameraRoot/CameraYaw" unique_id=1672859446]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Player/CameraRoot/CameraYaw/CameraPitch" unique_id=1800878830]
+shape = SubResource("SphereShape3D_h5mc4")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="Player/CameraRoot/CameraYaw/CameraPitch/SpringArm3D" unique_id=1411363763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7252903e-09, 0.61644363, 3.4740932)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=2147297569]
+
+[node name="VehicleController" parent="Node3D" unique_id=2125648195 node_paths=PackedStringArray("vehicle_node") instance=ExtResource("264_w5s1e")]
+vehicle_node = NodePath("sedan")
+
+[node name="sedan" parent="Node3D/VehicleController" unique_id=1732270905 instance=ExtResource("265_pkoe7")]
+
+[node name="camera_rig" type="Node3D" parent="Node3D/VehicleController/sedan" unique_id=1298461977]
+
+[node name="Camera3D" type="Camera3D" parent="Node3D/VehicleController/sedan/camera_rig" unique_id=925082997]
+transform = Transform3D(1, 0, 0, 0, 0.8945368, 0.44699425, 0, -0.44699425, 0.8945368, 0.26390362, 5.2627096, 9.789875)
+
+[connection signal="set_movement_direction" from="Player" to="Player/MovementController" method="_on_set_movement_direction"]
+[connection signal="set_movement_state" from="Player" to="Player/MovementController" method="_on_set_movement_state"]
+[connection signal="set_movement_state" from="Player" to="Player/AnimationController" method="_on_set_movement_state"]
+[connection signal="set_movement_state" from="Player" to="Player/CameraRoot" method="_on_set_movement_state"]
+[connection signal="set_cam_rotation" from="Player/CameraRoot" to="Player/MovementController" method="_on_set_cam_rotation"]
 
 [editable path="City_Area_01/SM_Prop_TrashBag_09"]
 [editable path="City_Area_01/SM_Env_Sidewalk_Panel_10"]
@@ -21553,3 +21729,4 @@ transform = Transform3D(-1, 0, 1.1026858e-06, 0, 1, 0, -1.1026858e-06, 0, -1, 33
 [editable path="Road_Cars/SM_Veh_Car_Ambo_09"]
 [editable path="Road_Cars/SM_Veh_Car_Ambo_10"]
 [editable path="Road_Cars/SM_Veh_Car_Ambo_11"]
+[editable path="Player/MeshRoot/UAL1_Standard"]

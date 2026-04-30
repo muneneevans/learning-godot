@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://coinnqhleha3v"]
+
+[ext_resource type="Script" uid="uid://b7os7dqc6hs5c" path="res://examples/navigation/navigation_npc.gd" id="1_47c20"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_e74m0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_47c20"]
+
+[node name="navigation_npc" type="CharacterBody3D" unique_id=1975219428]
+script = ExtResource("1_47c20")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1812895037]
+mesh = SubResource("CapsuleMesh_e74m0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2073355427]
+shape = SubResource("CapsuleShape3D_47c20")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=4416004]
+debug_enabled = true

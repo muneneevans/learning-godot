@@ -11,23 +11,22 @@ var plugin_path: String:
 	get():
 		return get_script().resource_path.get_base_dir()
 
-var _folder_repository: FolderRepository
 var _presenter: AssetPlacerPresenter
 var _asset_placer: AssetPlacer
-var _assets_repository: AssetsRepository
-var _collection_repository: AssetCollectionRepository
 var _updater: PluginUpdater
 var _async: AssetPlacerAsync
 var _asset_placer_window: AssetLibraryPanel
 var _file_system: EditorFileSystem = EditorInterface.get_resource_filesystem()
 var _plane_preview: Node3D
+var _last_preview_camera: Camera3D
+var _last_preview_mouse_position: Vector2 = Vector2.ZERO
+var _has_preview_pointer := false
 
 # Actual type is EditorDock
 var _dock: MarginContainer
 var _asset_placer_button: Button
 
 var _migration_collection_id = null
-var _data_source: AssetLibraryDataSource
 
 
 func _enable_plugin():
@@ -41,6 +40,7 @@ func _disable_plugin():
 func _enter_tree():
 	_initialize_data_layer()
 	_run_migrations()
+
 	_async = AssetPlacerAsync.new()
 	_presenter = AssetPlacerPresenter.new()
 	AssetPlacerDockPresenter.new()
@@ -51,7 +51,7 @@ func _enter_tree():
 	get_tree().root.add_child(_plane_preview)
 
 	_asset_placer = AssetPlacer.new(get_undo_redo())
-	synchronizer = Synchronize.new(_folder_repository, _assets_repository)
+	synchronizer = Synchronize.new()
 	scene_changed.connect(_handle_scene_changed)
 	_init_parent_scene.call_deferred()
 	_presenter.asset_selected.connect(start_placement)
@@ -87,7 +87,9 @@ func _enter_tree():
 			EditorToasterCompat.toast(message)
 	)
 
-	self.overlay = load("res://addons/asset_placer/ui/viewport_overlay/viewport_overlay.tscn").instantiate()
+	self.overlay = (
+		load("res://addons/asset_placer/ui/viewport_overlay/viewport_overlay.tscn").instantiate()
+	)
 	get_editor_interface().get_editor_viewport_3d().add_child(overlay)
 
 	_file_system.resources_reimported.connect(_react_to_reimorted_files)
@@ -111,6 +113,9 @@ func _exit_tree():
 	_updater.update_ready.disconnect(_show_update_available)
 	overlay.queue_free()
 	_plane_preview.queue_free()
+
+	AssetLibraryManager.free_library()
+
 	settings_repository.settings_changed.disconnect(_react_to_settings_change)
 	_file_system.resources_reimported.disconnect(_react_to_reimorted_files)
 	_presenter.asset_selected.disconnect(start_placement)
@@ -140,7 +145,9 @@ func _handle_scene_changed(scene: Node):
 
 
 func _run_migrations():
-	_migration_collection_id = load("res://addons/asset_placer/data/migrations/collection_id_migration.gd")
+	_migration_collection_id = load(
+		"res://addons/asset_placer/data/migrations/collection_id_migration.gd"
+	)
 	_migration_collection_id.new().run()
 
 
@@ -148,10 +155,10 @@ func _initialize_data_layer():
 	settings_repository = AssetPlacerSettingsRepository.new()
 	current_settings = settings_repository.get_settings()
 	settings_repository.settings_changed.connect(_react_to_settings_change)
-	_data_source = AssetLibraryDataSource.new(current_settings.asset_library_path)
-	_folder_repository = FolderRepository.new(_data_source)
-	_assets_repository = AssetsRepository.new(_data_source)
-	_collection_repository = AssetCollectionRepository.new(_data_source)
+
+	# TODO load library file save path setting
+	var path := AssetLibraryParser.DEFAULT_SAVE_PATH
+	AssetLibraryManager.load_asset_library(path)
 
 
 func _react_to_settings_change(settings: AssetPlacerSettings):
@@ -173,6 +180,8 @@ func start_placement(asset: AssetResource):
 	EditorInterface.set_main_screen_editor("3D")
 	AssetPlacerContextUtil.select_context()
 	_asset_placer.start_placement(get_tree().root, asset, _presenter.placement_mode)
+	if is_instance_valid(_last_preview_camera) and _has_preview_pointer:
+		_asset_placer.move_preview(_last_preview_mouse_position, _last_preview_camera)
 
 
 func _on_node_transform_mode_ended():
@@ -199,6 +208,8 @@ func _handle_in_place_transform():
 
 # gdlint: disable=max-returns
 func _forward_3d_gui_input(viewport_camera, event):
+	_capture_preview_pointer(viewport_camera, event)
+
 	if current_settings.bindings[AssetPlacerSettings.Bindings.InPlaceTransform].is_pressed(event):
 		_handle_in_place_transform()
 		return _handled()
@@ -223,6 +234,11 @@ func _forward_3d_gui_input(viewport_camera, event):
 	if current_settings.bindings[AssetPlacerSettings.Bindings.GridSnapping].is_pressed(event):
 		_presenter.toggle_grid_snapping()
 		return _handled()
+
+	if _is_asset_cycle_input(event):
+		var direction := 1 if _is_cycle_forward_input(event) else -1
+		if _presenter.cycle_selected_asset(direction):
+			return _handled()
 
 	if current_settings.binding_positive_transform.is_pressed(event):
 		var axis := _presenter.preview_transform_axis
@@ -283,6 +299,29 @@ func _show_update_available(_update: PluginUpdate):
 	else:
 		_asset_placer_button.icon = EditorIconTexture2D.new("MoveUp")
 		_asset_placer_button.icon_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+
+
+func _is_asset_cycle_input(event: InputEvent) -> bool:
+	if event is not InputEventKey or not event.is_pressed():
+		return false
+	if not event.shift_pressed:
+		return false
+	return _is_cycle_forward_input(event) or _is_cycle_backward_input(event)
+
+
+func _is_cycle_forward_input(event: InputEvent) -> bool:
+	return event.keycode == KEY_S
+
+
+func _is_cycle_backward_input(event: InputEvent) -> bool:
+	return event.keycode == KEY_A
+
+
+func _capture_preview_pointer(viewport_camera: Camera3D, event: InputEvent):
+	if event is InputEventMouse:
+		_last_preview_camera = viewport_camera
+		_last_preview_mouse_position = event.position
+		_has_preview_pointer = true
 
 
 func _handled():
